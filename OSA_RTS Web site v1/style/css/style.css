@@ -428,11 +428,10 @@ pre {
 	-moz-box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.15);
 	box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.15);
 	float: left;
-	position: relative;
+	position: fixed;
 	margin-top: -1px;
 	z-index: 100;
-    top: 0px;
-    left: auto;
+	height: 100vh;
 }
 
 #blog #sidebar {
