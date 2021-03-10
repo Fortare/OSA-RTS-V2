@@ -1,0 +1,21 @@
+Bill of Material for D:\Tools\A_Design\2009\Geotest\ATML Demo\7310-100-00 ATML Demo.Sch
+
+Used Part Type Designator           Footprint  Description 
+==== ========= ==================== ========== =========== 
+1    1.2K      R2                                          
+2    100K      R6 R7                                       
+5    10uF      C1 C2 C3 C4 C5                              
+2    12K       R1 R5                                       
+1    470       R4                                          
+1    5.6K      R3                                          
+1    AD5220    IC1                                         
+1    BA30BC0T  IC2                                         
+1    DB25      J1                   DB25                   
+1    F330DC    MOD1                                        
+2    JUMPER    JP1 JP2              RAD0.2                 
+1    LM7805    IC3                                         
+1    MAX233    IC4                                         
+1    NPN       Q1                                          
+10   SW        K1 K10 K2 K3 K4 K5                          
+               K6 K7 K8 K9                                 
+3    TP        VB VC VE                                    

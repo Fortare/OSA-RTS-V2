@@ -1,0 +1,414 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>OSA RTS Demo</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="style/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="style/css/style.css" media="all">
+    <link href='http://fonts.googleapis.com/css?family=Amaranth:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="style/css/ie7.css" media="all">
+    <![endif]-->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="style/css/ie8.css" media="all">
+    <![endif]-->
+    <!--[if IE 9]>
+    <link rel="stylesheet" type="text/css" href="style/css/ie9.css" media="all">
+    <![endif]-->
+    <script src="style/js/jquery-1.6.4.min.js"></script>
+    <script src="style/js/ddsmoothmenu.js"></script>
+    <script src="style/js/jquery.jcarousel.js"></script>
+    <script src="style/js/jquery.prettyPhoto.js"></script>
+    <script src="style/js/carousel.js"></script>
+    <script src="style/js/jquery.flexslider-min.js"></script>
+    <script src="style/js/jquery.masonry.min.js"></script>
+    <script src="style/js/jquery.slickforms.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="sidebar">
+            <div id="logo"><a href="index.html"><img src="style/images/logo.png" alt=""></a></div>
+            <div id="menu" class="menu-v">
+                <ul>
+                    <li>
+                        <a href="index.html" class="active">Home</a>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index2.html">What is an OSA-RTS</a></li>
+                            <li><a href="index3.html">Examples of Use</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="UUT1.html">UUT descritption</a>
+                        <ul>
+                            <li><a href="UUT1.html">UUT Description</a></li>
+                            <li><a href="UUT2.html">Identification</a></li>
+                            <li><a href="UUT3.html">Interface</a></li>
+                            <li><a href="UUT4.html">Component</a></li>
+                            <li><a href="UUT5.html">Network List</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="TestDescription1.html">Test descritption</a>
+                        <ul>
+                            <li><a href="TestDescription1.html">Test descritption presentation</a></li>
+                            <li><a href="TestDescription2.html">TSF Libraries</a></li>
+                            <li><a href="TestDescription3.html">Signal Requirements</a></li>
+                            <li><a href="TestDescription4.html">Test Information</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="blog.html">Demonstration</a>
+                        <ul>
+                            <li><a href="blog.html">Overview</a></li>
+                            <li><a href="blog2.html">Installing LabWindows/CVI OSA RTS Toolset</a></li>
+                            <li><a href="buttons-boxes-images.html">Running LabWindows/CVI OSA-RTS Toolset</a></li>
+                            <li><a href="post2.html">Video</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Features1.html">Features</a>
+                        <ul>
+                            <li><a href="Features1.html">Smart diagnostic</a></li>
+                            <li><a href="Features2.html">Rf testing (part 1)</a></li>
+                            <li><a href="Features3.html">Rf testing (part 2)</a></li>
+                            <li><a href="Features4.html">Other features</a></li>
+                            <li><a href="Features5.html">Empty</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="sidebox">
+                <ul class="share">
+                    <li><a href="#"><img src="style/images/icon-rss.png" alt=""></a></li>
+                    <li><a href="#"><img src="style/images/icon-facebook.png" alt=""></a></li>
+                    <li><a href="#"><img src="style/images/icon-twitter.png" alt=""></a></li>
+                    <li><a href="#"><img src="style/images/icon-dribbble.png" alt=""></a></li>
+                    <li><a href="#"><img src="style/images/icon-linkedin.png" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="sidebox">
+                <div class="search">
+                    <h3>Search</h3>
+                    <form class="searchform" method="get" action="#">
+                        <input type="text" id="s" name="s" value="type and hit enter" onFocus="this.value=''" onBlur="this.value='type and hit enter'">
+                    </form>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="sidebox" style="color:#FFF;">
+                <p style="margin-bottom:5px;">Copyright &copy; Site Name.com</p>
+                <p>Design By: <a href="http://elemisfreebies.com">elemis</a></p>
+            </div>
+        </div>
+        <div id="content">
+            <h1 class="title">Test Information</h1>
+            <div class="line"></div>
+
+            <p>
+                The Detailed Test Information contains the bulk of the test information associated with the test description.
+            </p>
+
+            <p>
+                The key top level areas discussed are :
+            </p>
+
+            <ul>
+                <li>
+                    EntryPoints - Identifies the test groups or actions that can be used as entry points for testing the UUT. For each entry point, test conditions are completely stated and are not dependent on previous tests or setups.
+                </li>
+                <li>
+                    Actions - Contains list of Tests or Sessions actions being the specific tests performed on the UUT
+                </li>
+                <li>
+                    StateVariables -Contains the list of state variables. State variables are used to specify conditions for the execution of tests.
+                </li>
+                <li>
+                    TestGroups - Identify the sequence of Actions to be performed as a group.
+                </li>
+                <li>
+                    GlobalSignals - Identifies global signals, shared by multiple tests. Global signals are referenced from various elements that describe the behavior of actions.
+                </li>
+            </ul>
+
+            <h2 class="title">EntryPoints</h2>
+
+            <p>
+                The ATML demo supports four entry points each representing the various stages of the test program through the ATML Demo phases.
+            </p>
+            <h4 class="title">Example</h4>
+
+            <p>
+                <xmp>
+                    - <td:EntryPoints>
+                        - <td:TestGroupEntryPoints primaryTestGroupEntryPointID="1">
+                            <td:TestGroupEntryPoint ID="1" testGroupID="ATLASTPS" />
+                            <td:TestGroupEntryPoint ID="2" testGroupID="seq1" />
+                            <td:TestGroupEntryPoint ID="3" testGroupID="seq_odbc_repeat" />
+                            <td:TestGroupEntryPoint ID="4" testGroupID="seq_odbc_generic" />
+                        </td:TestGroupEntryPoints>
+                    </td:EntryPoints>
+                </xmp>
+            </p>
+
+            <h2 class="title">Actions</h2>
+
+            <p>
+                The test Description contains 35 separate Actions two SessionActions to apply and remove power and 33 individual Tests
+            </p>
+            <h4 class="title">Example</h4>
+
+            <p>
+                <xmp>
+                    - <td:Actions>
+                        + <td:Action xsi:type="td:Test" ID="test1" name="V_CC_to_GND_Resistance_Test">
+                            + <td:Action xsi:type="td:SessionAction" ID="sa2" name="Apply_UUT_DC_Power">
+                                + <td:Action xsi:type="td:Test" ID="test3" name="V_O_AC_Voltage_Test">
+                                    + <td:Action xsi:type="td:Test" ID="test4" name="V_C_AC_Voltage_Test">
+                                        + <td:Action xsi:type="td:Test" ID="test5" name="V_C_DC_Voltage_Test">
+                                            + <td:Action xsi:type="td:Test" ID="test6" name="V_E_DC_Voltage_Test">
+                                                + <td:Action xsi:type="td:Test" ID="test7" name="V_B_DC_Voltage_Test">
+                                                    + <td:Action xsi:type="td:Test" ID="test8" name="VBE_Test_on_V_C_Fail_High">
+                                                        + <td:Action xsi:type="td:Test" ID="test9" name="VBE_Test_on_V_C_Fail_Low">
+                                                            + <td:Action xsi:type="td:Test" ID="test10" name="Gain_Control_Test">
+                                                                + <td:Action xsi:type="td:Test" ID="test11" name="Output_Control_Test">
+                                                                    + <td:Action xsi:type="td:SessionAction" ID="sesh1" name="CalculateGain">
+                                                                        + <td:Action xsi:type="td:Test" ID="test12" name="One_dB_CompressionPoint_Test_Repeat">
+                                                                            + <td:Action xsi:type="td:Test" ID="test13" name="One_dB_CompressionPoint_Test_Generic">
+                                                                                + <td:Action xsi:type="td:SessionAction" ID="sa1" name="Remove_UUT_DC_Power">
+                                                                                    + <td:Action xsi:type="td:Test" ID="MeasureResistance" name="MeasureResistance">
+                                                                                        + <td:Action xsi:type="td:Test" ID="MeasureVDC" name="MeasureVDC">
+                                                                                            + <td:Action xsi:type="td:Test" ID="MeasureVAC" name="MeasureVAC">
+                                                                                                + <td:Action xsi:type="td:Test" ID="200100" name="200100">
+                                                                                                    + <td:Action xsi:type="td:Test" ID="210100" name="210100">
+                                                                                                        + <td:Action xsi:type="td:Test" ID="220100" name="220100">
+                                                                                                            + <td:Action xsi:type="td:Test" ID="220200" name="220200">
+                                                                                                                + <td:Action xsi:type="td:Test" ID="220300" name="220300">
+                                                                                                                    + <td:Action xsi:type="td:Test" ID="220400" name="220400">
+                                                                                                                        + <td:Action xsi:type="td:Test" ID="220500" name="220500">
+                                                                                                                            + <td:Action xsi:type="td:Test" ID="220600" name="220600">
+                                                                                                                                + <td:Action xsi:type="td:Test" ID="220700" name="220700">
+                                                                                                                                    + <td:Action xsi:type="td:Test" ID="220800" name="220800">
+                                                                                                                                        + <td:Action xsi:type="td:Test" ID="230100" name="230100">
+                                                                                                                                            + <td:Action xsi:type="td:Test" ID="230200" name="230200">
+                                                                                                                                                + <td:Action xsi:type="td:Test" ID="230300" name="230300">
+                                                                                                                                                    + <td:Action xsi:type="td:Test" ID="240100" name="240100">
+                                                                                                                                                        + <td:Action xsi:type="td:Test" ID="240200" name="240200">
+                                                                                                                                                            + <td:Action xsi:type="td:Test" ID="240300" name="240300">
+                                                                                                                                                                + <td:Action xsi:type="td:Test" ID="240400" name="240400">
+                    </td:Actions>
+
+                </xmp>
+            </p>
+
+            <h2 class="title">Session Action</h2>
+
+            <p>
+                A Session Action differs from a test in so far as generally acting on global signals and only having a Done or Aborted Outcome, which implies no Test Result. The example sets up the global DC Power, which is removed by another session action not shown.
+            </p>
+            <h4 class="title">Example</h4>
+
+            <p>
+                <xmp>
+                    - <td:Action xsi:type="td:Test" ID="test1" name="V_CC_to_GND_Resistance_Test">
+                        - <td:Behavior>
+                            + <td:Operations>
+                        </td:Behavior>
+                        - <td:LocalSignals>
+                            - <td:LocalSignal name="Resistance Sensor">
+                                <td:Sensor ID="ls1" />
+                            </td:LocalSignal>
+                        </td:LocalSignals>
+                        - <td:Outcomes>
+                            <td:Outcome ID="t1o1" value="Passed" />
+                            <td:Outcome ID="t1o2" value="Failed" qualifier="FailLow" />
+                        </td:Outcomes>
+                        - <td:TestResults>
+                            - <td:TestResult ID="t1tr1" name="V_CC Resistance">
+                                + <td:ValueDescription>
+                                    - <td:TestLimits>
+                                        - <td:Limit>
+                                            - <c:SingleLimit comparator="GE">
+                                                <c:Datum xsi:type="c:double" standardUnit="kOhm" value="12.5" />
+                                            </c:SingleLimit>
+                                        </td:Limit>
+                                    </td:TestLimits>
+                            </td:TestResult>
+                        </td:TestResults>
+                    </td:Action>
+                </xmp>
+            </p>
+
+            <h2 class="title">Parameter Test</h2>
+
+            <p>
+                The parameter test has the key values for the test maintained in parameters (variables), which are used in the behavior. In this case the parameters are read by the Test Group and then forwarded to the test procedure. One problem with this example is how does the the measured value eventually get attracted to the appropriate test result associated with the specific test?
+            </p>
+            <h4 class="title">Example</h4>
+
+            <p>
+                <xmp>
+                    - <td:Action xsi:type="td:Test" ID="200100" name="200100">
+                        - <td:Parameters>
+                            + <td:Parameter ID="p1" name="LWL">
+                                + <td:Parameter ID="p2" name="UPL">
+                                    + <td:Parameter ID="p3" name="POS-CON">
+                                        + <td:Parameter ID="p4" name="NEG-CON">
+                        </td:Parameters>
+                        - <td:Behavior>
+                            <td:TestGroupCall testGroupID="Resistance Measurement" />
+                        </td:Behavior>
+                        - <td:Outcomes>
+                            <td:Outcome ID="200100oPassed" value="Passed" />
+                            <td:Outcome ID="200100oFailedLow" value="Failed" qualifier="FailedLow" />
+                            <td:Outcome ID="200100oFailedHigh" value="Failed" qualifier="FailedHigh" />
+                        </td:Outcomes>
+                        - <td:TestResults>
+                            + <td:TestResult ID="020100tr1" name="200100">
+                        </td:TestResults>
+                    </td:Action>
+                </xmp>
+            </p>
+
+            <h2 class="title">Test Procedure</h2>
+
+            <p>
+                The tests MeasureResistance, MeasureVDC and MeasureVAC are all examples of Test Procedures, they each define local behaviour and TestLimits that take their values from parameters passed in form the sequence. For the purpose of TestResults knowing your doing a MeasureResistance test or have a MeasureResistance result does not help what is needed is which test or step this test is being called from.
+            </p>
+            <h4 class="title">Example</h4>
+
+            <p>
+                <xmp>
+                    - <td:Action xsi:type="td:Test" ID="MeasureVAC" name="MeasureVAC">
+                        - <td:Parameters>
+                            + <td:Parameter ID="p1" name="LWL">
+                                + <td:Parameter ID="p2" name="UPL">
+                                    + <td:Parameter ID="p3" name="POS-CON">
+                                        + <td:Parameter ID="p4" name="NEG-CON">
+                                            + <td:Parameter ID="p5" name="XPCTD">
+                        </td:Parameters>
+                        - <td:Behavior>
+                            + <td:Operations>
+                        </td:Behavior>
+                        - <td:LocalSignals>
+                            + <td:LocalSignal name="DMM-ACV">
+                                + <td:LocalSignal name="AFG">
+                                    + <td:LocalSignal name="DWG">
+                        </td:LocalSignals>
+                        - <td:Outcomes>
+                            <td:Outcome ID="VACoPassed" value="Passed" />
+                            <td:Outcome ID="VACoFailedLow" value="Failed" qualifier="FailedLow" />
+                            <td:Outcome ID="VACoFailedHigh" value="Failed" qualifier="FailedHigh" />
+                        </td:Outcomes>
+                        - <td:TestResults>
+                            + <td:TestResult ID="VACtr1" name="MeasureVAC">
+                        </td:TestResults>
+                    </td:Action>
+                </xmp>
+            </p>
+
+            <h2 class="title">TestGroups</h2>
+
+            <p>
+                The test description defines 13 individual test groups.  The ATMLDemo3.xml uses several test group  constructs
+            </p>
+            <h4 class="title">Example</h4>
+
+            <p>
+                <xmp>
+                    - <td:TestGroups>
+                        + <td:TestGroup xsi:type="td:TestGroupSequence" ID="seq1" name="FaultDetectionAndIsolation">
+                            + <td:TestGroup xsi:type="td:TestGroupSequence" ID="seq2" name="VBE_Tests">
+                                + <td:TestGroup xsi:type="td:TestGroupSequence" ID="seq_odbc_repeat" name="1dBComp_repeat">
+                                    + <td:TestGroup xsi:type="td:TestGroupSequence" ID="seq_odbc_generic" name="1dBComp_generic">
+                                        + <td:TestGroup xsi:type="td:TestGroupSerial" ID="Resistance Measurement" name="Resistance Measurement">
+                                            + <td:TestGroup xsi:type="td:TestGroupSerial" ID="VDC Measurement" name="VDC Measurement">
+                                                + <td:TestGroup xsi:type="td:TestGroupSerial" ID="VAC Measurement" name="VAC Measurement">
+                                                    + <td:TestGroup xsi:type="td:TestGroupSerial" ID="200000" name="SIGNATURE-RESISTER-TESTS">
+                                                        + <td:TestGroup xsi:type="td:TestGroupSerial" ID="210000" name="SAFE-TO-TURN-ON-TESTS">
+                                                            + <td:TestGroup xsi:type="td:TestGroupSerial" ID="220000" name="CONTINUITY-TESTS">
+                                                                + <td:TestGroup xsi:type="td:TestGroupSerial" ID="230000" name="BIAS-VOLTAGE-TESTS">
+                                                                    + <td:TestGroup xsi:type="td:TestGroupSerial" ID="240000" name="GAIN-VOLTAGE-TESTS">
+                                                                        + <td:TestGroup xsi:type="td:TestGroupSequence" ID="ATLASTPS" name="ATLAS DIAGNOSTICS">
+                    </td:TestGroups>
+                </xmp>
+            </p>
+
+            <h2 class="title">GlobalSignals</h2>
+
+            <p>
+                The test description only used one global signal (UUT DC Power) , this was used across all phases on the demonstration. td:GlobalSignals does not declare the signal as global, it merely references those signals that are defined Global in scope from either the td:OperationSetup or td:Ieee1641Std components. Global Signals have the scope of the test program and have to be explicitly disconnected and turned - off. By contract local signals have the scope of their Action (or Group) and are automatically turned-off and disconnected when they go out of scope. A typical local signal is a Sensor, that only performs measurements during the actual test.
+            </p>
+            <h4 class="title">Example</h4>
+
+            <p>
+                <xmp>
+                    - <td:GlobalSignals>
+                        - <td:GlobalSignal name="UUT DC Power">
+                            <td:Source ID="gs1" />
+                        </td:GlobalSignal>
+                    </td:GlobalSignals>
+                    </td:TestGroups>
+                </xmp>
+            </p>
+
+            <div class="clear"></div>
+
+            <div class="page-navi">
+                <ul>
+                    <li><a href="TestDescription1.html">1</a></li>
+                    <li><a href="TestDescription2.html">2</a></li>
+                    <li><a href="TestDescription3.html">3</a></li>
+                    <li><a href="TestDescription4.html" class="current">4</a></li>
+                    <li><a href="contact.html">›</a></li>
+                    <li><a href="TestDescription4.html">»</a></li>
+                </ul>
+            </div>
+
+            <div id="footer">
+                <div class="footer-box one-third">
+                    <h3>Popular Posts</h3>
+                    <ul class="popular-posts">
+                        <li>
+                            <a href="Features1.html"><img src="style/images/art/s1.jpg" alt=""></a>
+                            <h5><a href="Features1.html">Smart diagnostic</a></h5>
+                            <span>26 Aug 2011</span>
+                        </li>
+                        <li>
+                            <a href="Features2.html"><img src="style/images/art/s2.jpg" alt=""></a>
+                            <h5><a href="Features2.html">RF Test</a></h5>
+                            <span>26 Aug 2011</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="style/images/art/s3.jpg" alt=""></a>
+                            <h5><a href="buttons-boxes-images.html">Demonstration</a></h5>
+                            <span>26 Aug 2011</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-box one-third">
+                    <h3>About</h3>
+                    <p>SPHEREA specialised in the design and realisation of modular testing solutions for the entire life cycle of complex and critical electronic, microwave, optronic and mechatronic systems.</p>
+                    <br>
+
+                </div>
+                <div class="footer-box one-third last">
+                    <h3>Question</h3>
+                    <p>To ask any queries or report any problems regarding the Knowledge Base. </p>
+                    <span class="lite1">Fax:</span> +44 1202 870 810<br> <br>
+                    <span class="lite1">Tel:</span> +44 1202 872 800<br> <br>
+                    <span class="lite1">E-mail:</span> tes-info@spherea.co.uk</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <script src="style/js/scripts.js"></script>
+    <!--[if !IE]> -->
+    <script src="style/js/jquery.corner.js"></script>
+    <!-- <![endif]-->
+</body>
+</html>

@@ -1,0 +1,1579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uut:UUTDescription uuid="b1c835dd-7557-4422-89ba-77bad1fbf469" xmlns:uut="urn:IEEE-1671.3:2009.03:UUTDescription" xmlns:c="urn:IEEE-1671:2010:Common" xmlns:hc="urn:IEEE-1671:2010:HardwareCommon" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:IEEE-1671.3:2009.03:UUTDescription UUTDescription.xsd"
+version="V17">
+	<uut:Hardware>
+		<c:Description>UUT Description for ATML Interoperability Demo UUT1 2010</c:Description>
+		<c:Identification>
+			<c:IdentificationNumbers>
+				<c:IdentificationNumber type="Part" number="2010-01" qualifier="User"/>
+			</c:IdentificationNumbers>
+			<c:ModelName>ATML Demo UUT</c:ModelName>
+			<c:Manufacturers>
+				<c:Manufacturer name="PIDESO"/>
+				<c:Manufacturer name="Geotest"/>
+			</c:Manufacturers>
+		</c:Identification>
+		<hc:Interface>
+			<c:Ports>
+				<c:Port name="GND" type="Ground" direction="Bi-Directional">
+					<c:ConnectorPins>
+						<c:ConnectorPin connectorID="J1" pinID="2"/>
+					</c:ConnectorPins>
+				</c:Port>
+				<c:Port name="GND" type="Ground" direction="Bi-Directional">
+					<c:ConnectorPins>
+						<c:ConnectorPin connectorID="J1" pinID="4"/>
+					</c:ConnectorPins>
+				</c:Port>
+				<c:Port name="GND" type="Ground" direction="Bi-Directional">
+					<c:ConnectorPins>
+						<c:ConnectorPin connectorID="J1" pinID="6"/>
+					</c:ConnectorPins>
+				</c:Port>
+				<c:Port name="vc" type="Analog" direction="Output">
+					<c:ConnectorPins>
+						<c:ConnectorPin connectorID="J1" pinID="7"/>
+					</c:ConnectorPins>
+				</c:Port>
+				<c:Port name="ve" type="Analog" direction="Output">
+					<c:ConnectorPins>
+						<c:ConnectorPin connectorID="J1" pinID="8"/>
+					</c:ConnectorPins>
+				</c:Port>
+				<c:Port name="vb" type="Analog" direction="Output">
+					<c:ConnectorPins>
+						<c:ConnectorPin connectorID="J1" pinID="9"/>
+					</c:ConnectorPins>
+				</c:Port>
+				<c:Port name="Vout" type="Analog" direction="Output">
+					<c:ConnectorPins>
+						<c:ConnectorPin connectorID="J1" pinID="3"/>
+					</c:ConnectorPins>
+				</c:Port>
+				<c:Port name="Vin" type="Analog" direction="Input">
+					<c:ConnectorPins>
+						<c:ConnectorPin connectorID="J1" pinID="1"/>
+					</c:ConnectorPins>
+				</c:Port>
+				<c:Port name="+12V" type="Power" direction="Input">
+					<c:ConnectorPins>
+						<c:ConnectorPin connectorID="J1" pinID="5"/>
+					</c:ConnectorPins>
+				</c:Port>
+				<c:Port name="D0" type="Digital" direction="Bi-Directional">
+					<c:ConnectorPins>
+						<c:ConnectorPin connectorID="J1" pinID="25"/>
+					</c:ConnectorPins>
+				</c:Port>
+				<c:Port name="D1" type="Digital" direction="Bi-Directional">
+					<c:ConnectorPins>
+						<c:ConnectorPin connectorID="J1" pinID="24"/>
+					</c:ConnectorPins>
+				</c:Port>
+				<c:Port name="D2" type="Digital" direction="Bi-Directional">
+					<c:ConnectorPins>
+						<c:ConnectorPin connectorID="J1" pinID="23"/>
+					</c:ConnectorPins>
+				</c:Port>
+				<c:Port name="D3" type="Digital" direction="Bi-Directional">
+					<c:ConnectorPins>
+						<c:ConnectorPin connectorID="J1" pinID="22"/>
+					</c:ConnectorPins>
+				</c:Port>
+				<c:Port name="D4" type="Digital" direction="Bi-Directional">
+					<c:ConnectorPins>
+						<c:ConnectorPin connectorID="J1" pinID="21"/>
+					</c:ConnectorPins>
+				</c:Port>
+				<c:Port name="D5" type="Digital" direction="Bi-Directional">
+					<c:ConnectorPins>
+						<c:ConnectorPin connectorID="J1" pinID="20"/>
+					</c:ConnectorPins>
+				</c:Port>
+				<c:Port name="D6" type="Digital" direction="Bi-Directional">
+					<c:ConnectorPins>
+						<c:ConnectorPin connectorID="J1" pinID="19"/>
+					</c:ConnectorPins>
+				</c:Port>
+				<c:Port name="D7" type="Digital" direction="Bi-Directional">
+					<c:ConnectorPins>
+						<c:ConnectorPin connectorID="J1" pinID="18"/>
+					</c:ConnectorPins>
+				</c:Port>
+				<c:Port name="GND" type="Ground" direction="Bi-Directional">
+					<c:ConnectorPins>
+						<c:ConnectorPin connectorID="J1" pinID="17"/>
+					</c:ConnectorPins>
+				</c:Port>
+				<c:Port name="STX" type="Digital" direction="Output">
+					<c:ConnectorPins>
+						<c:ConnectorPin connectorID="J1" pinID="11"/>
+					</c:ConnectorPins>
+				</c:Port>
+				<c:Port name="SRX" type="Digital" direction="Input">
+					<c:ConnectorPins>
+						<c:ConnectorPin connectorID="J1" pinID="12"/>
+					</c:ConnectorPins>
+				</c:Port>
+				<c:Port name="GND" type="Ground" direction="Bi-Directional">
+					<c:ConnectorPins>
+						<c:ConnectorPin connectorID="J1" pinID="13"/>
+					</c:ConnectorPins>
+				</c:Port>
+				<c:Port name="J1">
+					<c:ConnectorPins>
+						<c:ConnectorPin connectorID="J1" pinID="1"/>
+						<c:ConnectorPin connectorID="J1" pinID="2"/>
+						<c:ConnectorPin connectorID="J1" pinID="3"/>
+						<c:ConnectorPin connectorID="J1" pinID="4"/>
+						<c:ConnectorPin connectorID="J1" pinID="5"/>
+						<c:ConnectorPin connectorID="J1" pinID="6"/>
+						<c:ConnectorPin connectorID="J1" pinID="7"/>
+						<c:ConnectorPin connectorID="J1" pinID="8"/>
+						<c:ConnectorPin connectorID="J1" pinID="9"/>
+						<c:ConnectorPin connectorID="J1" pinID="11"/>
+						<c:ConnectorPin connectorID="J1" pinID="12"/>
+						<c:ConnectorPin connectorID="J1" pinID="13"/>
+						<c:ConnectorPin connectorID="J1" pinID="17"/>
+						<c:ConnectorPin connectorID="J1" pinID="18"/>
+						<c:ConnectorPin connectorID="J1" pinID="19"/>
+						<c:ConnectorPin connectorID="J1" pinID="20"/>
+						<c:ConnectorPin connectorID="J1" pinID="21"/>
+						<c:ConnectorPin connectorID="J1" pinID="22"/>
+						<c:ConnectorPin connectorID="J1" pinID="23"/>
+						<c:ConnectorPin connectorID="J1" pinID="24"/>
+						<c:ConnectorPin connectorID="J1" pinID="25"/>
+					</c:ConnectorPins>
+				</c:Port>
+			</c:Ports>
+			<c:Connectors>
+				<c:Connector type="25 Pin D (Female)" ID="J1" location="Front" matingConnectorType="25 Pin D (Male)">
+					<c:Identification>
+						<c:IdentificationNumbers>
+							<c:IdentificationNumber type="Part" number="MFR25K-ND" qualifier="Vendor"/>
+						</c:IdentificationNumbers>
+						<c:ModelName>8325-6000</c:ModelName>
+						<c:Manufacturers>
+							<c:Manufacturer name="DigiKey"/>
+						</c:Manufacturers>
+					</c:Identification>
+					<c:Pins>
+						<c:Pin ID="1" name="Vin"/>
+						<c:Pin ID="2" name="GND"/>
+						<c:Pin ID="3" name="Vout"/>
+						<c:Pin ID="4" name="GND"/>
+						<c:Pin ID="5" name="+12V"/>
+						<c:Pin ID="6" name="GND"/>
+						<c:Pin ID="7" name="vc"/>
+						<c:Pin ID="8" name="ve"/>
+						<c:Pin ID="9" name="vb"/>
+						<c:Pin ID="11" name="STX"/>
+						<c:Pin ID="12" name="SRX"/>
+						<c:Pin ID="13" name="GND"/>
+						<c:Pin ID="17" name="GND"/>
+						<c:Pin ID="18" name="D7"/>
+						<c:Pin ID="19" name="D6"/>
+						<c:Pin ID="20" name="D5"/>
+						<c:Pin ID="21" name="D4"/>
+						<c:Pin ID="22" name="D3"/>
+						<c:Pin ID="23" name="D2"/>
+						<c:Pin ID="24" name="D1"/>
+						<c:Pin ID="25" name="D0"/>
+					</c:Pins>
+				</c:Connector>
+			</c:Connectors>
+		</hc:Interface>
+		<hc:Components>
+			<hc:Component ID="R2">
+				<c:Definition xsi:type="uut:HardwareUUT">
+					<c:Identification designator="R2">
+						<c:ModelName>1.2K</c:ModelName>
+						<c:IdentificationNumbers>
+							<c:IdentificationNumber number="resistor" type="Other" qualifier="1.2K"/>
+						</c:IdentificationNumbers>
+					</c:Identification>
+					<hc:Interface>
+						<c:Ports>
+							<c:Port name="a"/>
+							<c:Port name="b"/>
+						</c:Ports>
+					</hc:Interface>
+				</c:Definition>
+			</hc:Component>
+			<hc:Component ID="R6">
+				<c:Definition xsi:type="uut:HardwareUUT">
+					<c:Identification designator="R6">
+						<c:ModelName>100K</c:ModelName>
+						<c:IdentificationNumbers>
+							<c:IdentificationNumber number="resistor" type="Other" qualifier="100K"/>
+						</c:IdentificationNumbers>
+					</c:Identification>
+					<hc:Interface>
+						<c:Ports>
+							<c:Port name="a"/>
+							<c:Port name="b"/>
+						</c:Ports>
+					</hc:Interface>
+				</c:Definition>
+			</hc:Component>
+			<hc:Component ID="R7">
+				<c:Definition xsi:type="uut:HardwareUUT">
+					<c:Identification designator="R7">
+						<c:ModelName>100K</c:ModelName>
+						<c:IdentificationNumbers>
+							<c:IdentificationNumber number="resistor" type="Other" qualifier="100K"/>
+						</c:IdentificationNumbers>
+					</c:Identification>
+					<hc:Interface>
+						<c:Ports>
+							<c:Port name="a"/>
+							<c:Port name="b"/>
+						</c:Ports>
+					</hc:Interface>
+				</c:Definition>
+			</hc:Component>
+			<hc:Component ID="C1">
+				<c:Definition xsi:type="uut:HardwareUUT">
+					<c:Identification designator="C1">
+						<c:ModelName>10uF</c:ModelName>
+						<c:IdentificationNumbers>
+							<c:IdentificationNumber number="capacitor" type="Other" qualifier="10uF"/>
+						</c:IdentificationNumbers>
+					</c:Identification>
+					<hc:Interface>
+						<c:Ports>
+							<c:Port name="a"/>
+							<c:Port name="b"/>
+						</c:Ports>
+					</hc:Interface>
+				</c:Definition>
+			</hc:Component>
+			<hc:Component ID="C2">
+				<c:Definition xsi:type="uut:HardwareUUT">
+					<c:Identification designator="C2">
+						<c:ModelName>10uF</c:ModelName>
+						<c:IdentificationNumbers>
+							<c:IdentificationNumber number="capacitor" type="Other" qualifier="10uF"/>
+						</c:IdentificationNumbers>
+					</c:Identification>
+					<hc:Interface>
+						<c:Ports>
+							<c:Port name="a"/>
+							<c:Port name="b"/>
+						</c:Ports>
+					</hc:Interface>
+				</c:Definition>
+			</hc:Component>
+			<hc:Component ID="C3">
+				<c:Definition xsi:type="uut:HardwareUUT">
+					<c:Identification designator="C3">
+						<c:ModelName>10uF</c:ModelName>
+						<c:IdentificationNumbers>
+							<c:IdentificationNumber number="capacitor" type="Other" qualifier="10uF"/>
+						</c:IdentificationNumbers>
+					</c:Identification>
+					<hc:Interface>
+						<c:Ports>
+							<c:Port name="a"/>
+							<c:Port name="b"/>
+						</c:Ports>
+					</hc:Interface>
+				</c:Definition>
+			</hc:Component>
+			<hc:Component ID="C4">
+				<c:Definition xsi:type="uut:HardwareUUT">
+					<c:Identification designator="C4">
+						<c:ModelName>10uF</c:ModelName>
+						<c:IdentificationNumbers>
+							<c:IdentificationNumber number="capacitor" type="Other" qualifier="10uF"/>
+						</c:IdentificationNumbers>
+					</c:Identification>
+					<hc:Interface>
+						<c:Ports>
+							<c:Port name="a"/>
+							<c:Port name="b"/>
+						</c:Ports>
+					</hc:Interface>
+				</c:Definition>
+			</hc:Component>
+			<hc:Component ID="C5">
+				<c:Definition xsi:type="uut:HardwareUUT">
+					<c:Identification designator="C5">
+						<c:ModelName>10uF</c:ModelName>
+						<c:IdentificationNumbers>
+							<c:IdentificationNumber number="capacitor" type="Other" qualifier="10uF"/>
+						</c:IdentificationNumbers>
+					</c:Identification>
+					<hc:Interface>
+						<c:Ports>
+							<c:Port name="a"/>
+							<c:Port name="b"/>
+						</c:Ports>
+					</hc:Interface>
+				</c:Definition>
+			</hc:Component>
+			<hc:Component ID="R1">
+				<c:Definition xsi:type="uut:HardwareUUT">
+					<c:Identification designator="R1">
+						<c:ModelName>12K</c:ModelName>
+						<c:IdentificationNumbers>
+							<c:IdentificationNumber number="resistor" type="Other" qualifier="12K"/>
+						</c:IdentificationNumbers>
+					</c:Identification>
+					<hc:Interface>
+						<c:Ports>
+							<c:Port name="a"/>
+							<c:Port name="b"/>
+						</c:Ports>
+					</hc:Interface>
+				</c:Definition>
+			</hc:Component>
+			<hc:Component ID="R5">
+				<c:Definition xsi:type="uut:HardwareUUT">
+					<c:Identification designator="R5">
+						<c:ModelName>12K</c:ModelName>
+						<c:IdentificationNumbers>
+							<c:IdentificationNumber number="resistor" type="Other" qualifier="12K"/>
+						</c:IdentificationNumbers>
+					</c:Identification>
+					<hc:Interface>
+						<c:Ports>
+							<c:Port name="a"/>
+							<c:Port name="b"/>
+						</c:Ports>
+					</hc:Interface>
+				</c:Definition>
+			</hc:Component>
+			<hc:Component ID="R4">
+				<c:Definition xsi:type="uut:HardwareUUT">
+					<c:Identification designator="R4">
+						<c:ModelName>470</c:ModelName>
+						<c:IdentificationNumbers>
+							<c:IdentificationNumber number="resistor" type="Other" qualifier="470"/>
+						</c:IdentificationNumbers>
+					</c:Identification>
+					<hc:Interface>
+						<c:Ports>
+							<c:Port name="a"/>
+							<c:Port name="b"/>
+						</c:Ports>
+					</hc:Interface>
+				</c:Definition>
+			</hc:Component>
+			<hc:Component ID="R3">
+				<c:Definition xsi:type="uut:HardwareUUT">
+					<c:Identification designator="R3">
+						<c:ModelName>5.6K</c:ModelName>
+						<c:IdentificationNumbers>
+							<c:IdentificationNumber number="resistor" type="Other" qualifier="5.6K"/>
+						</c:IdentificationNumbers>
+					</c:Identification>
+					<hc:Interface>
+						<c:Ports>
+							<c:Port name="a"/>
+							<c:Port name="b"/>
+						</c:Ports>
+					</hc:Interface>
+				</c:Definition>
+			</hc:Component>
+			<hc:Component ID="IC1">
+				<c:Definition xsi:type="uut:HardwareUUT">
+					<c:Identification designator="IC1">
+						<c:ModelName>AD5220</c:ModelName>
+					</c:Identification>
+					<hc:Interface>
+						<c:Ports>
+							<c:Port name="CLK">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="IC1" pinID="1"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="U/D">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="IC1" pinID="2"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="A1">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="IC1" pinID="3"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="GND">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="IC1" pinID="4"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="W1">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="IC1" pinID="5"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="B1">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="IC1" pinID="6"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="CS">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="IC1" pinID="7"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="VDD">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="IC1" pinID="8"/>
+								</c:ConnectorPins>
+							</c:Port>
+						</c:Ports>
+					</hc:Interface>
+				</c:Definition>
+			</hc:Component>
+			<hc:Component ID="IC2">
+				<c:Definition xsi:type="uut:HardwareUUT">
+					<c:Identification designator="IC2">
+						<c:ModelName>BA30BC0T</c:ModelName>
+					</c:Identification>
+					<hc:Interface>
+						<c:Ports>
+							<c:Port name="Vin">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="IC2" pinID="1"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="GND">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="IC2" pinID="2"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="Vout">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="IC2" pinID="3"/>
+								</c:ConnectorPins>
+							</c:Port>
+						</c:Ports>
+					</hc:Interface>
+				</c:Definition>
+			</hc:Component>
+			<hc:Component ID="MOD1">
+				<c:Definition xsi:type="uut:HardwareUUT">
+					<c:Identification designator="MOD1">
+						<c:ModelName>F330DC</c:ModelName>
+					</c:Identification>
+					<hc:Interface>
+						<c:Ports>
+							<c:Port name="D0">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="MOD1" pinID="1"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="D1">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="MOD1" pinID="2"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="D2">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="MOD1" pinID="3"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="D3">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="MOD1" pinID="4"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="D4">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="MOD1" pinID="5"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="D5">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="MOD1" pinID="6"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="D6">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="MOD1" pinID="7"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="D7">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="MOD1" pinID="8"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="Tx">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="MOD1" pinID="9"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="Rx">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="MOD1" pinID="10"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="Vcc">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="MOD1" pinID="11"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="GND">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="MOD1" pinID="12"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="P0.0">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="MOD1" pinID="13"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="P0.1">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="MOD1" pinID="14"/>
+								</c:ConnectorPins>
+							</c:Port>
+						</c:Ports>
+					</hc:Interface>
+				</c:Definition>
+			</hc:Component>
+			<hc:Component ID="JP1">
+				<c:Definition xsi:type="uut:HardwareUUT">
+					<c:Identification designator="JP1">
+						<c:ModelName>JUMPER</c:ModelName>
+						<c:IdentificationNumbers>
+							<c:IdentificationNumber number="jumper" type="Other" qualifier="2"/>
+						</c:IdentificationNumbers>
+					</c:Identification>
+					<hc:Interface>
+						<c:Ports>
+							<c:Port name="1"/>
+							<c:Port name="2"/>
+						</c:Ports>
+					</hc:Interface>
+				</c:Definition>
+			</hc:Component>
+			<hc:Component ID="JP2">
+				<c:Definition xsi:type="uut:HardwareUUT">
+					<c:Identification designator="JP2">
+						<c:ModelName>JUMPER</c:ModelName>
+						<c:IdentificationNumbers>
+							<c:IdentificationNumber number="jumper" type="Other" qualifier="2"/>
+						</c:IdentificationNumbers>
+					</c:Identification>
+					<hc:Interface>
+						<c:Ports>
+							<c:Port name="1"/>
+							<c:Port name="2"/>
+						</c:Ports>
+					</hc:Interface>
+				</c:Definition>
+			</hc:Component>
+			<hc:Component ID="IC3">
+				<c:Definition xsi:type="uut:HardwareUUT">
+					<c:Identification designator="IC3">
+						<c:ModelName>LM7805</c:ModelName>
+					</c:Identification>
+					<hc:Interface>
+						<c:Ports>
+							<c:Port name="Vin">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="IC2" pinID="1"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="GND">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="IC2" pinID="2"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="Vout">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="IC2" pinID="3"/>
+								</c:ConnectorPins>
+							</c:Port>
+						</c:Ports>
+					</hc:Interface>
+				</c:Definition>
+			</hc:Component>
+			<hc:Component ID="IC4">
+				<c:Definition xsi:type="uut:HardwareUUT">
+					<c:Identification designator="IC4">
+						<c:ModelName>MAX233</c:ModelName>
+					</c:Identification>
+					<hc:Interface>
+						<c:Ports>
+							<c:Port name="T2IN">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="IC4" pinID="1"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="T1IN">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="IC4" pinID="2"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="R1OUT">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="IC4" pinID="3"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="R1IN">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="IC4" pinID="4"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="T1OUT">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="IC4" pinID="5"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="GND">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="IC4" pinID="6"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="VCC">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="IC4" pinID="7"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="V+C1+">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="IC4" pinID="8"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="GND">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="IC4" pinID="9"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="V-CS-">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="IC4" pinID="10"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="C2+C2-">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="IC4" pinID="11"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="V-C2+">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="IC4" pinID="12"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="C1-C1+">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="IC4" pinID="13"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="V+C1-">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="IC4" pinID="14"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="C2+">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="IC4" pinID="15"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="C2-">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="IC4" pinID="16"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="V-">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="IC4" pinID="17"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="T2OUT-">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="IC4" pinID="18"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="R2IN">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="IC4" pinID="19"/>
+								</c:ConnectorPins>
+							</c:Port>
+							<c:Port name="R2OUT">
+								<c:ConnectorPins>
+									<c:ConnectorPin connectorID="IC4" pinID="20"/>
+								</c:ConnectorPins>
+							</c:Port>
+						</c:Ports>
+					</hc:Interface>
+				</c:Definition>
+			</hc:Component>
+			<hc:Component ID="Q1">
+				<c:Definition xsi:type="uut:HardwareUUT">
+					<c:Identification designator="Q1">
+						<c:ModelName>NPN</c:ModelName>
+						<c:IdentificationNumbers>
+							<c:IdentificationNumber number="transistor" type="Other" qualifier="NPN"/>
+						</c:IdentificationNumbers>
+					</c:Identification>
+					<hc:Interface>
+						<c:Ports>
+							<c:Port name="b"/>
+							<c:Port name="c"/>
+							<c:Port name="e"/>
+						</c:Ports>
+					</hc:Interface>
+				</c:Definition>
+			</hc:Component>
+			<hc:Component ID="K1">
+				<c:Definition xsi:type="uut:HardwareUUT">
+					<c:Identification designator="K1">
+						<c:ModelName>SW</c:ModelName>
+						<c:IdentificationNumbers>
+							<c:IdentificationNumber number="switch" type="Other" qualifier="2"/>
+						</c:IdentificationNumbers>
+					</c:Identification>
+					<hc:Interface>
+						<c:Ports>
+							<c:Port name="in"/>
+							<c:Port name="out"/>
+						</c:Ports>
+					</hc:Interface>
+				</c:Definition>
+			</hc:Component>
+			<hc:Component ID="K10">
+				<c:Definition xsi:type="uut:HardwareUUT">
+					<c:Identification designator="K10">
+						<c:ModelName>SW</c:ModelName>
+						<c:IdentificationNumbers>
+							<c:IdentificationNumber number="switch" type="Other" qualifier="2"/>
+						</c:IdentificationNumbers>
+					</c:Identification>
+					<hc:Interface>
+						<c:Ports>
+							<c:Port name="in"/>
+							<c:Port name="out"/>
+						</c:Ports>
+					</hc:Interface>
+				</c:Definition>
+			</hc:Component>
+			<hc:Component ID="K2">
+				<c:Definition xsi:type="uut:HardwareUUT">
+					<c:Identification designator="K2">
+						<c:ModelName>SW</c:ModelName>
+						<c:IdentificationNumbers>
+							<c:IdentificationNumber number="switch" type="Other" qualifier="2"/>
+						</c:IdentificationNumbers>
+					</c:Identification>
+					<hc:Interface>
+						<c:Ports>
+							<c:Port name="in"/>
+							<c:Port name="out"/>
+						</c:Ports>
+					</hc:Interface>
+				</c:Definition>
+			</hc:Component>
+			<hc:Component ID="K3">
+				<c:Definition xsi:type="uut:HardwareUUT">
+					<c:Identification designator="K3">
+						<c:ModelName>SW</c:ModelName>
+						<c:IdentificationNumbers>
+							<c:IdentificationNumber number="switch" type="Other" qualifier="2"/>
+						</c:IdentificationNumbers>
+					</c:Identification>
+					<hc:Interface>
+						<c:Ports>
+							<c:Port name="in"/>
+							<c:Port name="out"/>
+						</c:Ports>
+					</hc:Interface>
+				</c:Definition>
+			</hc:Component>
+			<hc:Component ID="K4">
+				<c:Definition xsi:type="uut:HardwareUUT">
+					<c:Identification designator="K4">
+						<c:ModelName>SW</c:ModelName>
+						<c:IdentificationNumbers>
+							<c:IdentificationNumber number="switch" type="Other" qualifier="2"/>
+						</c:IdentificationNumbers>
+					</c:Identification>
+					<hc:Interface>
+						<c:Ports>
+							<c:Port name="in"/>
+							<c:Port name="out"/>
+						</c:Ports>
+					</hc:Interface>
+				</c:Definition>
+			</hc:Component>
+			<hc:Component ID="K5">
+				<c:Definition xsi:type="uut:HardwareUUT">
+					<c:Identification designator="K5">
+						<c:ModelName>SW</c:ModelName>
+						<c:IdentificationNumbers>
+							<c:IdentificationNumber number="switch" type="Other" qualifier="2"/>
+						</c:IdentificationNumbers>
+					</c:Identification>
+					<hc:Interface>
+						<c:Ports>
+							<c:Port name="in"/>
+							<c:Port name="out"/>
+						</c:Ports>
+					</hc:Interface>
+				</c:Definition>
+			</hc:Component>
+			<hc:Component ID="K6">
+				<c:Definition xsi:type="uut:HardwareUUT">
+					<c:Identification designator="K6">
+						<c:ModelName>SW</c:ModelName>
+						<c:IdentificationNumbers>
+							<c:IdentificationNumber number="switch" type="Other" qualifier="2"/>
+						</c:IdentificationNumbers>
+					</c:Identification>
+					<hc:Interface>
+						<c:Ports>
+							<c:Port name="in"/>
+							<c:Port name="out"/>
+						</c:Ports>
+					</hc:Interface>
+				</c:Definition>
+			</hc:Component>
+			<hc:Component ID="K7">
+				<c:Definition xsi:type="uut:HardwareUUT">
+					<c:Identification designator="K7">
+						<c:ModelName>SW</c:ModelName>
+						<c:IdentificationNumbers>
+							<c:IdentificationNumber number="switch" type="Other" qualifier="2"/>
+						</c:IdentificationNumbers>
+					</c:Identification>
+					<hc:Interface>
+						<c:Ports>
+							<c:Port name="in"/>
+							<c:Port name="out"/>
+						</c:Ports>
+					</hc:Interface>
+				</c:Definition>
+			</hc:Component>
+			<hc:Component ID="K8">
+				<c:Definition xsi:type="uut:HardwareUUT">
+					<c:Identification designator="K8">
+						<c:ModelName>SW</c:ModelName>
+						<c:IdentificationNumbers>
+							<c:IdentificationNumber number="switch" type="Other" qualifier="2"/>
+						</c:IdentificationNumbers>
+					</c:Identification>
+					<hc:Interface>
+						<c:Ports>
+							<c:Port name="in"/>
+							<c:Port name="out"/>
+						</c:Ports>
+					</hc:Interface>
+				</c:Definition>
+			</hc:Component>
+			<hc:Component ID="K9">
+				<c:Definition xsi:type="uut:HardwareUUT">
+					<c:Identification designator="K9">
+						<c:ModelName>SW</c:ModelName>
+						<c:IdentificationNumbers>
+							<c:IdentificationNumber number="switch" type="Other" qualifier="2"/>
+						</c:IdentificationNumbers>
+					</c:Identification>
+					<hc:Interface>
+						<c:Ports>
+							<c:Port name="in"/>
+							<c:Port name="out"/>
+						</c:Ports>
+					</hc:Interface>
+				</c:Definition>
+			</hc:Component>
+			<hc:Component ID="VB">
+				<c:Definition xsi:type="uut:HardwareUUT">
+					<c:Identification designator="VB">
+						<c:ModelName>TP</c:ModelName>
+						<c:IdentificationNumbers>
+							<c:IdentificationNumber number="testpoint" type="Other" qualifier="1"/>
+						</c:IdentificationNumbers>
+					</c:Identification>
+					<hc:Interface>
+						<c:Ports>
+							<c:Port name="tp"/>
+						</c:Ports>
+					</hc:Interface>
+				</c:Definition>
+			</hc:Component>
+			<hc:Component ID="VC">
+				<c:Definition xsi:type="uut:HardwareUUT">
+					<c:Identification designator="VC">
+						<c:ModelName>TP</c:ModelName>
+						<c:IdentificationNumbers>
+							<c:IdentificationNumber number="testpoint" type="Other" qualifier="1"/>
+						</c:IdentificationNumbers>
+					</c:Identification>
+					<hc:Interface>
+						<c:Ports>
+							<c:Port name="tp"/>
+						</c:Ports>
+					</hc:Interface>
+				</c:Definition>
+			</hc:Component>
+			<hc:Component ID="VE">
+				<c:Definition xsi:type="uut:HardwareUUT">
+					<c:Identification designator="VE">
+						<c:ModelName>TP</c:ModelName>
+						<c:IdentificationNumbers>
+							<c:IdentificationNumber number="testpoint" type="Other" qualifier="1"/>
+						</c:IdentificationNumbers>
+					</c:Identification>
+					<hc:Interface>
+						<c:Ports>
+							<c:Port name="tp"/>
+						</c:Ports>
+					</hc:Interface>
+				</c:Definition>
+			</hc:Component>
+		</hc:Components>
+		<hc:Control>
+			<hc:Firmwares>
+				<hc:Firmware name="Firmware_-_Alpha_3_Release_(for_2010).zip" version="Alpha 3" qualifier="Min"/>
+			</hc:Firmwares>
+		</hc:Control>
+		<hc:Documentation>
+			<hc:Document uuid="{9715D15B-F524-4ea3-A999-68DDC4CFDDE4}" name="Theory of Operation">
+				<c:URL>file://D:/Work/ATML/TestDescription/Samples/TheoryOfOperationSample.doc</c:URL>
+			</hc:Document>
+		</hc:Documentation>
+		<hc:PowerRequirements>
+			<hc:DC>
+				<hc:Voltage>
+					<c:Expected comparator="EQ">
+						<c:Datum xsi:type="c:double" standardUnit="V" value="12.0">
+							<c:ErrorLimits>
+								<c:LimitPair operator="AND">
+									<c:Limit comparator="GE">
+										<c:Datum xsi:type="c:double" standardUnit="V" value="11.9"/>
+									</c:Limit>
+									<c:Limit comparator="LE">
+										<c:Datum xsi:type="c:double" standardUnit="V" value="12.1"/>
+									</c:Limit>
+								</c:LimitPair>
+							</c:ErrorLimits>
+						</c:Datum>
+					</c:Expected>
+				</hc:Voltage>
+				<hc:Amperage>
+					<c:Expected comparator="EQ">
+						<c:Datum xsi:type="c:double" standardUnit="A" value="1.5"/>
+					</c:Expected>
+				</hc:Amperage>
+				<hc:ConnectorPins>
+					<hc:ConnectorPin connectorID="J1" pinID="5"/>
+					<hc:ConnectorPin connectorID="J1" pinID="6"/>
+				</hc:ConnectorPins>
+			</hc:DC>
+		</hc:PowerRequirements>
+		<hc:Errors>
+			<hc:Error type="Performance" ID="fail1">
+				<hc:Description>Gain Control</hc:Description>
+			</hc:Error>
+			<hc:Error type="Performance" ID="fail2">
+				<hc:Description>Output Control</hc:Description>
+			</hc:Error>
+			<hc:Error type="Performance" ID="fail3">
+				<hc:Description>One dB Compression Point</hc:Description>
+			</hc:Error>
+			<hc:Error type="Fatal" ID="J1-3 to R5">
+				<hc:Description>Open</hc:Description>
+			</hc:Error>
+			<hc:Error type="Fatal" ID="R5 to J1-6">
+				<hc:Description>Open</hc:Description>
+			</hc:Error>
+			<hc:Error type="Fatal" ID="J1-2 to J1-6">
+				<hc:Description>Open</hc:Description>
+			</hc:Error>
+			<hc:Error type="Fatal" ID="J1-4 to J1-6">
+				<hc:Description>Open</hc:Description>
+			</hc:Error>
+			<hc:Error type="Fatal" ID="J1-6 to J1-13">
+				<hc:Description>Open</hc:Description>
+			</hc:Error>
+			<hc:Error type="Fatal" ID="J1-6 to J1-17">
+				<hc:Description>Open</hc:Description>
+			</hc:Error>
+			<hc:Error type="Fatal" ID="J1-8 to R4">
+				<hc:Description>Open</hc:Description>
+			</hc:Error>
+			<hc:Error type="Fatal" ID="R4 to J1-6">
+				<hc:Description>Open</hc:Description>
+			</hc:Error>
+			<hc:Error type="Fatal" ID="J1-6 to R2">
+				<hc:Description>Open</hc:Description>
+			</hc:Error>
+			<hc:Error type="Fatal" ID="R2 to J1-9">
+				<hc:Description>Open</hc:Description>
+			</hc:Error>
+			<hc:Error type="Fatal" ID="J1-7 to R3">
+				<hc:Description>Open</hc:Description>
+			</hc:Error>
+			<hc:Error type="Fatal" ID="R3 to J1-5">
+				<hc:Description>Open</hc:Description>
+			</hc:Error>
+			<hc:Error type="Fatal" ID="J1-5 to R1">
+				<hc:Description>Open</hc:Description>
+			</hc:Error>
+			<hc:Error type="Fatal" ID="R1 to J1-9">
+				<hc:Description>Open</hc:Description>
+			</hc:Error>
+			<hc:Error type="Fatal" ID="J1-9 to Q1-b">
+				<hc:Description>Open</hc:Description>
+			</hc:Error>
+			<hc:Error type="Fatal" ID="Q1-e to J1-8">
+				<hc:Description>Open</hc:Description>
+			</hc:Error>
+			<hc:Error type="Fatal" ID="J1-1 to C1">
+				<hc:Description>Open</hc:Description>
+			</hc:Error>
+			<hc:Error type="Fatal" ID="C1 to J1-9">
+				<hc:Description>Open</hc:Description>
+			</hc:Error>
+			<hc:Error type="Fatal" ID="J1-7 to C2">
+				<hc:Description>Open</hc:Description>
+			</hc:Error>
+			<hc:Error type="Fatal" ID="C2 to IC1-3">
+				<hc:Description>Open</hc:Description>
+			</hc:Error>
+			<hc:Error type="Fatal" ID="IC1-6 to J1-6">
+				<hc:Description>Open</hc:Description>
+			</hc:Error>
+			<hc:Error type="Fatal" ID="IC1-5 to C3">
+				<hc:Description>Open</hc:Description>
+			</hc:Error>
+			<hc:Error type="Fatal" ID="C3 to J1-3">
+				<hc:Description>Open</hc:Description>
+			</hc:Error>
+			<hc:Error type="Fatal" ID="J1-7 to Q1-c">
+				<hc:Description>Open</hc:Description>
+			</hc:Error>
+			<hc:Error type="Error" ID="c1f1" source="R1">
+				<hc:Description>Open</hc:Description>
+			</hc:Error>
+			<hc:Error type="Error" ID="c1f2" source="R1">
+				<hc:Description>Short</hc:Description>
+			</hc:Error>
+			<hc:Error type="Error" ID="c2f1" source="R2">
+				<hc:Description>Open</hc:Description>
+			</hc:Error>
+			<hc:Error type="Error" ID="c2f2" source="R2">
+				<hc:Description>Short</hc:Description>
+			</hc:Error>
+			<hc:Error type="Error" ID="c3f1" source="R3">
+				<hc:Description>Open</hc:Description>
+			</hc:Error>
+			<hc:Error type="Error" ID="c3f2" source="R3">
+				<hc:Description>Short</hc:Description>
+			</hc:Error>
+			<hc:Error type="Error" ID="c4f1" source="R4">
+				<hc:Description>Open</hc:Description>
+			</hc:Error>
+			<hc:Error type="Error" ID="c4f2" source="R4">
+				<hc:Description>Short</hc:Description>
+			</hc:Error>
+			<hc:Error type="Error" ID="c5f1" source="C1">
+				<hc:Description>Open</hc:Description>
+			</hc:Error>
+			<hc:Error type="Error" ID="c5f2" source="C1">
+				<hc:Description>Short</hc:Description>
+			</hc:Error>
+			<hc:Error type="Error" ID="c6f1" source="C2">
+				<hc:Description>Open</hc:Description>
+			</hc:Error>
+			<hc:Error type="Error" ID="c6f2" source="C2">
+				<hc:Description>Short</hc:Description>
+			</hc:Error>
+			<hc:Error type="Error" ID="c6f3" source="C2">
+				<hc:Description>Fault</hc:Description>
+			</hc:Error>
+			<hc:Error type="Crash and Burn" ID="c7f1" source="C3">
+				<hc:Description>Open</hc:Description>
+			</hc:Error>
+			<hc:Error type="Crash and Burn" ID="c7f2" source="C3">
+				<hc:Description>Short</hc:Description>
+			</hc:Error>
+			<hc:Error type="Crash and Burn" ID="c7f3" source="C3">
+				<hc:Description>Fault</hc:Description>
+			</hc:Error>
+			<hc:Error type="Crash and Burn" ID="c8f1" source="Q1">
+				<hc:Description>Short</hc:Description>
+			</hc:Error>
+			<hc:Error type="Crash and Burn" ID="c8f2" source="Q1">
+				<hc:Description>Open</hc:Description>
+			</hc:Error>
+			<hc:Error type="Crash and Burn" ID="c8f3" source="Q1">
+				<hc:Description>Short</hc:Description>
+			</hc:Error>
+			<hc:Error type="Crash and Burn" ID="c8f4" source="Q1">
+				<hc:Description>Open</hc:Description>
+			</hc:Error>
+			<hc:Error type="Crash and Burn" ID="c8f5" source="Q1">
+				<hc:Description>Short</hc:Description>
+			</hc:Error>
+			<hc:Error type="A Suddern Turn" ID="c8f6" source="Q1">
+				<hc:Description>Open</hc:Description>
+			</hc:Error>
+			<hc:Error type="A Suddern Turn" ID="c8f7" source="Q1">
+				<hc:Description>Fault</hc:Description>
+			</hc:Error>
+			<hc:Error type="Mildly Dizzy" ID="c9f1" source="R5">
+				<hc:Description>Open</hc:Description>
+			</hc:Error>
+			<hc:Error type="Mildly Dizzy" ID="c10f1" source="C4">
+				<hc:Description>Fault</hc:Description>
+			</hc:Error>
+			<hc:Error type="Mildly Dizzy" ID="c10f2" source="C4">
+				<hc:Description>Short</hc:Description>
+			</hc:Error>
+			<hc:Error type="Queasy" ID="c11f1" source="C5">
+				<hc:Description>Fault</hc:Description>
+			</hc:Error>
+			<hc:Error type="Queasy" ID="c11f2" source="C5">
+				<hc:Description>Short</hc:Description>
+			</hc:Error>
+			<hc:Error type="Queasy" ID="c12f1" source="IC1">
+				<hc:Description>Fault</hc:Description>
+			</hc:Error>
+			<hc:Error type="Queasy" ID="c12f2" source="IC1">
+				<hc:Description>Short</hc:Description>
+			</hc:Error>
+			<hc:Error type="Out Of Sorts" ID="c13f1" source="IC2">
+				<hc:Description>Fault</hc:Description>
+			</hc:Error>
+			<hc:Error type="Out Of Sorts" ID="c13f2" source="IC2">
+				<hc:Description>Short</hc:Description>
+			</hc:Error>
+			<hc:Error type="Out Of Sorts" ID="c14f1" source="IC3">
+				<hc:Description>Fault</hc:Description>
+			</hc:Error>
+			<hc:Error type="None" ID="c14f2" source="IC3">
+				<hc:Description>Short</hc:Description>
+			</hc:Error>
+			<hc:Error type="None" ID="c15f1" source="IC4">
+				<hc:Description>Fault</hc:Description>
+			</hc:Error>
+			<hc:Error type="None" ID="c15f2" source="IC4">
+				<hc:Description>Short</hc:Description>
+			</hc:Error>
+			<hc:Error type="None" ID="c16f1" source="MOD1">
+				<hc:Description>Fault</hc:Description>
+			</hc:Error>
+			<hc:Error type="None" ID="c16f2" source="MOD1">
+				<hc:Description>Short</hc:Description>
+			</hc:Error>
+		</hc:Errors>
+		<hc:NetworkList>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Interface/c:Ports/c:Port[@name="Vin"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="C1"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="a"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="C1"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="b"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="K1"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="in"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="K1"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="out"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="R1"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="b"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="VB"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="tp"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="K4"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="in"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="R2"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="a"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Interface/c:Ports/c:Port[@name="vb"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="K3"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="out"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="R1"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="a"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Interface/c:Ports/c:Port[@name="+12V"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="K3"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="in"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="K8"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="in"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="IC2"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="Vin"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="IC3"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="Vin"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="K8"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="out"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="R3"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="a"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="R3"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="b"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="VC"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="tp"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="K7"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="in"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="C2"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="a"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Interface/c:Ports/c:Port[@name="vc"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="C2"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="b"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="K9"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="in"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="K9"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="out"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="R7"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="a"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="IC1"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="A1"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="R6"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="b"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="R6"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="a"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="IC1"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="VDD"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="IC2"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="Vout"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="C4"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="a"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="JP1"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="2"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="IC1"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="CLK"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="MOD1"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="P0.0"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="IC1"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="U/D"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="MOD1"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="P0.1"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="IC1"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="W1"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="C3"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="a"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="C3"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="b"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="R5"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="a"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Interface/c:Ports/c:Port[@name="Vout"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="K7"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="out"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="K10"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="in"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="Q1"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="c"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="K5"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="in"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="K10"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="out"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="Q1"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="e"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="K5"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="out"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="VE"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="tp"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="R4"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="a"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Interface/c:Ports/c:Port[@name="ve"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="R4"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="b"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="K6"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="in"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="R2"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="b"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="K2"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="in"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="K4"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="out"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="Q1"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="b"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="IC3"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="Vout"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="C5"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="a"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="JP2"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="2"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Interface/c:Ports/c:Port[@name="D0"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="MOD1"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="D0"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Interface/c:Ports/c:Port[@name="D1"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="MOD1"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="D1"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Interface/c:Ports/c:Port[@name="D2"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="MOD1"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="D2"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Interface/c:Ports/c:Port[@name="D3"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="MOD1"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="D3"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Interface/c:Ports/c:Port[@name="D4"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="MOD1"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="D4"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Interface/c:Ports/c:Port[@name="D5"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="MOD1"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="D5"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Interface/c:Ports/c:Port[@name="D6"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="MOD1"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="D6"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Interface/c:Ports/c:Port[@name="D7"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="MOD1"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="D7"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="MOD1"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="Tx"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="IC4"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="T1IN"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="MOD1"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="Rx"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="IC4"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="R1OUT"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="JP2"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="1"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="IC4"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="VCC"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="IC4"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="V-CS-"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="IC4"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="C2-"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="IC4"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="C2+C2-"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="IC4"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="C2+"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="IC4"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="V-C2+"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="IC4"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="V-"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Interface/c:Ports/c:Port[@name="STX"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="IC4"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="T1OUT"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Interface/c:Ports/c:Port[@name="SRX"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="IC4"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="R1IN"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="JP1]/c:Definition/hc:Interface/c:Ports/c:Port[@name="1"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="MOD1"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="Vcc"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+			<hc:Network>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Interface/c:Ports/c:Port[@name="GND"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="K2"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="out"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="K6"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="out"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="R7"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="b"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="R5"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="b"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="IC1"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="GND"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="IC1"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="CS"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="IC1"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="B1"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="MOD1"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="GND"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="IC4"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="GND"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="IC2"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="GND"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="IC3"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="GND"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="C4"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="b"]</hc:Path>
+				</hc:Node>
+				<hc:Node>
+					<hc:Path>//uut:Hardware/hc:Components/hc:Component[@ID="C5"]/c:Definition/hc:Interface/c:Ports/c:Port[@name="b"]</hc:Path>
+				</hc:Node>
+			</hc:Network>
+		</hc:NetworkList>
+	</uut:Hardware>
+</uut:UUTDescription>

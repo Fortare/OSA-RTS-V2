@@ -1,0 +1,292 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>OSA RTS Demo</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="style/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="style/css/style.css" media="all">
+    <link href='http://fonts.googleapis.com/css?family=Amaranth:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="style/css/ie7.css" media="all">
+    <![endif]-->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="style/css/ie8.css" media="all">
+    <![endif]-->
+    <!--[if IE 9]>
+    <link rel="stylesheet" type="text/css" href="style/css/ie9.css" media="all">
+    <![endif]-->
+    <script src="style/js/jquery-1.6.4.min.js"></script>
+    <script src="style/js/ddsmoothmenu.js"></script>
+    <script src="style/js/jquery.jcarousel.js"></script>
+    <script src="style/js/jquery.prettyPhoto.js"></script>
+    <script src="style/js/carousel.js"></script>
+    <script src="style/js/jquery.flexslider-min.js"></script>
+    <script src="style/js/jquery.masonry.min.js"></script>
+    <script src="style/js/jquery.slickforms.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="sidebar">
+            <div id="logo"><a href="index.html"><img src="style/images/logo.png" alt=""></a></div>
+            <div id="menu" class="menu-v">
+                <ul>
+                    <li>
+                        <a href="index.html" class="active">Home</a>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index2.html">What is an OSA-RTS</a></li>
+                            <li><a href="index3.html">Examples of Use</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="UUT1.html">UUT descritption</a>
+                        <ul>
+                            <li><a href="UUT1.html">UUT Description</a></li>
+                            <li><a href="UUT2.html">Identification</a></li>
+                            <li><a href="UUT3.html">Interface</a></li>
+                            <li><a href="UUT4.html">Component</a></li>
+                            <li><a href="UUT5.html">Network List</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="TestDescription1.html">Test descritption</a>
+                        <ul>
+                            <li><a href="TestDescription1.html">Test descritption presentation</a></li>
+                            <li><a href="TestDescription2.html">TSF Libraries</a></li>
+                            <li><a href="TestDescription3.html">Signal Requirements</a></li>
+                            <li><a href="TestDescription4.html">Test Information</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="blog.html">Demonstration</a>
+                        <ul>
+                            <li><a href="blog.html">Overview</a></li>
+                            <li><a href="blog2.html">Installing LabWindows/CVI OSA RTS Toolset</a></li>
+                            <li><a href="buttons-boxes-images.html">Running LabWindows/CVI OSA-RTS Toolset</a></li>
+                            <li><a href="post2.html">Video</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Features1.html">Features</a>
+                        <ul>
+                            <li><a href="Features1.html">Smart diagnostic</a></li>
+                            <li><a href="Features2.html">Rf testing (part 1)</a></li>
+                            <li><a href="Features3.html">Rf testing (part 2)</a></li>
+                            <li><a href="Features4.html">Other features</a></li>
+                            <li><a href="Features5.html">Empty</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="sidebox">
+                <ul class="share">
+                    <li><a href="#"><img src="style/images/icon-rss.png" alt=""></a></li>
+                    <li><a href="#"><img src="style/images/icon-facebook.png" alt=""></a></li>
+                    <li><a href="#"><img src="style/images/icon-twitter.png" alt=""></a></li>
+                    <li><a href="#"><img src="style/images/icon-dribbble.png" alt=""></a></li>
+                    <li><a href="#"><img src="style/images/icon-linkedin.png" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="sidebox">
+                <div class="search">
+                    <h3>Search</h3>
+                    <form class="searchform" method="get" action="#">
+                        <input type="text" id="s" name="s" value="type and hit enter" onFocus="this.value=''" onBlur="this.value='type and hit enter'">
+                    </form>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="sidebox" style="color:#FFF;">
+                <p style="margin-bottom:5px;">Copyright &copy; Site Name.com</p>
+                <p>Design By: <a href="http://elemisfreebies.com">elemis</a></p>
+            </div>
+        </div>
+        <div id="content">
+
+            <h1 class="title">TSF Libraries</h1>
+            <div class="line"></div>
+
+            <p>
+                ATML Test Description allows signals to be fully defined using the IEEE Std. 1641 Signal Modeling Standard. This allows signals to be defined in a Signal modeling libraries canned Test Signal Framework (TSF) libraries. Any signal can make use of the signals contained within a TSF Library mealy by referencing the TSF Library schema and the TSF within it.
+            </p>
+
+            <p>
+                What is a Test Signal Framework model?
+            </p>
+            <p>
+                <ul>
+                    <li>
+                        A model of a signal required to test a UUT
+                    </li>
+                    <li>
+                        It is a shorthand way of defining a complicated signal
+                    </li>
+                    <li>
+                        Can comprise a single BSC
+                    </li>
+                    <li>
+                        Can be a complex arrangement of BSCs
+                    </li>
+                    <li>
+                        Can include previously defined TSF models
+                    </li>
+                    <li>
+                        Its "Interface Properties" are the interface to the Test
+                        Requirement
+                    </li>
+                </ul>
+            </p>
+
+            <p>
+                Why do we need TSF libraries?
+            </p>
+
+            <p>
+                <ul>
+                    <li>
+                        They contain all the signals required by a specific technology,
+                        environment or application
+                    </li>
+                    <li>
+                        1641 has an example library (corresponding to C/ATLAS)
+                    </li>
+                    <li>
+                        They include simple TSF models such as AC_SIGNAL and DC_SIGNAL
+                    </li>
+                    <li>
+                        They include complex TSF models such as SYNCHRO and TACAN
+                    </li>
+                    <li>
+                        Can include previously defined TSF models
+                    </li>
+                    <li>
+                        Its "Interface Properties" are the interface to the Test
+                        Requirement
+                    </li>
+                </ul>
+            </p>
+
+            <p>
+                There are multiple ways Test Description may need to reference a TSF Library each refers to the same libraries but are used by different applications
+            </p>
+            <p>
+                xsi:schemaLocation
+                TsfLibraries
+            </p>
+            <p>
+                TSF Libraries generally come with their own documentation (usually generated from the TSF Library XML. In the case of the ATML Demo program the TSF libraries available are:
+            </p>
+            <p>
+            <p>
+                <ul>
+                    <li>
+                        STDTSFLib (IEEE Std 1641 (716 Standard Library))
+                    </li>
+                    <li>
+                        ATMLDemo2DigitalPatterns - Defines the parallel digital patterns used during Phase II on the digital IO
+                    </li>
+                    <li>
+                        OnedBCompressionTest - Complex RF Test methods for testing RF UUTs used as part of Phase 2 test  program
+                    </li>
+                    <li>
+                        ATMLDemoRTCASSLib - Simplified UUT TSF Library for teh ATML Demo UUT. Only used during Phase I test program to interface with RTCASS ATE
+                    </li>
+                </ul>
+            </p>
+
+            <h3>xsi:schemaLocation</h3>
+
+            <p>
+                In order to validate the use of any TSF the schema location of the TSF Library XMLSchema(.xsd) file must be declared. Different applications and validators can do this in a variety of ways however the use of the xsi:schemaLocation is a classic way by which the location of the TSF Library schema can be given to the Test Description to allow XML validation to proceed.
+            </p>
+
+            <p>
+                Note: multiple declarations of xsi:schemaLocation may not work with all valdiators, its best to ensure that the top level declaration of schemaLocations contains all the locations.
+            </p>
+
+
+            <h3>TsfLibraries</h3>
+            <p>
+                Provides a way for Test Description to identify the specific libraries it's using, and also to identify the locations TSF library schema and the TSF library 'xml', which may be in different places Generally TsfLibraries should be completed as it helps identify extra information as well as which XMLSchemas refer to only TSF Libraries.
+            </p>
+
+            <p>
+                <xmp>
+                    - <td:TsfLibraries>
+                        - <td:TsfLibrary name="urn:IEEE-1641:2010:STDTSFLib" ID="1">
+                            <td:XmlSchemaURL>STDTSFLib.xsd</td:XmlSchemaURL>
+                            <td:XmlInstanceDocumentURL>STDTSFLib.xml</td:XmlInstanceDocumentURL>
+                        </td:TsfLibrary>
+                        - <td:TsfLibrary name="ATMLDemo2DigitalPatterns" ID="2">
+                            <td:XmlSchemaURL>ATMLDemo2DigitalPatterns.xsd</td:XmlSchemaURL>
+                            <td:XmlInstanceDocumentURL>ATMLDemo2DigitalPatterns.xml</td:XmlInstanceDocumentURL>
+                        </td:TsfLibrary>
+                        - <td:TsfLibrary name="OneDBCompressionTest" ID="3">
+                            <td:XmlSchemaURL>OneDBCompressionTest.xsd</td:XmlSchemaURL>
+                            <td:XmlInstanceDocumentURL>OneDBCompressionTest.xml</td:XmlInstanceDocumentURL>
+                        </td:TsfLibrary>
+                    </td:TsfLibraries>
+                </xmp>
+            </p>
+
+
+            <div class="clear"></div>
+
+            <div class="page-navi">
+                <ul>
+                    <li><a href="TestDescription1.html">1</a></li>
+                    <li><a href="TestDescription2.html" class="current">2</a></li>
+                    <li><a href="TestDescription3.html">3</a></li>
+                    <li><a href="TestDescription4.html">4</a></li>
+                    <li><a href="contact.html">›</a></li>
+                    <li><a href="TestDescription4.html">»</a></li>
+                </ul>
+            </div>
+
+            <div id="footer">
+                <div class="footer-box one-third">
+                    <h3>Popular Posts</h3>
+                    <ul class="popular-posts">
+                        <li>
+                            <a href="Features1.html"><img src="style/images/art/s1.jpg" alt=""></a>
+                            <h5><a href="Features1.html">Smart diagnostic</a></h5>
+                            <span>26 Aug 2011</span>
+                        </li>
+                        <li>
+                            <a href="Features2.html"><img src="style/images/art/s2.jpg" alt=""></a>
+                            <h5><a href="Features2.html">RF Test</a></h5>
+                            <span>26 Aug 2011</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="style/images/art/s3.jpg" alt=""></a>
+                            <h5><a href="buttons-boxes-images.html">Demonstration</a></h5>
+                            <span>26 Aug 2011</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-box one-third">
+                    <h3>About</h3>
+                    <p>SPHEREA specialised in the design and realisation of modular testing solutions for the entire life cycle of complex and critical electronic, microwave, optronic and mechatronic systems.</p>
+                    <br>
+
+                </div>
+                <div class="footer-box one-third last">
+                    <h3>Question</h3>
+                    <p>To ask any queries or report any problems regarding the Knowledge Base. </p>
+                    <span class="lite1">Fax:</span> +44 1202 870 810<br> <br>
+                    <span class="lite1">Tel:</span> +44 1202 872 800<br> <br>
+                    <span class="lite1">E-mail:</span> tes-info@spherea.co.uk</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <script src="style/js/scripts.js"></script>
+    <!--[if !IE]> -->
+    <script src="style/js/jquery.corner.js"></script>
+    <!-- <![endif]-->
+</body>
+</html>

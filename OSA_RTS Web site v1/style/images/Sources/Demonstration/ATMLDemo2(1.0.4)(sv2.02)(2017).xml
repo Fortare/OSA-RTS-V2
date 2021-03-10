@@ -1,0 +1,2242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Generated using 'XSLT to 2017' Stylesheet version 1.0.8.0-->
+<!--ATML Test Description instance document for ATML Demo Phase II, Sept 2009-->
+<!-- Generated using 'XTransform' Executable version 1.0.4.2-->
+<td:TestDescription xsi:schemaLocation="urn:IEEE-1671.3:2017:UUTDescription UUTDescription.xsd urn:IEEE-1671.1:2017:TestDescription TestDescription.xsd urn:IEEE-1641:2010:STDBSC STDBSC.xsd urn:IEEE-1641:2010:STDTSFLib STDTSFLib.xsd  ATMLDemo2DigitalPatterns ATMLDemo2DigitalPatterns.xsd OnedBCompressionTest OneDBCompressionTest.xsd" uuid="{F9ED240A-ABA1-447e-BBBA-1A4EF0D434B1}" xmlns:td="urn:IEEE-1671.1:2017:TestDescription" xmlns:uut="urn:IEEE-1671.3:2017:UUTDescription" xmlns:odcp="OnedBCompressionTest" xmlns:atmldemo2digitalpatterns="ATMLDemo2DigitalPatterns" xmlns:std="urn:IEEE-1641:2010:STDBSC" xmlns:tsf="urn:IEEE-1641:2010:STDTSFLib" xmlns:hc="urn:IEEE-1671:2010:HardwareCommon" xmlns:c="urn:IEEE-1671:2010:Common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!--Moved td:TsfLibraries -->
+  <td:UUT>
+    <td:Description>
+      <c:Definition xsi:type="uut:UUTDescription">
+        <c:Identification>
+          <c:ModelName>DemoUut2</c:ModelName>
+        </c:Identification>
+        <hc:Interface>
+          <c:Ports>
+            <c:Port name="P1" direction="Bi-Directional">
+              <c:ConnectorPins>
+                <c:ConnectorPin xsi:type="uut:UUTConnectorLocation" connectorID="J1" pinID="1">
+                  <uut:Function>
+                    <uut:SignalInformation>
+                      <uut:SignalName>Vi</uut:SignalName>
+                      <uut:SignalType>Input</uut:SignalType>
+                      <uut:SignalDefinition>Input signal</uut:SignalDefinition>
+                    </uut:SignalInformation>
+                  </uut:Function>
+                </c:ConnectorPin>
+                <c:ConnectorPin xsi:type="uut:UUTConnectorLocation" connectorID="J1" pinID="2">
+                  <uut:Function>
+                    <uut:SignalInformation>
+                      <uut:SignalName>Vo</uut:SignalName>
+                      <uut:SignalType>Output</uut:SignalType>
+                      <uut:SignalDefinition>Output signal</uut:SignalDefinition>
+                    </uut:SignalInformation>
+                  </uut:Function>
+                </c:ConnectorPin>
+                <c:ConnectorPin xsi:type="uut:UUTConnectorLocation" connectorID="J1" pinID="3">
+                  <uut:Function>
+                    <uut:SignalInformation>
+                      <uut:SignalName>Vcc</uut:SignalName>
+                      <uut:SignalType>Input</uut:SignalType>
+                      <uut:SignalDefinition>DC Power</uut:SignalDefinition>
+                    </uut:SignalInformation>
+                  </uut:Function>
+                </c:ConnectorPin>
+                <c:ConnectorPin xsi:type="uut:UUTConnectorLocation" connectorID="J1" pinID="4">
+                  <uut:Function>
+                    <uut:SignalInformation>
+                      <uut:SignalName>Vc</uut:SignalName>
+                      <uut:SignalType>Output</uut:SignalType>
+                      <uut:SignalDefinition>Output signal</uut:SignalDefinition>
+                    </uut:SignalInformation>
+                  </uut:Function>
+                </c:ConnectorPin>
+                <c:ConnectorPin xsi:type="uut:UUTConnectorLocation" connectorID="J1" pinID="5">
+                  <uut:Function>
+                    <uut:SignalInformation>
+                      <uut:SignalName>Vb</uut:SignalName>
+                      <uut:SignalType>Output</uut:SignalType>
+                      <uut:SignalDefinition>Output signal</uut:SignalDefinition>
+                    </uut:SignalInformation>
+                  </uut:Function>
+                </c:ConnectorPin>
+                <c:ConnectorPin xsi:type="uut:UUTConnectorLocation" connectorID="J1" pinID="6">
+                  <uut:Function>
+                    <uut:SignalInformation>
+                      <uut:SignalName>RS232_TX</uut:SignalName>
+                      <uut:SignalType>Output</uut:SignalType>
+                      <uut:SignalDefinition>RS232</uut:SignalDefinition>
+                    </uut:SignalInformation>
+                  </uut:Function>
+                </c:ConnectorPin>
+                <c:ConnectorPin xsi:type="uut:UUTConnectorLocation" connectorID="J1" pinID="7">
+                  <uut:Function>
+                    <uut:SignalInformation>
+                      <uut:SignalName>RS232_GND</uut:SignalName>
+                      <uut:SignalType>Bi-Directional</uut:SignalType>
+                      <uut:SignalDefinition>Ground connection for RS232 signal</uut:SignalDefinition>
+                    </uut:SignalInformation>
+                  </uut:Function>
+                </c:ConnectorPin>
+                <c:ConnectorPin xsi:type="uut:UUTConnectorLocation" connectorID="J1" pinID="8">
+                  <uut:Function>
+                    <uut:SignalInformation>
+                      <uut:SignalName>RF_IN</uut:SignalName>
+                      <uut:SignalType>Input</uut:SignalType>
+                      <uut:SignalDefinition>RF input signal</uut:SignalDefinition>
+                    </uut:SignalInformation>
+                  </uut:Function>
+                </c:ConnectorPin>
+                <c:ConnectorPin xsi:type="uut:UUTConnectorLocation" connectorID="J1" pinID="9">
+                  <uut:Function>
+                    <uut:SignalInformation>
+                      <uut:SignalName>Digital_GND</uut:SignalName>
+                      <uut:SignalType>Bi-Directional</uut:SignalType>
+                      <uut:SignalDefinition>Ground connection for Digital signal</uut:SignalDefinition>
+                    </uut:SignalInformation>
+                  </uut:Function>
+                </c:ConnectorPin>
+                <c:ConnectorPin xsi:type="uut:UUTConnectorLocation" connectorID="J1" pinID="10">
+                  <uut:Function>
+                    <uut:SignalInformation>
+                      <uut:SignalName>Digital_07</uut:SignalName>
+                      <uut:SignalType>Bi-Directional</uut:SignalType>
+                      <uut:SignalDefinition>Digital signal</uut:SignalDefinition>
+                    </uut:SignalInformation>
+                  </uut:Function>
+                </c:ConnectorPin>
+                <c:ConnectorPin xsi:type="uut:UUTConnectorLocation" connectorID="J1" pinID="11">
+                  <uut:Function>
+                    <uut:SignalInformation>
+                      <uut:SignalName>Digital_05</uut:SignalName>
+                      <uut:SignalType>Bi-Directional</uut:SignalType>
+                      <uut:SignalDefinition>Digital signal</uut:SignalDefinition>
+                    </uut:SignalInformation>
+                  </uut:Function>
+                </c:ConnectorPin>
+                <c:ConnectorPin xsi:type="uut:UUTConnectorLocation" connectorID="J1" pinID="12">
+                  <uut:Function>
+                    <uut:SignalInformation>
+                      <uut:SignalName>Digital_03</uut:SignalName>
+                      <uut:SignalType>Bi-Directional</uut:SignalType>
+                      <uut:SignalDefinition>Digital signal</uut:SignalDefinition>
+                    </uut:SignalInformation>
+                  </uut:Function>
+                </c:ConnectorPin>
+                <c:ConnectorPin xsi:type="uut:UUTConnectorLocation" connectorID="J1" pinID="13">
+                  <uut:Function>
+                    <uut:SignalInformation>
+                      <uut:SignalName>Digital_01_LSB</uut:SignalName>
+                      <uut:SignalType>Bi-Directional</uut:SignalType>
+                      <uut:SignalDefinition>Digital signal</uut:SignalDefinition>
+                    </uut:SignalInformation>
+                  </uut:Function>
+                </c:ConnectorPin>
+                <c:ConnectorPin xsi:type="uut:UUTConnectorLocation" connectorID="J1" pinID="14">
+                  <uut:Function>
+                    <uut:SignalInformation>
+                      <uut:SignalName>UUT_GND1</uut:SignalName>
+                      <uut:SignalType>Bi-Directional</uut:SignalType>
+                      <uut:SignalDefinition>Ground connection for UUT input</uut:SignalDefinition>
+                    </uut:SignalInformation>
+                  </uut:Function>
+                </c:ConnectorPin>
+                <c:ConnectorPin xsi:type="uut:UUTConnectorLocation" connectorID="J1" pinID="15">
+                  <uut:Function>
+                    <uut:SignalInformation>
+                      <uut:SignalName>UUT_GND2</uut:SignalName>
+                      <uut:SignalType>Bi-Directional</uut:SignalType>
+                      <uut:SignalDefinition>Ground connection for UUT output</uut:SignalDefinition>
+                    </uut:SignalInformation>
+                  </uut:Function>
+                </c:ConnectorPin>
+                <c:ConnectorPin xsi:type="uut:UUTConnectorLocation" connectorID="J1" pinID="16">
+                  <uut:Function>
+                    <uut:SignalInformation>
+                      <uut:SignalName>UUT_GND3</uut:SignalName>
+                      <uut:SignalType>Bi-Directional</uut:SignalType>
+                      <uut:SignalDefinition>Ground connection for UUT power</uut:SignalDefinition>
+                    </uut:SignalInformation>
+                  </uut:Function>
+                </c:ConnectorPin>
+                <c:ConnectorPin xsi:type="uut:UUTConnectorLocation" connectorID="J1" pinID="17">
+                  <uut:Function>
+                    <uut:SignalInformation>
+                      <uut:SignalName>Ve</uut:SignalName>
+                      <uut:SignalType>Output</uut:SignalType>
+                      <uut:SignalDefinition>Output signal</uut:SignalDefinition>
+                    </uut:SignalInformation>
+                  </uut:Function>
+                </c:ConnectorPin>
+                <c:ConnectorPin xsi:type="uut:UUTConnectorLocation" connectorID="J1" pinID="19">
+                  <uut:Function>
+                    <uut:SignalInformation>
+                      <uut:SignalName>RS232_RX</uut:SignalName>
+                      <uut:SignalType>Input</uut:SignalType>
+                      <uut:SignalDefinition>RS232</uut:SignalDefinition>
+                    </uut:SignalInformation>
+                  </uut:Function>
+                </c:ConnectorPin>
+                <c:ConnectorPin xsi:type="uut:UUTConnectorLocation" connectorID="J1" pinID="20">
+                  <uut:Function>
+                    <uut:SignalInformation>
+                      <uut:SignalName>RF_GND</uut:SignalName>
+                      <uut:SignalType>Bi-Directional</uut:SignalType>
+                      <uut:SignalDefinition>Ground connection for RF</uut:SignalDefinition>
+                    </uut:SignalInformation>
+                  </uut:Function>
+                </c:ConnectorPin>
+                <c:ConnectorPin xsi:type="uut:UUTConnectorLocation" connectorID="J1" pinID="21">
+                  <uut:Function>
+                    <uut:SignalInformation>
+                      <uut:SignalName>RF_OUT</uut:SignalName>
+                      <uut:SignalType>Bi-Directional</uut:SignalType>
+                      <uut:SignalDefinition>RF output signal</uut:SignalDefinition>
+                    </uut:SignalInformation>
+                  </uut:Function>
+                </c:ConnectorPin>
+                <c:ConnectorPin xsi:type="uut:UUTConnectorLocation" connectorID="J1" pinID="22">
+                  <uut:Function>
+                    <uut:SignalInformation>
+                      <uut:SignalName>Digital_08_MSB</uut:SignalName>
+                      <uut:SignalType>Bi-Directional</uut:SignalType>
+                      <uut:SignalDefinition>Digital signal</uut:SignalDefinition>
+                    </uut:SignalInformation>
+                  </uut:Function>
+                </c:ConnectorPin>
+                <c:ConnectorPin xsi:type="uut:UUTConnectorLocation" connectorID="J1" pinID="23">
+                  <uut:Function>
+                    <uut:SignalInformation>
+                      <uut:SignalName>Digital_06</uut:SignalName>
+                      <uut:SignalType>Bi-Directional</uut:SignalType>
+                      <uut:SignalDefinition>Digital signal</uut:SignalDefinition>
+                    </uut:SignalInformation>
+                  </uut:Function>
+                </c:ConnectorPin>
+                <c:ConnectorPin xsi:type="uut:UUTConnectorLocation" connectorID="J1" pinID="24">
+                  <uut:Function>
+                    <uut:SignalInformation>
+                      <uut:SignalName>Digital_04</uut:SignalName>
+                      <uut:SignalType>Bi-Directional</uut:SignalType>
+                      <uut:SignalDefinition>Digital signal</uut:SignalDefinition>
+                    </uut:SignalInformation>
+                  </uut:Function>
+                </c:ConnectorPin>
+                <c:ConnectorPin xsi:type="uut:UUTConnectorLocation" connectorID="J1" pinID="25">
+                  <uut:Function>
+                    <uut:SignalInformation>
+                      <uut:SignalName>Digital_02</uut:SignalName>
+                      <uut:SignalType>Bi-Directional</uut:SignalType>
+                      <uut:SignalDefinition>Digital signal</uut:SignalDefinition>
+                    </uut:SignalInformation>
+                  </uut:Function>
+                </c:ConnectorPin>
+              </c:ConnectorPins>
+            </c:Port>
+          </c:Ports>
+          <c:Connectors>
+            <c:Connector ID="J1" location="Front" type="001" matingConnectorType="EX1-C1a">
+              <c:Identification designator="J1">
+                <c:ModelName>EX1-C1</c:ModelName>
+                <c:Manufacturers>
+                  <c:Manufacturer name="Example Manufacturer" />
+                </c:Manufacturers>
+              </c:Identification>
+            </c:Connector>
+          </c:Connectors>
+        </hc:Interface>
+        <hc:Components>
+          <hc:Component ID="c1">
+            <c:Definition>
+              <c:Identification designator="R1">
+                <c:ModelName>Resistor</c:ModelName>
+              </c:Identification>
+            </c:Definition>
+          </hc:Component>
+          <hc:Component ID="c2">
+            <c:Definition>
+              <c:Identification designator="R2">
+                <c:ModelName>Resistor</c:ModelName>
+              </c:Identification>
+            </c:Definition>
+          </hc:Component>
+          <hc:Component ID="c3">
+            <c:Definition>
+              <c:Identification designator="R3">
+                <c:ModelName>Resistor</c:ModelName>
+              </c:Identification>
+            </c:Definition>
+          </hc:Component>
+          <hc:Component ID="c4">
+            <c:Definition>
+              <c:Identification designator="R4">
+                <c:ModelName>Resistor</c:ModelName>
+              </c:Identification>
+            </c:Definition>
+          </hc:Component>
+          <hc:Component ID="c5">
+            <c:Definition>
+              <c:Identification designator="C1">
+                <c:ModelName>Capacitor</c:ModelName>
+              </c:Identification>
+            </c:Definition>
+          </hc:Component>
+          <hc:Component ID="c6">
+            <c:Definition>
+              <c:Identification designator="C2">
+                <c:ModelName>Capacitor</c:ModelName>
+              </c:Identification>
+            </c:Definition>
+          </hc:Component>
+          <hc:Component ID="c7">
+            <c:Definition>
+              <c:Identification designator="C3">
+                <c:ModelName>Capacitor</c:ModelName>
+              </c:Identification>
+            </c:Definition>
+          </hc:Component>
+          <hc:Component ID="c8">
+            <c:Definition xsi:type="uut:UUTComponentDefinition">
+              <c:Identification designator="Q1">
+                <c:ModelName>Transistor</c:ModelName>
+              </c:Identification>
+              <hc:Interface>
+                <c:Ports>
+                  <c:Port name="c1p1">
+                    <c:ConnectorPins>
+                      <c:ConnectorPin connectorID="c1" pinID="B" />
+                      <c:ConnectorPin connectorID="c1" pinID="C" />
+                      <c:ConnectorPin connectorID="c1" pinID="E" />
+                    </c:ConnectorPins>
+                  </c:Port>
+                </c:Ports>
+                <c:Connectors>
+                  <c:Connector ID="c1" type="dummy" location="Front">
+                    <c:Identification>
+                      <c:ModelName>dummy</c:ModelName>
+                    </c:Identification>
+                  </c:Connector>
+                </c:Connectors>
+              </hc:Interface>
+            </c:Definition>
+          </hc:Component>
+        </hc:Components>
+        <hc:Documentation>
+          <hc:Document uuid="{9715D15B-F524-4ea3-A999-68DDC4CFDDE4}" name="Theory of Operation">
+            <c:URL>file://D:/Work/ATML/TestDescription/Samples/TheoryOfOperationSample.doc</c:URL>
+          </hc:Document>
+        </hc:Documentation>
+      </c:Definition>
+    </td:Description>
+    <!--Removed td:TestData -->
+  </td:UUT>
+  <!--InterfaceRequirements removed-->
+  <td:DetailedTestInformation>
+    <td:TsfLibraries>
+      <td:TsfLibrary name="STDTSFLib" ID="1">
+        <td:XmlSchemaURL>STDTSFLib.xsd</td:XmlSchemaURL>
+        <td:XmlInstanceDocumentURL>STDTSFLib.xml</td:XmlInstanceDocumentURL>
+      </td:TsfLibrary>
+      <td:TsfLibrary name="OnedBCompressionTest" ID="2">
+        <td:XmlSchemaURL>OneDBCompressionTest.xsd</td:XmlSchemaURL>
+        <td:XmlInstanceDocumentURL>OneDBCompressionTest.xml</td:XmlInstanceDocumentURL>
+      </td:TsfLibrary>
+    </td:TsfLibraries>
+    <td:EntryPoints primaryEntryPointID="1">
+      <td:EntryPoint ID="1" testGroupID="seq1" />
+      <td:EntryPoint ID="2" testGroupID="seq_odbc_repeat" />
+      <td:EntryPoint ID="3" testGroupID="seq_odbc_generic" />
+    </td:EntryPoints>
+    <td:Tests>
+      <td:Test ID="test1" name="V_CC_to_GND_Resistance_Test">
+        <td:Variables>
+          <td:Variable name="Resistance Sensor" ID="ls1">
+            <td:Value>
+              <c:Datum xsi:type="td:SignalReference" />
+            </td:Value>
+          </td:Variable>
+        </td:Variables>
+        <td:Behavior>
+          <td:Operations>
+            <td:Operation xsi:type="td:OperationSetup" ID="op1">
+              <!--Example: measuring a quantity that is not a signal attribute-->
+              <td:Description>Define sensor signal to measure resistance</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls1" />
+								<std:Signal Out="Measure1" xmlns:std="urn:IEEE-1641:2010:STDBSC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:IEEE-1641:2010:STDBSC STDBSC.xsd">
+                  <std:Instantaneous name="Measure1" type="Resistance" samples="1" nominal="13.2kOhm" />
+                </std:Signal>
+              </td:Signal>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationConnect" ID="op2">
+              <td:Description>Connect sensor to UUT power pins</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls1" />
+								<std:Signal xmlns:std="urn:IEEE-1641:2010:STDBSC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:IEEE-1641:2010:STDBSC STDBSC.xsd">
+									<!--Example: Using compound port names for signal attributes "hi" and "lo"-->
+                  <std:TwoWire name="Conn1" hi="J1-3" lo="J1-16" />
+                </std:Signal>
+              </td:Signal>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationRead" ID="op3">
+              <td:Description>Read measured value</td:Description>
+              <!-- Measurement Removed-->
+              <td:SignalRef type="LocalVariable" refID="ls1" />
+              <td:OutValues>
+                <td:OutValue signalName="Measure1">
+                  <td:ValueTo type="TestResult" refID="t1tr1" />
+                </td:OutValue>
+              </td:OutValues>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationDisconnect" ID="op4">
+              <td:Description>Disconnect sensor</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls1" />
+              </td:Signal>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationReset" ID="op5">
+              <td:Description>Reset sensor</td:Description>
+              <td:SignalRef type="LocalVariable" refID="ls1" />
+            </td:Operation>
+          </td:Operations>
+        </td:Behavior>
+        <td:Outcomes>
+          <td:Outcome ID="t1o1" value="Passed" />
+          <td:Outcome ID="t1o2" value="Failed" qualifier="FailLow" />
+        </td:Outcomes>
+        <td:TestResults>
+          <td:TestResult ID="t1tr1" name="V_CC Resistance">
+            <td:ValueDescription>
+              <td:DatumDescription xsi:type="td:doubleDescription" standardUnit="kOhm" />
+            </td:ValueDescription>
+            <td:ValueTo refID="t1tr1" type="TestResult" />
+            <td:TestLimits>
+              <td:Limit>
+                <c:SingleLimit comparator="GE">
+                  <c:Datum xsi:type="c:double" standardUnit="kOhm" value="12.5" />
+                </c:SingleLimit>
+              </td:Limit>
+            </td:TestLimits>
+          </td:TestResult>
+        </td:TestResults>
+      </td:Test>
+      <td:Test ID="sa2" name="Apply_UUT_DC_Power" type="SessionAction">
+        <td:Variables>
+          <td:Variable name="DC Voltage Sensor" ID="ls1">
+            <td:Value>
+              <c:Datum xsi:type="td:SignalReference" />
+            </td:Value>
+          </td:Variable>
+        </td:Variables>
+        <td:Behavior>
+          <td:Operations>
+            <td:Operation xsi:type="td:OperationSetup" ID="op1">
+              <!--Example: source signal defined locally-->
+              <td:Description>Define source signal for UUT DC power</td:Description>
+              <td:Signal>
+                <td:SignalRef type="GlobalVariable" refID="gs1" />
+								<std:Signal Out="DcSignal1" xmlns:std="urn:IEEE-1641:2010:STDBSC" xmlns:tsf= "urn:IEEE-1641:2010:STDTSFLib" xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='urn:IEEE-1641:2010:STDBSC STDBSC.xsd  urn:IEEE-1641:2010:STDTSFLib STDTSFLib.xsd'>
+                  <tsf:DC_SIGNAL name="DcSignal1" dc_ampl="12.0 V" />
+                </std:Signal>
+              </td:Signal>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationConnect" ID="op2">
+              <td:Description>Connect source to UUT power pins</td:Description>
+              <td:Signal>
+                <td:SignalRef type="GlobalVariable" refID="gs1" />
+								<std:Signal xmlns:std="urn:IEEE-1641:2010:STDBSC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:IEEE-1641:2010:STDBSC STDBSC.xsd">
+                  <std:TwoWire name="Conn2" hi="J1-3" lo="J1-16" />
+                </std:Signal>
+              </td:Signal>
+            </td:Operation>
+            <!--Leave UUT power connected-->
+          </td:Operations>
+        </td:Behavior>
+        <td:Outcomes>
+          <td:Outcome ID="sa2o1" value="Done" />
+        </td:Outcomes>
+      </td:Test>
+      <td:Test ID="test3" name="V_O_AC_Voltage_Test">
+        <td:Parameters>
+          <td:Parameter ID="t3p1" name="V_I Amplitude">
+            <td:Value>
+              <c:Datum xsi:type="c:double" standardUnit="mV" unitQualifier="pk_pk" value="100.0" />
+            </td:Value>
+          </td:Parameter>
+          <td:Parameter ID="t3p2" name="V_I Frequency">
+            <td:Value>
+              <c:Datum xsi:type="c:double" standardUnit="kHz" value="1.0" />
+            </td:Value>
+          </td:Parameter>
+        </td:Parameters>
+        <td:Variables>
+          <td:Variable name="AC Voltage Source" ID="ls1">
+            <td:Value>
+              <c:Datum xsi:type="td:SignalReference" />
+            </td:Value>
+          </td:Variable>
+          <td:Variable name="AC Voltage Sensor" ID="ls2">
+            <td:Value>
+              <c:Datum xsi:type="td:SignalReference" />
+            </td:Value>
+          </td:Variable>
+        </td:Variables>
+        <td:Behavior>
+          <td:Operations>
+            <td:Operation xsi:type="td:OperationSetup" ID="op1">
+              <!--Example: Transferring values of signal attributes from test parameters-->
+              <td:Description>Define source of AC signal</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls1" />
+								<std:Signal Out="AcSignal2" xmlns:std="urn:IEEE-1641:2010:STDBSC" xmlns:tsf="urn:IEEE-1641:2010:STDTSFLib" xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='urn:IEEE-1641:2010:STDBSC STDBSC.xsd  urn:IEEE-1641:2010:STDTSFLib STDTSFLib.xsd'>
+                  <tsf:AC_SIGNAL name="AcSignal2" ac_ampl="100.0mV" freq="1000.0Hz" />
+                </std:Signal>
+                <td:InValues>
+                  <td:InValue signalName="AcSignal2" signalAttribute="ac_ampl">
+                    <td:ValueFrom type="Parameter" refID="t3p1" />
+                  </td:InValue>
+                  <td:InValue signalName="AcSignal2" signalAttribute="freq">
+                    <td:ValueFrom type="Parameter" refID="t3p2" />
+                  </td:InValue>
+                </td:InValues>
+              </td:Signal>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationConnect" ID="op2">
+              <td:Description>Connect source to UUT input</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls1" />
+								<std:Signal xmlns:std="urn:IEEE-1641:2010:STDBSC" xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='urn:IEEE-1641:2010:STDBSC STDBSC.xsd'>
+                  <std:TwoWire name="Conn4" hi="J1-1" lo="J1-14" />
+                </std:Signal>
+              </td:Signal>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationSetup" ID="op3">
+              <td:Description>Define sensor signal to measure AC voltage</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls2" />
+								<std:Signal Out="Measure5" xmlns:std="urn:IEEE-1641:2010:STDBSC" xmlns:tsf="urn:IEEE-1641:2010:STDTSFLib" xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='urn:IEEE-1641:2010:STDBSC STDBSC.xsd  urn:IEEE-1641:2010:STDTSFLib STDTSFLib.xsd'>
+                  <tsf:AC_SIGNAL name="AcSignal3" ac_ampl="1000 mV" freq="1 kHz" />
+                  <std:Measure name="Measure5" As="AcSignal3" attribute="ac_ampl" />
+                </std:Signal>
+              </td:Signal>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationConnect" ID="op4">
+              <td:Description>Connect sensor to UUT output</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls2" />
+								<std:Signal xmlns:std="urn:IEEE-1641:2010:STDBSC" xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='urn:IEEE-1641:2010:STDBSC STDBSC.xsd'>
+                  <std:TwoWire name="Conn5" hi="J1-2" lo="J1-15" />
+                </std:Signal>
+              </td:Signal>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationRead" ID="op5">
+              <td:Description>Read measured value</td:Description>
+              <!-- Measurement Removed-->
+              <td:SignalRef type="LocalVariable" refID="ls2" />
+              <td:OutValues>
+                <td:OutValue signalName="Measure5">
+                  <td:ValueTo type="TestResult" refID="t3tr1" />
+                </td:OutValue>
+              </td:OutValues>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationDisconnect" ID="op6">
+              <td:Description>Disconnect sensor</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls2" />
+              </td:Signal>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationReset" ID="op7">
+              <td:Description>Reset sensor</td:Description>
+              <td:SignalRef type="LocalVariable" refID="ls2" />
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationDisconnect" ID="op8">
+              <td:Description>Disconnect source</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls1" />
+              </td:Signal>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationReset" ID="op9">
+              <td:Description>Reset source</td:Description>
+              <td:SignalRef type="LocalVariable" refID="ls1" />
+            </td:Operation>
+          </td:Operations>
+        </td:Behavior>
+        <td:Outcomes>
+          <td:Outcome ID="t3o1" value="Passed" />
+          <td:Outcome ID="t3o2" value="Failed" qualifier="FailLow" />
+        </td:Outcomes>
+        <td:TestResults>
+          <td:TestResult ID="t3tr1" name="V_O AC Voltage">
+            <td:ValueDescription>
+              <td:DatumDescription xsi:type="td:doubleDescription" standardUnit="mV" unitQualifier="pk_pk" />
+            </td:ValueDescription>
+            <td:ValueTo refID="t3tr1" type="TestResult" />
+            <td:TestLimits>
+              <td:Limit>
+                <c:SingleLimit comparator="GE">
+                  <c:Datum xsi:type="c:double" standardUnit="mV" unitQualifier="pk_pk" value="900.0" />
+                </c:SingleLimit>
+              </td:Limit>
+            </td:TestLimits>
+          </td:TestResult>
+        </td:TestResults>
+      </td:Test>
+      <td:Test ID="test4" name="V_C_AC_Voltage_Test">
+        <td:Variables>
+          <td:Variable name="AC Voltage Source" ID="ls1">
+            <td:Value>
+              <c:Datum xsi:type="td:SignalReference" />
+            </td:Value>
+          </td:Variable>
+          <td:Variable name="AC Voltage Sensor" ID="ls2">
+            <td:Value>
+              <c:Datum xsi:type="td:SignalReference" />
+            </td:Value>
+          </td:Variable>
+        </td:Variables>
+        <td:Behavior>
+          <td:Operations>
+            <td:Operation xsi:type="td:OperationSetup" ID="op1">
+              <td:Description>Define source of AC signal</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls1" />
+								<std:Signal Out="AcSignal4" xmlns:std="urn:IEEE-1641:2010:STDBSC" xmlns:tsf="urn:IEEE-1641:2010:STDTSFLib" xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='urn:IEEE-1641:2010:STDBSC STDBSC.xsd  urn:IEEE-1641:2010:STDTSFLib STDTSFLib.xsd'>
+                  <tsf:AC_SIGNAL name="AcSignal4" ac_ampl="pk_pk 100.0 mV" freq="1.0 kHz" />
+                </std:Signal>
+              </td:Signal>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationConnect" ID="op2">
+              <td:Description>Connect source to UUT input</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls1" />
+								<std:Signal xmlns:std="urn:IEEE-1641:2010:STDBSC" xmlns:tsf="urn:IEEE-1641:2010:STDTSFLib" xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='urn:IEEE-1641:2010:STDBSC STDBSC.xsd  urn:IEEE-1641:2010:STDTSFLib STDTSFLib.xsd'>
+                  <std:TwoWire name="Conn6" hi="J1-1" lo="J1-14" />
+                </std:Signal>
+              </td:Signal>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationSetup" ID="op3">
+              <td:Description>Define sensor signal to measure AC voltage</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls2" />
+								<std:Signal Out="Measure6" xmlns:std="urn:IEEE-1641:2010:STDBSC" xmlns:tsf="urn:IEEE-1641:2010:STDTSFLib" xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='urn:IEEE-1641:2010:STDBSC STDBSC.xsd  urn:IEEE-1641:2010:STDTSFLib STDTSFLib.xsd'>
+                  <tsf:AC_SIGNAL name="AcSignal5" ac_ampl="1000 mV" freq="1 kHz" />
+                  <std:Measure name="Measure6" As="AcSignal5" attribute="ac_ampl" />
+                </std:Signal>
+              </td:Signal>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationConnect" ID="op4">
+              <td:Description>Connect sensor to Q1 collector</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls2" />
+								<std:Signal xmlns:std="urn:IEEE-1641:2010:STDBSC" xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='urn:IEEE-1641:2010:STDBSC STDBSC.xsd'>
+                  <std:TwoWire name="Conn7" hi="J1-4" lo="J1-16" />
+                </std:Signal>
+                <td:PortValues>
+                  <td:PortValue signalName="Conn7" signalAttribute="hi">
+                    <td:Network>
+                      <hc:Node>
+                        <hc:Path>/TestDescription/InterfaceRequirements/c:Ports/c:Port[@name="P1"]/c:ConnectorPins/c:ConnectorPin[@connectorID="J1" and @pinID="4"]</hc:Path>
+                      </hc:Node>
+                    </td:Network>
+                  </td:PortValue>
+                  <td:PortValue signalName="Conn7" signalAttribute="lo">
+                    <td:Network>
+                      <hc:Node>
+                        <hc:Path>/TestDescription/InterfaceRequirements/c:Ports/c:Port[@name="P1"]/c:ConnectorPins/c:ConnectorPin[@connectorID="J1" and @pinID="16"]</hc:Path>
+                      </hc:Node>
+                    </td:Network>
+                  </td:PortValue>
+                </td:PortValues>
+              </td:Signal>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationRead" ID="op5">
+              <td:Description>Read measured value</td:Description>
+              <!-- Measurement Removed-->
+              <td:SignalRef type="LocalVariable" refID="ls2" />
+              <td:OutValues>
+                <td:OutValue signalName="Measure6">
+                  <td:ValueTo type="TestResult" refID="t4tr1" />
+                </td:OutValue>
+              </td:OutValues>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationDisconnect" ID="op6">
+              <td:Description>Disconnect sensor</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls2" />
+              </td:Signal>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationReset" ID="op7">
+              <td:Description>Reset sensor</td:Description>
+              <td:SignalRef type="LocalVariable" refID="ls2" />
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationDisconnect" ID="op8">
+              <td:Description>Disconnect source</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls1" />
+              </td:Signal>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationReset" ID="op9">
+              <td:Description>Reset source</td:Description>
+              <td:SignalRef type="LocalVariable" refID="ls1" />
+            </td:Operation>
+          </td:Operations>
+        </td:Behavior>
+        <td:Outcomes>
+          <td:Outcome ID="t4o1" value="Passed" />
+          <td:Outcome ID="t4o2" value="Failed" qualifier="FailLow" />
+        </td:Outcomes>
+        <td:TestResults>
+          <td:TestResult ID="t4tr1" name="V_C AC Voltage">
+            <td:ValueDescription>
+              <td:DatumDescription xsi:type="td:doubleDescription" standardUnit="mV" unitQualifier="pk_pk" />
+            </td:ValueDescription>
+            <td:ValueTo refID="t4tr1" type="TestResult" />
+            <td:TestLimits>
+              <td:Limit>
+                <c:SingleLimit comparator="GE">
+                  <c:Datum xsi:type="c:double" standardUnit="mV" unitQualifier="pk_pk" value="900.0" />
+                </c:SingleLimit>
+              </td:Limit>
+            </td:TestLimits>
+          </td:TestResult>
+        </td:TestResults>
+      </td:Test>
+      <td:Test ID="test5" name="V_C_DC_Voltage_Test">
+        <td:Variables>
+          <td:Variable name="DC Voltage Sensor" ID="ls1">
+            <td:Value>
+              <c:Datum xsi:type="td:SignalReference" />
+            </td:Value>
+          </td:Variable>
+        </td:Variables>
+        <td:Behavior>
+          <td:Operations>
+            <td:Operation xsi:type="td:OperationSetup" ID="op1">
+              <td:Description>Define sensor signal to measure DC voltage</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls1" />
+								<std:Signal Out="Measure7" xmlns:std="urn:IEEE-1641:2010:STDBSC" xmlns:tsf="urn:IEEE-1641:2010:STDTSFLib" xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='urn:IEEE-1641:2010:STDBSC STDBSC.xsd  urn:IEEE-1641:2010:STDTSFLib STDTSFLib.xsd'>
+                  <tsf:DC_SIGNAL name="DcSignal4" dc_ampl="6.54 V" />
+                  <std:Measure name="Measure7" As="DcSignal4" attribute="dc_ampl" />
+                </std:Signal>
+              </td:Signal>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationConnect" ID="op2">
+              <td:Description>Connect sensor to Q1 collector</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls1" />
+								<std:Signal xmlns:std="urn:IEEE-1641:2010:STDBSC" xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='urn:IEEE-1641:2010:STDBSC STDBSC.xsd'>
+                  <std:TwoWire name="Conn8" hi="J1-4" lo="J1-16" />
+                </std:Signal>
+                <td:PortValues>
+                  <td:PortValue signalName="Conn8" signalAttribute="hi">
+                    <td:Network>
+                      <hc:Node>
+                        <hc:Path>/TestDescription/InterfaceRequirements/c:Ports/c:Port[@name="P1"]/c:ConnectorPins/c:ConnectorPin[@connectorID="J1" and @pinID="4"]</hc:Path>
+                      </hc:Node>
+                    </td:Network>
+                  </td:PortValue>
+                  <td:PortValue signalName="Conn8" signalAttribute="lo">
+                    <td:Network>
+                      <hc:Node>
+                        <hc:Path>/TestDescription/InterfaceRequirements/c:Ports/c:Port[@name="P1"]/c:ConnectorPins/c:ConnectorPin[@connectorID="J1" and @pinID="16"]</hc:Path>
+                      </hc:Node>
+                    </td:Network>
+                  </td:PortValue>
+                </td:PortValues>
+              </td:Signal>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationRead" ID="op3">
+              <td:Description>Read measured value</td:Description>
+              <!-- Measurement Removed-->
+              <td:SignalRef type="LocalVariable" refID="ls1" />
+              <td:OutValues>
+                <td:OutValue signalName="Measure7">
+                  <td:ValueTo type="TestResult" refID="t5tr1" />
+                </td:OutValue>
+              </td:OutValues>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationDisconnect" ID="op4">
+              <td:Description>Disconnect sensor</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls1" />
+              </td:Signal>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationReset" ID="op5">
+              <td:Description>Reset sensor</td:Description>
+              <td:SignalRef type="LocalVariable" refID="ls1" />
+            </td:Operation>
+          </td:Operations>
+        </td:Behavior>
+        <td:Outcomes>
+          <td:Outcome ID="t5o1" value="Passed" />
+          <td:Outcome ID="t5o2" value="Failed" qualifier="FailHigh" />
+          <td:Outcome ID="t5o3" value="Failed" qualifier="FailLow" />
+        </td:Outcomes>
+        <td:TestResults>
+          <td:TestResult ID="t5tr1" name="V_C DC Voltage">
+            <td:ValueDescription>
+              <td:DatumDescription xsi:type="td:doubleDescription" standardUnit="V" />
+            </td:ValueDescription>
+            <td:ValueTo refID="t5tr1" type="TestResult" />
+            <td:TestLimits>
+              <td:Limit>
+                <c:LimitPair operator="AND">
+                  <c:Limit comparator="GE">
+                    <c:Datum xsi:type="c:double" standardUnit="V" value="4.7" />
+                  </c:Limit>
+                  <c:Limit comparator="LE">
+                    <c:Datum xsi:type="c:double" standardUnit="V" value="8.0" />
+                  </c:Limit>
+                </c:LimitPair>
+              </td:Limit>
+            </td:TestLimits>
+          </td:TestResult>
+        </td:TestResults>
+      </td:Test>
+      <td:Test ID="test6" name="V_E_DC_Voltage_Test">
+        <td:Variables>
+          <td:Variable name="DC Voltage Sensor" ID="ls1">
+            <td:Value>
+              <c:Datum xsi:type="td:SignalReference" />
+            </td:Value>
+          </td:Variable>
+        </td:Variables>
+        <td:Behavior>
+          <td:Operations>
+            <td:Operation xsi:type="td:OperationSetup" ID="op1">
+              <td:Description>Define sensor signal to measure DC voltage</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls1" />
+								<std:Signal Out="Measure8" xmlns:std="urn:IEEE-1641:2010:STDBSC" xmlns:tsf="urn:IEEE-1641:2010:STDTSFLib" xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='urn:IEEE-1641:2010:STDBSC STDBSC.xsd  urn:IEEE-1641:2010:STDTSFLib STDTSFLib.xsd'>
+                  <tsf:DC_SIGNAL name="DcSignal5" dc_ampl="0.46 V" />
+                  <std:Measure name="Measure8" As="DcSignal5" attribute="dc_ampl" />
+                </std:Signal>
+              </td:Signal>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationConnect" ID="op2">
+              <td:Description>Connect sensor to Q1 emitter</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls1" />
+								<std:Signal xmlns:std="urn:IEEE-1641:2010:STDBSC" xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='urn:IEEE-1641:2010:STDBSC STDBSC.xsd '>
+                  <std:TwoWire name="Conn9" hi="J1-17" lo="J1-16" />
+                </std:Signal>
+                <td:PortValues>
+                  <td:PortValue signalName="Conn9" signalAttribute="hi">
+                    <td:Network>
+                      <hc:Node>
+                        <hc:Path>/TestDescription/InterfaceRequirements/c:Ports/c:Port[@name="P1"]/c:ConnectorPins/c:ConnectorPin[@connectorID="J1" and @pinID="17"]</hc:Path>
+                      </hc:Node>
+                    </td:Network>
+                  </td:PortValue>
+                  <td:PortValue signalName="Conn9" signalAttribute="lo">
+                    <td:Network>
+                      <hc:Node>
+                        <hc:Path>/TestDescription/InterfaceRequirements/c:Ports/c:Port[@name="P1"]/c:ConnectorPins/c:ConnectorPin[@connectorID="J1" and @pinID="16"]</hc:Path>
+                      </hc:Node>
+                    </td:Network>
+                  </td:PortValue>
+                </td:PortValues>
+              </td:Signal>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationRead" ID="op3">
+              <td:Description>Read measured value</td:Description>
+              <!-- Measurement Removed-->
+              <td:SignalRef type="LocalVariable" refID="ls1" />
+              <td:OutValues>
+                <td:OutValue signalName="Measure8">
+                  <td:ValueTo type="TestResult" refID="t6tr1" />
+                </td:OutValue>
+              </td:OutValues>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationDisconnect" ID="op4">
+              <td:Description>Disconnect sensor</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls1" />
+              </td:Signal>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationReset" ID="op5">
+              <td:Description>Reset sensor</td:Description>
+              <td:SignalRef type="LocalVariable" refID="ls1" />
+            </td:Operation>
+          </td:Operations>
+        </td:Behavior>
+        <td:Outcomes>
+          <td:Outcome ID="t6o1" value="Passed" />
+          <td:Outcome ID="t6o2" value="Failed" qualifier="FailHigh" />
+          <td:Outcome ID="t6o3" value="Failed" qualifier="FailLow" />
+        </td:Outcomes>
+        <td:TestResults>
+          <td:TestResult ID="t6tr1" name="V_E DC Voltage">
+            <td:ValueDescription>
+              <td:DatumDescription xsi:type="td:doubleDescription" standardUnit="V" />
+            </td:ValueDescription>
+            <td:ValueTo refID="t6tr1" type="TestResult" />
+            <td:TestLimits>
+              <td:Limit>
+                <c:LimitPair operator="AND">
+                  <c:Limit comparator="GE">
+                    <c:Datum xsi:type="c:double" standardUnit="V" value="0.37" />
+                  </c:Limit>
+                  <c:Limit comparator="LE">
+                    <c:Datum xsi:type="c:double" standardUnit="V" value="0.55" />
+                  </c:Limit>
+                </c:LimitPair>
+              </td:Limit>
+            </td:TestLimits>
+          </td:TestResult>
+        </td:TestResults>
+      </td:Test>
+      <td:Test ID="test7" name="V_B_DC_Voltage_Test">
+        <td:Variables>
+          <td:Variable name="DC Voltage Sensor" ID="ls1">
+            <td:Value>
+              <c:Datum xsi:type="td:SignalReference" />
+            </td:Value>
+          </td:Variable>
+        </td:Variables>
+        <td:Behavior>
+          <td:Operations>
+            <td:Operation xsi:type="td:OperationSetup" ID="op1">
+              <td:Description>Define sensor signal to measure DC voltage</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls1" />
+								<std:Signal Out="Measure9" xmlns:std="urn:IEEE-1641:2010:STDBSC" xmlns:tsf="urn:IEEE-1641:2010:STDTSFLib" xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='urn:IEEE-1641:2010:STDBSC STDBSC.xsd  urn:IEEE-1641:2010:STDTSFLib STDTSFLib.xsd'>
+                  <tsf:DC_SIGNAL name="DcSignal6" dc_ampl="1.09 V" />
+                  <std:Measure name="Measure9" As="DcSignal6" attribute="dc_ampl" />
+                </std:Signal>
+              </td:Signal>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationConnect" ID="op2">
+              <td:Description>Connect sensor to Q1 base</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls1" />
+								<std:Signal xmlns:std="urn:IEEE-1641:2010:STDBSC" xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='urn:IEEE-1641:2010:STDBSC STDBSC.xsd'>
+                  <std:TwoWire name="Conn10" hi="J1-5" lo="J1-16" />
+                </std:Signal>
+                <td:PortValues>
+                  <td:PortValue signalName="Conn10" signalAttribute="hi">
+                    <td:Network>
+                      <hc:Node>
+                        <hc:Path>/TestDescription/InterfaceRequirements/c:Ports/c:Port[@name="P1"]/c:ConnectorPins/c:ConnectorPin[@connectorID="J1" and @pinID="5"]</hc:Path>
+                      </hc:Node>
+                    </td:Network>
+                  </td:PortValue>
+                  <td:PortValue signalName="Conn10" signalAttribute="lo">
+                    <td:Network>
+                      <hc:Node>
+                        <hc:Path>/TestDescription/InterfaceRequirements/c:Ports/c:Port[@name="P1"]/c:ConnectorPins/c:ConnectorPin[@connectorID="J1" and @pinID="16"]</hc:Path>
+                      </hc:Node>
+                    </td:Network>
+                  </td:PortValue>
+                </td:PortValues>
+              </td:Signal>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationRead" ID="op3">
+              <td:Description>Read measured value</td:Description>
+              <!-- Measurement Removed-->
+              <td:SignalRef type="LocalVariable" refID="ls1" />
+              <td:OutValues>
+                <td:OutValue signalName="Measure9">
+                  <td:ValueTo type="TestResult" refID="t7tr1" />
+                </td:OutValue>
+              </td:OutValues>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationDisconnect" ID="op4">
+              <td:Description>Disconnect sensor</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls1" />
+              </td:Signal>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationReset" ID="op5">
+              <td:Description>Reset sensor</td:Description>
+              <td:SignalRef type="LocalVariable" refID="ls1" />
+            </td:Operation>
+          </td:Operations>
+        </td:Behavior>
+        <td:Outcomes>
+          <td:Outcome ID="t7o1" value="Passed" />
+          <td:Outcome ID="t7o2" value="Failed" qualifier="FailHigh" />
+          <td:Outcome ID="t7o3" value="Failed" qualifier="FailLow" />
+        </td:Outcomes>
+        <td:TestResults>
+          <td:TestResult ID="t7tr1" name="V_B DC Voltage">
+            <td:ValueDescription>
+              <td:DatumDescription xsi:type="td:doubleDescription" standardUnit="V" />
+            </td:ValueDescription>
+            <td:ValueTo refID="t7tr1" type="TestResult" />
+            <td:TestLimits>
+              <td:Limit>
+                <c:LimitPair operator="AND">
+                  <c:Limit comparator="GE">
+                    <c:Datum xsi:type="c:double" standardUnit="V" value="0.99" />
+                  </c:Limit>
+                  <c:Limit comparator="LE">
+                    <c:Datum xsi:type="c:double" standardUnit="V" value="1.2" />
+                  </c:Limit>
+                </c:LimitPair>
+              </td:Limit>
+            </td:TestLimits>
+          </td:TestResult>
+        </td:TestResults>
+      </td:Test>
+      <td:Test ID="test8" name="VBE_Test_on_V_C_Fail_High">
+        <td:Behavior>
+          <td:TestGroupCall testGroupID="seq2" />
+        </td:Behavior>
+        <td:Outcomes>
+          <td:Outcome ID="t8o1" value="Passed" qualifier="VE_P" />
+          <td:Outcome ID="t8o2" value="Failed" qualifier="VE_H_VB_P" />
+          <td:Outcome ID="t8o3" value="Failed" qualifier="VE_H_VB_H" />
+          <td:Outcome ID="t8o4" value="Failed" qualifier="VE_H_VB_L" />
+          <td:Outcome ID="t8o5" value="Failed" qualifier="VE_L_VB_P" />
+          <td:Outcome ID="t8o6" value="Failed" qualifier="VE_L_VB_H" />
+          <td:Outcome ID="t8o7" value="Failed" qualifier="VE_L_VB_L" />
+        </td:Outcomes>
+      </td:Test>
+      <td:Test ID="test9" name="VBE_Test_on_V_C_Fail_Low">
+        <td:Behavior>
+          <td:TestGroupCall testGroupID="seq2" />
+        </td:Behavior>
+        <td:Outcomes>
+          <td:Outcome ID="t9o1" value="Passed" qualifier="VE_P" />
+          <td:Outcome ID="t9o2" value="Failed" qualifier="VE_H_VB_P" />
+          <td:Outcome ID="t9o3" value="Failed" qualifier="VE_H_VB_H" />
+          <td:Outcome ID="t9o4" value="Failed" qualifier="VE_H_VB_L" />
+          <td:Outcome ID="t9o5" value="Failed" qualifier="VE_L_VB_P" />
+          <td:Outcome ID="t9o6" value="Failed" qualifier="VE_L_VB_H" />
+          <td:Outcome ID="t9o7" value="Failed" qualifier="VE_L_VB_L" />
+        </td:Outcomes>
+      </td:Test>
+      <td:Test ID="test10" name="Gain_Control_Test">
+        <td:Parameters>
+          <td:Parameter ID="t10p1" name="V_I Amplitude">
+            <td:Value>
+              <c:Datum xsi:type="c:double" standardUnit="mV" unitQualifier="pk_pk" value="100.0" />
+            </td:Value>
+          </td:Parameter>
+          <td:Parameter ID="t10p2" name="V_I Frequency">
+            <td:Value>
+              <c:Datum xsi:type="c:double" standardUnit="kHz" value="1.0" />
+            </td:Value>
+          </td:Parameter>
+          <td:Parameter ID="t10p3" name="DigitalControl">
+            <td:Value>
+              <c:Datum xsi:type="c:hexadecimal" value="0x80" />
+            </td:Value>
+          </td:Parameter>
+        </td:Parameters>
+        <td:Variables>
+          <td:Variable name="AC Voltage Source" ID="ls1">
+            <td:Value>
+              <c:Datum xsi:type="td:SignalReference" />
+            </td:Value>
+          </td:Variable>
+          <td:Variable name="AC Voltage Sensor" ID="ls2">
+            <td:Value>
+              <c:Datum xsi:type="td:SignalReference" />
+            </td:Value>
+          </td:Variable>
+        </td:Variables>
+        <td:Behavior>
+          <td:Operations>
+            <!--- <tsf716:AC_SIGNAL name="AC_SIGNAL_4644x" ac_ampl="pk_pk 100.0 mV" freq="1 kHz"/> -->
+            <td:Operation xsi:type="td:OperationSetup" ID="op1">
+              <!--Example: Transferring values of signal attributes from test parameters-->
+              <td:Description>Define source of AC signal</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls1" />
+									<std:Signal Out="AcSignal2_1" xmlns:std="urn:IEEE-1641:2010:STDBSC" xmlns:tsf="urn:IEEE-1641:2010:STDTSFLib" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:IEEE-1641:2010:STDBSC STDBSC.xsd  urn:IEEE-1641:2010:STDTSFLib STDTSFLib.xsd">
+                  <tsf:AC_SIGNAL name="AcSignal2_1" ac_ampl="100.0mV" freq="1000.0Hz" />
+                </std:Signal>
+                <td:InValues>
+                  <td:InValue signalName="AcSignal2_1" signalAttribute="ac_ampl">
+                    <td:ValueFrom type="Parameter" refID="t10p1" />
+                  </td:InValue>
+                  <td:InValue signalName="AcSignal2_1" signalAttribute="freq">
+                    <td:ValueFrom type="Parameter" refID="t10p2" />
+                  </td:InValue>
+                </td:InValues>
+              </td:Signal>
+            </td:Operation>
+            <!-- <std:TwoWire name="TwoWire_4649" In="AC_SIGNAL_4644x" hi="J1-1" lo="J1-14"/> -->
+            <td:Operation xsi:type="td:OperationConnect" ID="op2">
+              <td:Description>Connect source to UUT input</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls1" />
+								<std:Signal xmlns:std="urn:IEEE-1641:2010:STDBSC" xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='urn:IEEE-1641:2010:STDBSC STDBSC.xsd'>
+                  <std:TwoWire name="TwoWire_4649" hi="J1-1" lo="J1-14" />
+                </std:Signal>
+              </td:Signal>
+            </td:Operation>
+            <!-- <tsf716:AC_SIGNAL name="AC_SIGNAL_4644" ac_ampl="pk_pk 100.0 mV" freq="1 kHz"/> -->
+            <td:Operation xsi:type="td:OperationSetup" ID="op3">
+              <td:Description>Define sensor signal to measure AC voltage</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls2" />
+									<std:Signal Out="Measure5_1"  xmlns:std="urn:IEEE-1641:2010:STDBSC" xmlns:tsf="urn:IEEE-1641:2010:STDTSFLib" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:IEEE-1641:2010:STDBSC STDBSC.xsd  urn:IEEE-1641:2010:STDTSFLib STDTSFLib.xsd">
+                  <tsf:AC_SIGNAL name="AcSignal3_1" ac_ampl="500.0 mV" freq="1 kHz" />
+                  <std:Measure name="Measure5_1" As="AcSignal3_1" attribute="ac_ampl" />
+                </std:Signal>
+              </td:Signal>
+            </td:Operation>
+            <!-- <std:TwoWire name="TwoWire_4650" hi="J1-2" lo="J1-15"/> -->
+            <td:Operation xsi:type="td:OperationConnect" ID="op4">
+              <td:Description>Connect sensor to UUT output</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls2" />
+								<std:Signal xmlns:std="urn:IEEE-1641:2010:STDBSC" xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='urn:IEEE-1641:2010:STDBSC STDBSC.xsd'>
+                  <std:TwoWire name="Conn5_1" hi="J1-2" lo="J1-15" />
+                </std:Signal>
+              </td:Signal>
+            </td:Operation>
+            <!-- <std:Measure name="Measure_4651" nominal="pk_pk 500 mV" As="AC_SIGNAL_4644" attribute="ac_ampl" In="TwoWire_4650"/> -->
+            <td:Operation xsi:type="td:OperationRead" ID="op5">
+              <td:Description>Read measured value</td:Description>
+              <!-- Measurement Removed-->
+              <td:SignalRef type="LocalVariable" refID="ls2" />
+              <td:OutValues>
+                <td:OutValue signalName="Measure5_1">
+                  <td:ValueTo type="TestResult" refID="t10tr1" />
+                </td:OutValue>
+              </td:OutValues>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationDisconnect" ID="op6">
+              <td:Description>Disconnect sensor</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls2" />
+              </td:Signal>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationReset" ID="op7">
+              <td:Description>Reset sensor</td:Description>
+              <td:SignalRef type="LocalVariable" refID="ls2" />
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationDisconnect" ID="op8">
+              <td:Description>Disconnect source</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls1" />
+              </td:Signal>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationReset" ID="op9">
+              <td:Description>Reset source</td:Description>
+              <td:SignalRef type="LocalVariable" refID="ls1" />
+            </td:Operation>
+          </td:Operations>
+        </td:Behavior>
+        <td:Outcomes>
+          <td:Outcome ID="t10o1" value="Passed" />
+          <td:Outcome ID="t10o2" value="Failed" qualifier="FailLow" />
+          <td:Outcome ID="t10o3" value="Failed" qualifier="FailHigh" />
+        </td:Outcomes>
+        <td:TestResults>
+          <td:TestResult ID="t10tr1" name="V_O AC Voltage">
+            <td:ValueDescription>
+              <td:DatumDescription xsi:type="td:doubleDescription" standardUnit="mV" unitQualifier="pk_pk" />
+            </td:ValueDescription>
+            <td:ValueTo refID="t10tr1" type="TestResult" />
+            <td:TestLimits>
+              <td:Limit>
+                <c:LimitPair operator="AND">
+                  <c:Limit comparator="GE">
+                    <c:Datum xsi:type="c:double" standardUnit="mV" unitQualifier="pk_pk" value="400.0" />
+                  </c:Limit>
+                  <c:Limit comparator="LE">
+                    <c:Datum xsi:type="c:double" standardUnit="mV" unitQualifier="pk_pk" value="600.0" />
+                  </c:Limit>
+                </c:LimitPair>
+              </td:Limit>
+            </td:TestLimits>
+          </td:TestResult>
+        </td:TestResults>
+      </td:Test>
+      <td:Test ID="test11" name="Output_Control_Test">
+        <td:Parameters>
+          <td:Parameter ID="t10p1" name="V_I Amplitude">
+            <td:Value>
+              <c:Datum xsi:type="c:double" standardUnit="mV" unitQualifier="pk_pk" value="100.0" />
+            </td:Value>
+          </td:Parameter>
+          <td:Parameter ID="t10p2" name="V_I Frequency">
+            <td:Value>
+              <c:Datum xsi:type="c:double" standardUnit="kHz" value="1.0" />
+            </td:Value>
+          </td:Parameter>
+          <td:Parameter ID="t10p3" name="SerialCommand">
+            <td:Value>
+              <c:Datum xsi:type="c:string">
+                <c:Value>R0</c:Value>
+              </c:Datum>
+            </td:Value>
+          </td:Parameter>
+        </td:Parameters>
+        <td:Variables>
+          <td:Variable name="AC Voltage Source" ID="ls1">
+            <td:Value>
+              <c:Datum xsi:type="td:SignalReference" />
+            </td:Value>
+          </td:Variable>
+          <td:Variable ID="ls2">
+            <td:Value>
+              <c:Datum xsi:type="td:SignalReference" />
+            </td:Value>
+          </td:Variable>
+        </td:Variables>
+        <td:Behavior>
+          <td:Operations>
+            <!-- <tsf716:AC_SIGNAL name="AC_SIGNAL_5299x" ac_ampl="pk_pk 100.0 mV" freq="1.0 kHz"/> -->
+            <td:Operation xsi:type="td:OperationSetup" ID="op1">
+              <!--Example: Transferring values of signal attributes from test parameters-->
+              <td:Description>Define source of AC signal</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls1" />
+								<std:Signal Out="AcSignal2_2" xmlns:std="urn:IEEE-1641:2010:STDBSC" xmlns:tsf="urn:IEEE-1641:2010:STDTSFLib" xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='urn:IEEE-1641:2010:STDBSC STDBSC.xsd  urn:IEEE-1641:2010:STDTSFLib STDTSFLib.xsd'>
+                  <tsf:AC_SIGNAL name="AcSignal2_2" ac_ampl="100.0mV" freq="1000.0Hz" />
+                </std:Signal>
+                <td:InValues>
+                  <td:InValue signalName="AcSignal2_2" signalAttribute="ac_ampl">
+                    <td:ValueFrom type="Parameter" refID="t10p1" />
+                  </td:InValue>
+                  <td:InValue signalName="AcSignal2_2" signalAttribute="freq">
+                    <td:ValueFrom type="Parameter" refID="t10p2" />
+                  </td:InValue>
+                </td:InValues>
+              </td:Signal>
+            </td:Operation>
+            <!-- <std:TwoWire name="TwoWire_5304"  In="AC_SIGNAL_5299x" hi="J1-1" lo="J1-14"/> -->
+            <td:Operation xsi:type="td:OperationConnect" ID="op2">
+              <td:Description>Connect source to UUT input</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls1" />
+								<std:Signal xmlns:std="urn:IEEE-1641:2010:STDBSC" xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='urn:IEEE-1641:2010:STDBSC STDBSC.xsd'>
+                  <std:TwoWire name="Conn4_2" hi="J1-1" lo="J1-14" />
+                </std:Signal>
+              </td:Signal>
+            </td:Operation>
+            <!-- <tsf716:AC_SIGNAL name="AC_SIGNAL_5299" ac_ampl="pk_pk 100.0 mV" freq="1.0 kHz"/> -->
+            <td:Operation xsi:type="td:OperationSetup" ID="op3">
+              <td:Description>Define sensor signal to measure AC voltage</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls2" />
+								<std:Signal Out="Measure5_2" xmlns:std="urn:IEEE-1641:2010:STDBSC" xmlns:tsf="urn:IEEE-1641:2010:STDTSFLib" xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='urn:IEEE-1641:2010:STDBSC STDBSC.xsd  urn:IEEE-1641:2010:STDTSFLib STDTSFLib.xsd'>
+                  <tsf:AC_SIGNAL name="AcSignal3_2" ac_ampl="50 mV" freq="1 kHz" />
+                  <std:Measure name="Measure5_2" As="AcSignal3_2" attribute="ac_ampl" />
+                </std:Signal>
+              </td:Signal>
+            </td:Operation>
+            <!-- <std:TwoWire name="TwoWire_5298" hi="J1-2" lo="J1-15"/> -->
+            <td:Operation xsi:type="td:OperationConnect" ID="op4">
+              <td:Description>Connect sensor to UUT output</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls2" />
+								<std:Signal xmlns:std="urn:IEEE-1641:2010:STDBSC" xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='urn:IEEE-1641:2010:STDBSC STDBSC.xsd'>
+                  <std:TwoWire name="Conn5_2" hi="J1-2" lo="J1-15" />
+                </std:Signal>
+              </td:Signal>
+            </td:Operation>
+            <!-- <std:Measure name="Measure_5294" nominal="pk_pk 500 mV" As="AC_SIGNAL_5299" attribute="ac_ampl" In="TwoWire_5298"/> -->
+            <td:Operation xsi:type="td:OperationRead" ID="op5">
+              <td:Description>Read measured value</td:Description>
+              <!-- Measurement Removed-->
+              <td:SignalRef type="LocalVariable" refID="ls2" />
+              <td:OutValues>
+                <td:OutValue signalName="Measure5_2">
+                  <td:ValueTo type="TestResult" refID="t11tr1" />
+                </td:OutValue>
+              </td:OutValues>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationDisconnect" ID="op6">
+              <td:Description>Disconnect sensor</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls2" />
+              </td:Signal>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationReset" ID="op7">
+              <td:Description>Reset sensor</td:Description>
+              <td:SignalRef type="LocalVariable" refID="ls2" />
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationDisconnect" ID="op8">
+              <td:Description>Disconnect source</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls1" />
+              </td:Signal>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationReset" ID="op9">
+              <td:Description>Reset source</td:Description>
+              <td:SignalRef type="LocalVariable" refID="ls1" />
+            </td:Operation>
+          </td:Operations>
+        </td:Behavior>
+        <td:Outcomes>
+          <td:Outcome ID="t11o1" value="Passed" />
+          <td:Outcome ID="t11o2" value="Failed" qualifier="FailHigh" />
+        </td:Outcomes>
+        <td:TestResults>
+          <td:TestResult ID="t11tr1" name="V_O AC Voltage">
+            <td:ValueDescription>
+              <td:DatumDescription xsi:type="td:doubleDescription" standardUnit="mV" unitQualifier="pk_pk" />
+            </td:ValueDescription>
+            <td:ValueTo refID="t11tr1" type="TestResult" />
+            <td:TestLimits>
+              <td:Limit>
+                <c:SingleLimit comparator="LE">
+                  <c:Datum xsi:type="c:double" standardUnit="mV" unitQualifier="pk_pk" value="50.0" />
+                </c:SingleLimit>
+              </td:Limit>
+            </td:TestLimits>
+          </td:TestResult>
+        </td:TestResults>
+      </td:Test>
+      <td:Test ID="sesh1" name="CalculateGain">
+        <td:Variables>
+          <td:Variable name="CalcGain" ID="ls1">
+            <td:Value>
+              <c:Datum xsi:type="td:SignalReference" />
+            </td:Value>
+          </td:Variable>
+        </td:Variables>
+        <td:Behavior>
+          <td:Operations>
+            <td:Operation xsi:type="td:OperationSetup" ID="op1">
+              <td:Description>Setup</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls1" />
+								<std:Signal Out="G1" xmlns:std="urn:IEEE-1641:2010:STDBSC"  xmlns:odcp="OnedBCompressionTest" xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='urn:IEEE-1641:2010:STDBSC STDBSC.xsd OnedBCompressionTest OneDBCompressionTest.xsd'>
+                  <odcp:GAIN name="G1" input_freq="15 kHz" nominal="18.54 dB" uut_input_pin="J1-8" uut_output_pin="J1-20" input_pwr="-20 dBm" />
+                </std:Signal>
+              </td:Signal>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationConnect" ID="op2">
+              <td:Description>Connect</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls1" />
+								<std:Signal xmlns:std="urn:IEEE-1641:2010:STDBSC" xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='urn:IEEE-1641:2010:STDBSC STDBSC.xsd'>
+                  <std:TwoWire name="Conn1_1" hi="J1-8" lo="J1-20" />
+                </std:Signal>
+              </td:Signal>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationRead" ID="op3">
+              <td:Description>Read</td:Description>
+              <!-- Measurement Removed-->
+              <td:SignalRef type="LocalVariable" refID="ls1" />
+              <td:OutValues>
+                <td:OutValue signalName="G1" signalAttribute="measurement">
+                  <td:ValueTo type="TestResult" refID="sesh1Res1" />
+                </td:OutValue>
+              </td:OutValues>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationDisconnect" ID="op4">
+              <td:Description>Disconnect</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls1" />
+              </td:Signal>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationReset" ID="op5">
+              <td:Description>Reset</td:Description>
+              <td:SignalRef type="LocalVariable" refID="ls1" />
+            </td:Operation>
+          </td:Operations>
+        </td:Behavior>
+        <td:Outcomes>
+          <td:Outcome ID="sesh1oDone" value="Done" />
+        </td:Outcomes>
+        <td:TestResults>
+          <td:TestResult ID="sesh1Res1" name="Gain">
+            <td:ValueDescription>
+              <td:DatumDescription xsi:type="td:doubleDescription" standardUnit="dB" />
+            </td:ValueDescription>
+            <td:ValueTo refID="sesh1Res1" type="TestResult" />
+          </td:TestResult>
+        </td:TestResults>
+      </td:Test>
+      <td:Test ID="test12" name="One_dB_CompressionPoint_Test_Repeat">
+        <td:Parameters>
+          <td:Parameter ID="t12p1" name="V_I Max Power">
+            <td:Value>
+              <c:Datum xsi:type="c:double" standardUnit="dBm" value="1.0" />
+            </td:Value>
+          </td:Parameter>
+          <td:Parameter ID="t12p2" name="V_I Frequency">
+            <td:Value>
+              <c:Datum xsi:type="c:double" standardUnit="kHz" value="1.0" />
+            </td:Value>
+          </td:Parameter>
+          <td:Parameter ID="test12p1" name="Gain">
+            <td:Value>
+              <c:Datum xsi:type="td:DatumValueFrom">
+                <td:ValueFrom type="TestResult" refID="sesh1Res1" />
+              </c:Datum>
+            </td:Value>
+          </td:Parameter>
+        </td:Parameters>
+        <td:Variables>
+          <td:Variable name="CompSignal_1dB" ID="test12ls1">
+            <td:Value>
+              <c:Datum xsi:type="td:SignalReference" />
+            </td:Value>
+          </td:Variable>
+          <td:Variable ID="test12op3it1">
+            <td:Value>
+              <c:Datum xsi:type="c:double" value="-20.0" standardUnit="dBm" />
+            </td:Value>
+          </td:Variable>
+        </td:Variables>
+        <td:Behavior>
+          <td:Operations>
+            <td:Operation xsi:type="td:OperationSetVariable" ID="test12op0_1">
+              <td:Value>
+                <c:Datum xsi:type="c:double" value="-20.0" standardUnit="dBm" />
+              </td:Value>
+              <td:ValueTo type="LocalVariable" refID="test12op3it1" />
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationSetup" ID="test12op0">
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="test12ls1" />
+								<std:Signal Out="ODCP1"  xmlns:odcp="OnedBCompressionTest" xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='urn:IEEE-1641:2010:STDBSC STDBSC.xsd OnedBCompressionTest OneDBCompressionTest.xsd'>
+                  <odcp:ONE_DB_COMPRESSION_POINT name="ODCP1" errlmt="0.05 dB" input_freq="15 kHz" uut_input_pin="J1-8" uut_output_pin="J1-20" />
+                </std:Signal>
+                <td:InValues>
+                  <td:InValue signalName="ODCP1" signalAttribute="linear_gain">
+                    <td:ValueFrom type="Parameter" refID="test12p1" />
+                  </td:InValue>
+                </td:InValues>
+              </td:Signal>
+            </td:Operation>
+            <!--						<td:Operation xsi:type="td:OperationConnect" ID="test12op1">
+							<td:Signal>
+								<td:LocalSignalReference localSignalID="test12ls1"/>
+							</td:Signal>
+						</td:Operation>-->
+            <td:Operation xsi:type="td:OperationRead" ID="test12op2">
+              <!-- Measurement Removed-->
+              <td:SignalRef type="LocalVariable" refID="test12ls1" />
+              <td:OutValues>
+                <td:OutValue signalName="ODCP1" signalAttribute="GO">
+                  <td:ValueTo type="TestResult" refID="test12rGO" />
+                </td:OutValue>
+                <td:OutValue signalName="ODCP1" signalAttribute="measurement">
+                  <td:ValueTo type="TestResult" refID="test12rOutputPwr" />
+                </td:OutValue>
+              </td:OutValues>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationRepeat" ID="test12op3">
+              <td:Body>
+                <td:Operation xsi:type="td:OperationConditional" ID="test12op3.body.op1">
+                  <td:Decision>
+                    <td:ValueComparison>
+                      <td:Value xsi:type="td:DatumValueFrom">
+                        <td:ValueFrom type="TestResult" refID="test12rGO" />
+                      </td:Value>
+                      <td:Limits>
+                        <td:Limit>
+                          <c:Expected comparator="EQ">
+                            <c:Datum xsi:type="c:boolean" value="false" />
+                          </c:Expected>
+                        </td:Limit>
+                      </td:Limits>
+                    </td:ValueComparison>
+                  </td:Decision>
+                  <td:OnTrue>
+                    <td:Operation xsi:type="td:OperationChange" ID="test12op3.body.op1.onTrue.op1">
+                      <td:SignalRef type="LocalVariable" refID="test12ls1" />
+                      <td:AttributeChanges>
+                        <td:AttributeChange attributeName="ODCP1.input_pwr">
+                          <td:Value>
+                            <c:Datum xsi:type="td:DatumValueFrom">
+                              <td:ValueFrom refID="test12op3it1" type="LocalVariable" />
+                            </c:Datum>
+                          </td:Value>
+                        </td:AttributeChange>
+                      </td:AttributeChanges>
+                    </td:Operation>
+                    <td:Operation xsi:type="td:OperationRead" ID="test12op3.body.op1.onTrue.op2">
+                      <!-- Measurement Removed-->
+                      <td:SignalRef type="LocalVariable" refID="test12ls1" />
+                      <td:OutValues>
+                        <td:OutValue signalName="ODCP1" signalAttribute="GO">
+                          <td:ValueTo type="TestResult" refID="test12rGO" />
+                        </td:OutValue>
+                        <td:OutValue signalName="ODCP1" signalAttribute="measurement">
+                          <td:ValueTo type="TestResult" refID="test12rOutputPwr" />
+                        </td:OutValue>
+                      </td:OutValues>
+                    </td:Operation>
+                    <td:Operation xsi:type="td:OperationCalculate" ID="test12op3.body.op1.onTrue.op2_2" expression="test12op3it1 + 0.05" expressionLanguage="C">
+                      <td:ResultValue>
+                        <td:ValueTo type="LocalVariable" refID="test12op3it1" />
+                      </td:ResultValue>
+                    </td:Operation>
+                  </td:OnTrue>
+                  <td:OnFalse>
+                    <td:Operation xsi:type="td:OperationReset" ID="test12op3.body.op1.onFalse.op1">
+                      <td:SignalRef type="LocalVariable" refID="test12ls1" />
+                    </td:Operation>
+                  </td:OnFalse>
+                </td:Operation>
+              </td:Body>
+              <td:Decision>
+                <td:Comparison>
+                  <td:ValueFrom type="LocalVariable" refID="test12op3it1" />
+                  <td:Limits>
+                    <td:Limit>
+                      <c:Expected comparator="EQ">
+                        <!-- This is only the safety limit -->
+                        <c:Datum xsi:type="c:double" value="12.0" standardUnit="dBm" />
+                      </c:Expected>
+                    </td:Limit>
+                  </td:Limits>
+                </td:Comparison>
+              </td:Decision>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationReset" ID="test12op4">
+              <td:SignalRef type="LocalVariable" refID="test12ls1" />
+            </td:Operation>
+          </td:Operations>
+        </td:Behavior>
+        <td:Outcomes>
+          <td:Outcome ID="t12o1" value="Passed" />
+          <td:Outcome ID="t12o2" value="Failed" qualifier="FailLow" />
+        </td:Outcomes>
+        <td:TestResults>
+          <td:TestResult ID="test12rGO" name="test12rGO">
+            <td:ValueDescription>
+              <td:DatumDescription xsi:type="td:booleanDescription" />
+            </td:ValueDescription>
+            <td:ValueTo refID="test12rGO" type="TestResult" />
+          </td:TestResult>
+          <td:TestResult ID="test12rOutputPwr" name="test12rOutputPwr">
+            <td:ValueDescription>
+              <td:DatumDescription xsi:type="td:doubleDescription" standardUnit="dBm" />
+            </td:ValueDescription>
+            <td:ValueTo refID="test12rOutputPwr" type="TestResult" />
+          </td:TestResult>
+        </td:TestResults>
+      </td:Test>
+      <td:Test ID="test13" name="One_dB_CompressionPoint_Test_Generic">
+        <td:Parameters>
+          <td:Parameter ID="test13p1" name="Gain">
+            <td:Value>
+              <c:Datum xsi:type="td:DatumValueFrom">
+                <td:ValueFrom type="TestResult" refID="sesh1Res1" />
+              </c:Datum>
+            </td:Value>
+          </td:Parameter>
+        </td:Parameters>
+        <td:Variables>
+          <td:Variable name="odcp_comp" ID="ls1">
+            <td:Value>
+              <c:Datum xsi:type="td:SignalReference" />
+            </td:Value>
+          </td:Variable>
+        </td:Variables>
+        <td:Behavior>
+          <td:Operations>
+            <td:Operation xsi:type="td:OperationSetup" ID="op1">
+              <td:Description>Setup</td:Description>
+              <td:Signal>
+                <td:SignalRef type="LocalVariable" refID="ls1" />
+								<std:Signal Out="O_C1" xmlns:odcp="OnedBCompressionTest" xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='urn:IEEE-1641:2010:STDBSC STDBSC.xsd OnedBCompressionTest OneDBCompressionTest.xsd'>
+                  <odcp:ODCP_COMPLETE name="O_C1" errlmt="0.05 dB" freq="15 kHz" max_input_pwr="12 dBm" min_input_pwr="-20 dBm" uut_input_pin="J1-8" uut_output_pin="J1-20" />
+                </std:Signal>
+                <td:InValues>
+                  <td:InValue signalName="O_C1" signalAttribute="gain">
+                    <td:ValueFrom type="Parameter" refID="test13p1" />
+                  </td:InValue>
+                </td:InValues>
+              </td:Signal>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationRead" ID="op2">
+              <td:Description>Read measured value</td:Description>
+              <!-- Measurement Removed-->
+              <td:SignalRef type="LocalVariable" refID="ls1" />
+              <td:OutValues>
+                <td:OutValue signalName="O_C1" signalAttribute="measurement">
+                  <td:ValueTo type="TestResult" refID="test13Res1" />
+                </td:OutValue>
+              </td:OutValues>
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationReset" ID="op3">
+              <td:Description>Reset sensor</td:Description>
+              <td:SignalRef type="LocalVariable" refID="ls1" />
+            </td:Operation>
+          </td:Operations>
+        </td:Behavior>
+        <td:Outcomes>
+          <td:Outcome ID="t13o1" value="Passed" />
+          <td:Outcome ID="t13o2" value="Failed" qualifier="FailLow" />
+        </td:Outcomes>
+        <td:TestResults>
+          <td:TestResult ID="test13Res1" name="test13Res1">
+            <td:ValueDescription>
+              <td:DatumDescription xsi:type="td:doubleDescription" standardUnit="dBm" />
+            </td:ValueDescription>
+            <td:ValueTo refID="test13Res1" type="TestResult" />
+          </td:TestResult>
+        </td:TestResults>
+      </td:Test>
+      <td:Test ID="sa1" name="Remove_UUT_DC_Power" type="SessionAction">
+        <td:Behavior>
+          <td:Operations>
+            <td:Operation xsi:type="td:OperationReset" ID="op1">
+              <td:Description>Reset UUT DC power</td:Description>
+              <td:SignalRef type="GlobalVariable" refID="gs1" />
+            </td:Operation>
+            <td:Operation xsi:type="td:OperationDisconnect" ID="op2">
+              <td:Description>Disconnect UUT DC Power</td:Description>
+              <td:Signal>
+                <td:SignalRef type="GlobalVariable" refID="gs1" />
+              </td:Signal>
+            </td:Operation>
+          </td:Operations>
+        </td:Behavior>
+        <td:Outcomes>
+          <td:Outcome ID="sa1o1" value="Done" />
+        </td:Outcomes>
+      </td:Test>
+    </td:Tests>
+    <td:TestGroups>
+      <td:TestGroup ID="seq1" name="FaultDetectionAndIsolation">
+        <td:Outcomes>
+          <td:Outcome ID="s1o1" value="Passed" />
+          <td:Outcome ID="s1o2" value="Failed" qualifier="C3.SR">
+            <td:DetectionIsolation>
+              <td:Faults>
+                <td:Fault faultID="c7f2" />
+              </td:Faults>
+            </td:DetectionIsolation>
+          </td:Outcome>
+          <td:Outcome ID="s1o4" value="Failed" qualifier="C1.SR">
+            <td:DetectionIsolation>
+              <td:Faults>
+                <td:Fault faultID="c5f2" />
+              </td:Faults>
+            </td:DetectionIsolation>
+          </td:Outcome>
+          <td:Outcome ID="s1o5" value="Failed" qualifier="C3.OP">
+            <td:DetectionIsolation>
+              <td:Faults>
+                <td:Fault faultID="c7f1" />
+              </td:Faults>
+            </td:DetectionIsolation>
+          </td:Outcome>
+          <td:Outcome ID="s1o6" value="Failed" qualifier="R4.OP">
+            <td:DetectionIsolation>
+              <td:Faults>
+                <td:Fault faultID="c4f1" />
+              </td:Faults>
+            </td:DetectionIsolation>
+          </td:Outcome>
+          <td:Outcome ID="s1o7" value="Failed" qualifier="Q1.BE.SR,Q1.C.OP,R1.OP">
+            <td:DetectionIsolation>
+              <td:Faults>
+                <td:Fault faultID="c8f1" />
+                <td:Fault faultID="c8f4" />
+                <td:Fault faultID="c1f1" />
+              </td:Faults>
+            </td:DetectionIsolation>
+          </td:Outcome>
+          <td:Outcome ID="s1o8" value="Failed" qualifier="Q1.B.OP,Q1.E.OP">
+            <td:DetectionIsolation>
+              <td:Faults>
+                <td:Fault faultID="c8f2" />
+                <td:Fault faultID="c8f6" />
+              </td:Faults>
+            </td:DetectionIsolation>
+          </td:Outcome>
+          <td:Outcome ID="s1o9" value="Failed" qualifier="R2.OP,Q1.BC.SR">
+            <td:DetectionIsolation>
+              <td:Faults>
+                <td:Fault faultID="c2f1" />
+                <td:Fault faultID="c8f5" />
+              </td:Faults>
+            </td:DetectionIsolation>
+          </td:Outcome>
+          <td:Outcome ID="s1o10" value="Failed" qualifier="Q1.CE.SR">
+            <td:DetectionIsolation>
+              <td:Faults>
+                <td:Fault faultID="c8f3" />
+              </td:Faults>
+            </td:DetectionIsolation>
+          </td:Outcome>
+          <td:Outcome ID="s1o11" value="Failed" qualifier="R3.OP">
+            <td:DetectionIsolation>
+              <td:Faults>
+                <td:Fault faultID="c3f1" />
+              </td:Faults>
+            </td:DetectionIsolation>
+          </td:Outcome>
+          <td:Outcome ID="s1o12" value="Failed" qualifier="C1.OP">
+            <td:DetectionIsolation>
+              <td:Faults>
+                <td:Fault faultID="c5f1" />
+              </td:Faults>
+            </td:DetectionIsolation>
+          </td:Outcome>
+          <td:Outcome ID="s1o13" value="Failed" qualifier="C2.OP">
+            <td:DetectionIsolation>
+              <td:Faults>
+                <td:Fault faultID="c6f1" />
+              </td:Faults>
+            </td:DetectionIsolation>
+          </td:Outcome>
+          <td:Outcome ID="s1o14" value="Failed" qualifier="Gain Control">
+            <td:DetectionIsolation>
+              <td:Failures>
+                <td:Failure failureID="fail1" />
+              </td:Failures>
+            </td:DetectionIsolation>
+          </td:Outcome>
+          <td:Outcome ID="s1o15" value="Failed" qualifier="Output Control">
+            <td:DetectionIsolation>
+              <td:Failures>
+                <td:Failure failureID="fail2" />
+              </td:Failures>
+            </td:DetectionIsolation>
+          </td:Outcome>
+          <td:Outcome ID="s1o16" value="Failed" qualifier="One dB Compression Point">
+            <td:DetectionIsolation>
+              <td:Failures>
+                <td:Failure failureID="fail2" />
+              </td:Failures>
+            </td:DetectionIsolation>
+          </td:Outcome>
+          <td:Outcome ID="s1o17" value="Aborted" qualifier="Error" />
+        </td:Outcomes>
+        <td:Termination>
+          <td:Test testID="sa1" />
+        </td:Termination>
+        <td:Sequence>
+          <td:Steps>
+            <td:Step ID="step1" name="test1" testID="test1">
+              <!--Removed td:ActionReference -->
+              <td:Results>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t1o1" />
+                  <td:NextStep stepID="step2" />
+                </td:Result>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t1o2" />
+                  <td:SequenceOutcome sequenceOutcomeID="s1o2" />
+                </td:Result>
+              </td:Results>
+            </td:Step>
+            <td:Step ID="step2" name="sa2" testID="sa2">
+              <!--Removed td:ActionReference -->
+              <td:Results>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="sa2o1" />
+                  <td:NextStep stepID="step3" />
+                </td:Result>
+              </td:Results>
+            </td:Step>
+            <td:Step ID="step3" name="test3" testID="test3">
+              <!--Removed td:ActionReference -->
+              <td:Results>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t3o1" />
+                  <td:NextStep stepID="step8" />
+                </td:Result>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t3o2" />
+                  <td:NextStep stepID="step4" />
+                </td:Result>
+              </td:Results>
+            </td:Step>
+            <td:Step ID="step4" name="test5" testID="test5">
+              <!--Removed td:ActionReference -->
+              <td:Results>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t5o1" />
+                  <td:NextStep stepID="step5" />
+                </td:Result>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t5o2" />
+                  <td:NextStep stepID="step6" />
+                </td:Result>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t5o3" />
+                  <td:NextStep stepID="step7" />
+                </td:Result>
+              </td:Results>
+            </td:Step>
+            <td:Step ID="step5" name="test4" testID="test4">
+              <!--Removed td:ActionReference -->
+              <td:Results>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t4o1" />
+                  <td:SequenceOutcome sequenceOutcomeID="s1o13" />
+                </td:Result>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t4o2" />
+                  <td:SequenceOutcome sequenceOutcomeID="s1o12" />
+                </td:Result>
+              </td:Results>
+            </td:Step>
+            <td:Step ID="step6" name="test8" testID="test8">
+              <!--Removed td:ActionReference -->
+              <td:Results>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t8o1" />
+                  <td:SequenceOutcome sequenceOutcomeID="s1o17" />
+                </td:Result>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t8o2" />
+                  <td:SequenceOutcome sequenceOutcomeID="s1o6" />
+                </td:Result>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t8o3" />
+                  <td:SequenceOutcome sequenceOutcomeID="s1o6" />
+                </td:Result>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t8o4" />
+                  <td:SequenceOutcome sequenceOutcomeID="s1o6" />
+                </td:Result>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t8o5" />
+                  <td:SequenceOutcome sequenceOutcomeID="s1o8" />
+                </td:Result>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t8o6" />
+                  <td:SequenceOutcome sequenceOutcomeID="s1o8" />
+                </td:Result>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t8o7" />
+                  <td:SequenceOutcome sequenceOutcomeID="s1o7" />
+                </td:Result>
+              </td:Results>
+            </td:Step>
+            <td:Step ID="step7" name="test9" testID="test9">
+              <!--Removed td:ActionReference -->
+              <td:Results>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t9o1" />
+                  <td:SequenceOutcome sequenceOutcomeID="s1o17" />
+                </td:Result>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t9o2" />
+                  <td:SequenceOutcome sequenceOutcomeID="s1o10" />
+                </td:Result>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t9o3" />
+                  <td:SequenceOutcome sequenceOutcomeID="s1o9" />
+                </td:Result>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t9o4" />
+                  <td:SequenceOutcome sequenceOutcomeID="s1o10" />
+                </td:Result>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t9o5" />
+                  <td:SequenceOutcome sequenceOutcomeID="s1o11" />
+                </td:Result>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t9o6" />
+                  <td:SequenceOutcome sequenceOutcomeID="s1o11" />
+                </td:Result>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t9o7" />
+                  <td:SequenceOutcome sequenceOutcomeID="s1o11" />
+                </td:Result>
+              </td:Results>
+            </td:Step>
+            <td:Step ID="step8" name="test10" testID="test10">
+              <!--Removed td:ActionReference -->
+              <td:Results>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t10o1" />
+                  <td:NextStep stepID="step9" />
+                </td:Result>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t10o2" />
+                  <td:SequenceOutcome sequenceOutcomeID="s1o13" />
+                </td:Result>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t10o3" />
+                  <td:SequenceOutcome sequenceOutcomeID="s1o13" />
+                </td:Result>
+              </td:Results>
+            </td:Step>
+            <td:Step ID="step9" name="test11" testID="test11">
+              <!--Removed td:ActionReference -->
+              <td:Results>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t11o1" />
+                  <td:NextStep stepID="step10" />
+                </td:Result>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t11o2" />
+                  <td:SequenceOutcome sequenceOutcomeID="s1o14" />
+                </td:Result>
+              </td:Results>
+            </td:Step>
+            <td:Step ID="step10" name="test12" testID="test12">
+              <!--Removed td:ActionReference -->
+              <td:Results>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t12o1" />
+                  <td:SequenceOutcome sequenceOutcomeID="s1o1" />
+                </td:Result>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t12o2" />
+                  <td:SequenceOutcome sequenceOutcomeID="s1o15" />
+                </td:Result>
+              </td:Results>
+            </td:Step>
+          </td:Steps>
+          <td:EntryPoints primaryEntryPointID="1">
+            <td:EntryPoint ID="1" stepID="step1" />
+          </td:EntryPoints>
+        </td:Sequence>
+      </td:TestGroup>
+      <td:TestGroup ID="seq2" name="VBE_Tests">
+        <td:Outcomes>
+          <td:Outcome ID="s2o1" value="Passed" qualifier="VE_P" />
+          <td:Outcome ID="s2o2" value="Failed" qualifier="VE_H_VB_P" />
+          <td:Outcome ID="s2o3" value="Failed" qualifier="VE_H_VB_H" />
+          <td:Outcome ID="s2o4" value="Failed" qualifier="VE_H_VB_L" />
+          <td:Outcome ID="s2o5" value="Failed" qualifier="VE_L_VB_P" />
+          <td:Outcome ID="s2o6" value="Failed" qualifier="VE_L_VB_H" />
+          <td:Outcome ID="s2o7" value="Failed" qualifier="VE_L_VB_L" />
+        </td:Outcomes>
+        <td:Sequence>
+          <td:Steps>
+            <td:Step ID="seq2_step1" name="test6" testID="test6">
+              <!--Removed td:ActionReference -->
+              <td:Results>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t6o1" />
+                  <td:SequenceOutcome sequenceOutcomeID="s2o1" />
+                </td:Result>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t6o2" />
+                  <td:NextStep stepID="seq2_step2" />
+                </td:Result>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t6o3" />
+                  <td:NextStep stepID="seq2_step3" />
+                </td:Result>
+              </td:Results>
+            </td:Step>
+            <td:Step ID="seq2_step2" name="test7" testID="test7">
+              <!--Removed td:ActionReference -->
+              <td:Results>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t7o1" />
+                  <td:SequenceOutcome sequenceOutcomeID="s2o2" />
+                </td:Result>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t7o2" />
+                  <td:SequenceOutcome sequenceOutcomeID="s2o3" />
+                </td:Result>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t7o3" />
+                  <td:SequenceOutcome sequenceOutcomeID="s2o4" />
+                </td:Result>
+              </td:Results>
+            </td:Step>
+            <td:Step ID="seq2_step3" name="test7" testID="test7">
+              <!--Removed td:ActionReference -->
+              <td:Results>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t7o1" />
+                  <td:SequenceOutcome sequenceOutcomeID="s2o5" />
+                </td:Result>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t7o2" />
+                  <td:SequenceOutcome sequenceOutcomeID="s2o6" />
+                </td:Result>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t7o3" />
+                  <td:SequenceOutcome sequenceOutcomeID="s2o7" />
+                </td:Result>
+              </td:Results>
+            </td:Step>
+          </td:Steps>
+          <td:EntryPoints primaryEntryPointID="1">
+            <td:EntryPoint ID="1" stepID="seq2_step1" />
+          </td:EntryPoints>
+        </td:Sequence>
+      </td:TestGroup>
+      <td:TestGroup ID="seq_odbc_repeat" name="Comp_repeat_1dB">
+        <td:Outcomes>
+          <td:Outcome ID="seq_odbc_repeatoPass" value="Passed" />
+        </td:Outcomes>
+        <td:TestResultDescriptions>
+          <td:TestResultDescription ID="seq_odbc_repeattr1" name="OutputPwr">
+            <td:ValueDescription>
+              <td:DatumDescription xsi:type="td:doubleDescription" standardUnit="dBm" />
+            </td:ValueDescription>
+          </td:TestResultDescription>
+        </td:TestResultDescriptions>
+        <td:Sequence>
+          <td:Steps>
+            <td:Step ID="seq_odbc_repeats1" name="sa2" testID="sa2">
+              <!--Removed td:ActionReference -->
+              <td:Results>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="sa2o1" />
+                  <td:NextStep stepID="seq_odbc_repeats2" />
+                </td:Result>
+              </td:Results>
+            </td:Step>
+            <td:Step ID="seq_odbc_repeats2" name="sesh1" testID="sesh1">
+              <!--Removed td:ActionReference -->
+              <td:Results>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="sesh1oDone" />
+                  <td:NextStep stepID="seq_odbc_repeats3" />
+                </td:Result>
+              </td:Results>
+            </td:Step>
+            <td:Step ID="seq_odbc_repeats3" name="test12" testID="test12">
+              <!--Removed td:ActionReference -->
+              <td:Results>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t12o1" />
+                  <td:NextStep stepID="seq_odbc_repeats4" />
+                </td:Result>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t12o2" />
+                  <td:NextStep stepID="seq_odbc_repeats4" />
+                </td:Result>
+              </td:Results>
+            </td:Step>
+            <td:Step ID="seq_odbc_repeats4" name="sa1" testID="sa1">
+              <!--Removed td:ActionReference -->
+              <td:Results>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="sa1o1" />
+                  <td:SequenceOutcome sequenceOutcomeID="seq_odbc_repeatoPass" />
+                </td:Result>
+              </td:Results>
+            </td:Step>
+          </td:Steps>
+          <td:EntryPoints primaryEntryPointID="seq_odbc_repeatep1">
+            <td:EntryPoint ID="seq_odbc_repeatep1" stepID="seq_odbc_repeats1" />
+          </td:EntryPoints>
+        </td:Sequence>
+      </td:TestGroup>
+      <td:TestGroup ID="seq_odbc_generic" name="Comp_generic_1dB">
+        <td:Outcomes>
+          <td:Outcome ID="seq_odbc_genericoPass" value="Passed" />
+        </td:Outcomes>
+        <td:TestResultDescriptions>
+          <td:TestResultDescription ID="seq_odbc_generictr1" name="OutputPwr">
+            <td:ValueDescription>
+              <td:DatumDescription xsi:type="td:doubleDescription" standardUnit="dBm" />
+            </td:ValueDescription>
+          </td:TestResultDescription>
+        </td:TestResultDescriptions>
+        <td:Sequence>
+          <td:Steps>
+            <td:Step ID="seq_odbc_generics1" name="sa2" testID="sa2">
+              <!--Removed td:ActionReference -->
+              <td:Results>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="sa2o1" />
+                  <td:NextStep stepID="seq_odbc_generics2" />
+                </td:Result>
+              </td:Results>
+            </td:Step>
+            <td:Step ID="seq_odbc_generics2" name="sesh1" testID="sesh1">
+              <!--Removed td:ActionReference -->
+              <td:Results>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="sesh1oDone" />
+                  <td:NextStep stepID="seq_odbc_generics3" />
+                </td:Result>
+              </td:Results>
+            </td:Step>
+            <td:Step ID="seq_odbc_generics3" name="test13" testID="test13">
+              <!--Removed td:ActionReference -->
+              <td:Results>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t13o1" />
+                  <td:NextStep stepID="seq_odbc_generics4" />
+                </td:Result>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="t13o2" />
+                  <td:NextStep stepID="seq_odbc_generics4" />
+                </td:Result>
+              </td:Results>
+            </td:Step>
+            <td:Step ID="seq_odbc_generics4" name="sa1" testID="sa1">
+              <!--Removed td:ActionReference -->
+              <td:Results>
+                <td:Result>
+                  <td:TestOutcomeReference testOutcomeID="sa1o1" />
+                  <td:SequenceOutcome sequenceOutcomeID="seq_odbc_genericoPass" />
+                </td:Result>
+              </td:Results>
+            </td:Step>
+          </td:Steps>
+          <td:EntryPoints primaryEntryPointID="seq_odbc_genericep1">
+            <td:EntryPoint ID="seq_odbc_genericep1" stepID="seq_odbc_generics1" />
+          </td:EntryPoints>
+        </td:Sequence>
+      </td:TestGroup>
+    </td:TestGroups>
+    <td:GlobalVariables>
+      <td:GlobalVariable ID="gs1" name="UUT DC Power">
+        <td:Value>
+          <c:Datum xsi:type="td:SignalReference" />
+        </td:Value>
+      </td:GlobalVariable>
+    </td:GlobalVariables>
+    <td:Faults>
+      <td:Fault ID="c1f1" componentID="c1" detectability="DetectableInsertable">
+        <uut:FailureMode>Open</uut:FailureMode>
+        <td:LocationItem>
+          <td:UUT />
+        </td:LocationItem>
+      </td:Fault>
+      <td:Fault ID="c2f1" componentID="c2" detectability="DetectableInsertable">
+        <uut:FailureMode>Open</uut:FailureMode>
+        <td:LocationItem>
+          <td:UUT />
+        </td:LocationItem>
+      </td:Fault>
+      <td:Fault ID="c3f1" componentID="c3" detectability="DetectableInsertable">
+        <uut:FailureMode>Open</uut:FailureMode>
+        <td:LocationItem>
+          <td:UUT />
+        </td:LocationItem>
+      </td:Fault>
+      <td:Fault ID="c4f1" componentID="c4" detectability="DetectableInsertable">
+        <uut:FailureMode>Open</uut:FailureMode>
+        <td:LocationItem>
+          <td:UUT />
+        </td:LocationItem>
+      </td:Fault>
+      <td:Fault ID="c5f1" componentID="c5" detectability="DetectableInsertable">
+        <uut:FailureMode>Open</uut:FailureMode>
+        <td:LocationItem>
+          <td:UUT />
+        </td:LocationItem>
+      </td:Fault>
+      <td:Fault ID="c5f2" componentID="c5" detectability="DetectableInsertable">
+        <uut:FailureMode>Short</uut:FailureMode>
+        <td:LocationItem>
+          <td:UUT />
+        </td:LocationItem>
+      </td:Fault>
+      <td:Fault ID="c6f1" componentID="c6" detectability="DetectableInsertable">
+        <uut:FailureMode>Open</uut:FailureMode>
+        <td:LocationItem>
+          <td:UUT />
+        </td:LocationItem>
+      </td:Fault>
+      <td:Fault ID="c6f2" componentID="c6" detectability="DetectableInsertable">
+        <uut:FailureMode>Short</uut:FailureMode>
+        <td:LocationItem>
+          <td:UUT />
+        </td:LocationItem>
+      </td:Fault>
+      <td:Fault ID="c7f1" componentID="c7" detectability="DetectableInsertable">
+        <uut:FailureMode>Open</uut:FailureMode>
+        <td:LocationItem>
+          <td:UUT />
+        </td:LocationItem>
+      </td:Fault>
+      <td:Fault ID="c7f2" componentID="c7" detectability="DetectableInsertable">
+        <uut:FailureMode>Short</uut:FailureMode>
+        <td:LocationItem>
+          <td:UUT />
+        </td:LocationItem>
+      </td:Fault>
+      <td:Fault ID="c8f1" componentID="c8" detectability="DetectableInsertable">
+        <uut:Location>
+          <hc:Node>
+            <hc:Path>/TestDescription/FailureFaultData/FaultData/Components/Component[@ID="c8"]/Interface/c:Ports/c:Port/c:ConnectorPins/c:ConnectorPin[@connectorID="c1" and @pinID="B"]</hc:Path>
+          </hc:Node>
+          <hc:Node>
+            <hc:Path>/TestDescription/FailureFaultData/FaultData/Components/Component[@ID="c8"]/Interface/c:Ports/c:Port/c:ConnectorPins/c:ConnectorPin[@connectorID="c1" and @pinID="E"]</hc:Path>
+          </hc:Node>
+        </uut:Location>
+        <uut:FailureMode>Short</uut:FailureMode>
+        <td:LocationItem>
+          <td:UUT />
+        </td:LocationItem>
+      </td:Fault>
+      <td:Fault ID="c8f2" componentID="c8" detectability="DetectableInsertable">
+        <uut:Location>
+          <hc:Node>
+            <hc:Path>/TestDescription/FailureFaultData/FaultData/Components/Component[@ID="c8"]/Interface/c:Ports/c:Port/c:ConnectorPins/c:ConnectorPin[@connectorID="c1" and @pinID="B"]</hc:Path>
+          </hc:Node>
+        </uut:Location>
+        <uut:FailureMode>Open</uut:FailureMode>
+        <td:LocationItem>
+          <td:UUT />
+        </td:LocationItem>
+      </td:Fault>
+      <td:Fault ID="c8f3" componentID="c8" detectability="DetectableInsertable">
+        <uut:Location>
+          <hc:Node>
+            <hc:Path>/TestDescription/FailureFaultData/FaultData/Components/Component[@ID="c8"]/Interface/c:Ports/c:Port/c:ConnectorPins/c:ConnectorPin[@connectorID="c1" and @pinID="C"]</hc:Path>
+          </hc:Node>
+          <hc:Node>
+            <hc:Path>/TestDescription/FailureFaultData/FaultData/Components/Component[@ID="c8"]/Interface/c:Ports/c:Port/c:ConnectorPins/c:ConnectorPin[@connectorID="c1" and @pinID="E"]</hc:Path>
+          </hc:Node>
+        </uut:Location>
+        <uut:FailureMode>Short</uut:FailureMode>
+        <td:LocationItem>
+          <td:UUT />
+        </td:LocationItem>
+      </td:Fault>
+      <td:Fault ID="c8f4" componentID="c8" detectability="DetectableInsertable">
+        <uut:Location>
+          <hc:Node>
+            <hc:Path>/TestDescription/FailureFaultData/FaultData/Components/Component[@ID="c8"]/Interface/c:Ports/c:Port/c:ConnectorPins/c:ConnectorPin[@connectorID="c1" and @pinID="C"]</hc:Path>
+          </hc:Node>
+        </uut:Location>
+        <uut:FailureMode>Open</uut:FailureMode>
+        <td:LocationItem>
+          <td:UUT />
+        </td:LocationItem>
+      </td:Fault>
+      <td:Fault ID="c8f5" componentID="c8" detectability="DetectableInsertable">
+        <uut:Location>
+          <hc:Node>
+            <hc:Path>/TestDescription/FailureFaultData/FaultData/Components/Component[@ID="c8"]/Interface/c:Ports/c:Port/c:ConnectorPins/c:ConnectorPin[@connectorID="c1" and @pinID="B"]</hc:Path>
+          </hc:Node>
+          <hc:Node>
+            <hc:Path>/TestDescription/FailureFaultData/FaultData/Components/Component[@ID="c8"]/Interface/c:Ports/c:Port/c:ConnectorPins/c:ConnectorPin[@connectorID="c1" and @pinID="C"]</hc:Path>
+          </hc:Node>
+        </uut:Location>
+        <uut:FailureMode>Short</uut:FailureMode>
+        <td:LocationItem>
+          <td:UUT />
+        </td:LocationItem>
+      </td:Fault>
+      <td:Fault ID="c8f6" componentID="c8" detectability="DetectableInsertable">
+        <uut:Location>
+          <hc:Node>
+            <hc:Path>/TestDescription/FailureFaultData/FaultData/Components/Component[@ID="c8"]/Interface/c:Ports/c:Port/c:ConnectorPins/c:ConnectorPin[@connectorID="c1" and @pinID="E"]</hc:Path>
+          </hc:Node>
+        </uut:Location>
+        <uut:FailureMode>Open</uut:FailureMode>
+        <td:LocationItem>
+          <td:UUT />
+        </td:LocationItem>
+      </td:Fault>
+    </td:Faults>
+    <td:Failures>
+      <td:Failure name="-" ID="fail1" type="Detectable">
+        <uut:Description>Gain Control</uut:Description>
+        <td:LocationItem>
+          <td:UUT />
+        </td:LocationItem>
+      </td:Failure>
+      <td:Failure name="-" ID="fail2" type="Detectable">
+        <uut:Description>Output Control</uut:Description>
+        <td:LocationItem>
+          <td:UUT />
+        </td:LocationItem>
+      </td:Failure>
+      <td:Failure name="-" ID="fail3" type="Detectable">
+        <uut:Description>One dB Compression Point</uut:Description>
+        <td:LocationItem>
+          <td:UUT />
+        </td:LocationItem>
+      </td:Failure>
+    </td:Failures>
+  </td:DetailedTestInformation>
+  <!--FailureFaultData-->
+</td:TestDescription>
