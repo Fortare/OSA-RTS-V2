@@ -1,0 +1,3 @@
+[build]
+  base = "."
+  publish = "OSA_RTS Web site v1/"
