@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:2.1
+N:Spherea Technology Ltd
+FN:Spherea Technology Ltd
+ORG:Spherea Technology Ltd
+TEL;PREF;WORK;VOICE:+44 (0) 1202 872800
+TEL;WORK;FAX:+44 (0) 1202 870810
+ADR;WORK:;;23-25 Cobham Road;Ferndown Industrial Estate,Wimborne;Dorset;BH21 7PE;United Kingdom
+LABEL;WORK;POSTAL;ENCODING=QUOTED-PRINTABLE:Building 400=0D=0AAviation Business Park=0D=0ABournemouth International Airport=0D=0AChristchurch,Dorset,BH23 6NW=0D=0AUnited Kingdom
+EMAIL;PREF;INTERNET:tes-info@spherea.co.uk
+REV:20141223T001430Z
+END:VCARD

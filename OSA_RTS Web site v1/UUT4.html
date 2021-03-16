@@ -24,339 +24,1895 @@
     <script src="style/js/jquery.flexslider-min.js"></script>
     <script src="style/js/jquery.masonry.min.js"></script>
     <script src="style/js/jquery.slickforms.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="style/css/viewxml.css" />
+    <script type="text/javascript" src="style/js/viewxml.js"></script>
+
 </head>
 <body>
-    <div id="wrapper">
-        <div id="sidebar">
-            <div id="logo"><a href="index.html"><img src="style/images/logo.png" alt=""></a></div>
-            <div id="menu" class="menu-v">
-                <ul>
-                    <li>
-                        <a href="index.html" class="active">Home</a>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="index2.html">What is an OSA-RTS</a></li>
-                            <li><a href="index3.html">Examples of Use</a></li>
-                            <li><a href="index4.html">File sources</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="UUT1.html">UUT Description</a>
-                        <ul>
-                            <li><a href="UUT1.html">UUT Description</a></li>
-                            <li><a href="UUT2.html">Identification</a></li>
-                            <li><a href="UUT3.html">Interface</a></li>
-                            <li><a href="UUT4.html">Component</a></li>
-                            <li><a href="UUT5.html">Network List</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="TestDescription1.html">Test descritption</a>
-                        <ul>
-                            <li><a href="TestDescription1.html">Test descritption presentation</a></li>
-                            <li><a href="TestDescription2.html">TSF Libraries</a></li>
-                            <li><a href="TestDescription3.html">Signal Requirements</a></li>
-                            <li><a href="TestDescription4.html">Test Information</a></li>
+	<div id="wrapper">
+		<div id="sidebar">
+			<div id="logo"><a href="index.html"><img src="style/images/logo.png" alt=""></a></div>
+			<div id="menu" class="menu-v">
+				<ul>
+					<li>
+						<a href="index.html" class="active">Home</a>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="index2.html">What is an OSA-RTS</a></li>
+							<li><a href="index3.html">Examples of Use</a></li>
+							<li><a href="index4.html">File sources</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="UUT1.html">UUT Description</a>
+						<ul>
+							<li><a href="UUT1.html">UUT Description</a></li>
+							<li><a href="UUT2.html">Identification</a></li>
+							<li><a href="UUT3.html">Interface</a></li>
+							<li><a href="UUT4.html">Component</a></li>
+							<li><a href="UUT5.html">Network List</a></li>
+							<li><a href="UUT6.html">Error/Control/Requirements</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="TestDescription1.html">Test descritption</a>
+						<ul>
+							<li><a href="TestDescription1.html">Test descritption presentation</a></li>
+							<li><a href="TestDescription2.html">TSF Libraries</a></li>
+							<li><a href="TestDescription3.html">Signal Requirements</a></li>
+							<li><a href="TestDescription4.html">Test Information</a></li>
 
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="blog.html">Demonstration</a>
-                        <ul>
-                            <li><a href="blog.html">Overview</a></li>
-                            <li><a href="blog2.html">Installing LabWindows/CVI OSA RTS Toolset</a></li>
-                            <li><a href="buttons-boxes-images.html">Running LabWindows/CVI OSA-RTS Toolset</a></li>
-                            <li><a href="post2.html">Video</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="Features1.html">Features</a>
-                        <ul>
-                            <li><a href="Features1.html">Smart diagnostic</a></li>
-                            <li><a href="Features2.html">Rf testing (part 1)</a></li>
-                            <li><a href="Features3.html">Rf testing (part 2)</a></li>
-                            <li><a href="Features4.html">Other features</a></li>
-                            <li><a href="Features5.html">Empty</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="sidebox">
-                <ul class="share">
-                    <li><a href="#"><img src="style/images/icon-rss.png" alt=""></a></li>
-                    <li><a href="#"><img src="style/images/icon-facebook.png" alt=""></a></li>
-                    <li><a href="#"><img src="style/images/icon-twitter.png" alt=""></a></li>
-                    <li><a href="#"><img src="style/images/icon-dribbble.png" alt=""></a></li>
-                    <li><a href="#"><img src="style/images/icon-linkedin.png" alt=""></a></li>
-                </ul>
-            </div>
-            <div class="sidebox">
-                <div class="search">
-                    <h3>Search</h3>
-                    <form class="searchform" method="get" action="#">
-                        <input type="text" id="s" name="s" value="type and hit enter" onFocus="this.value=''" onBlur="this.value='type and hit enter'">
-                    </form>
-                    <div class="clear"></div>
-                </div>
-            </div>
+						</ul>
+					</li>
+					<li>
+						<a href="blog.html">Demonstration</a>
+						<ul>
+							<li><a href="blog.html">Overview</a></li>
+							<li><a href="blog2.html">Installing LabWindows/CVI OSA RTS Toolset</a></li>
+							<li><a href="buttons-boxes-images.html">Running LabWindows/CVI OSA-RTS Toolset</a></li>
+							<li><a href="post2.html">Video</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="Features1.html">Features</a>
+						<ul>
+							<li><a href="Features1.html">Smart diagnostic</a></li>
+							<li><a href="Features2.html">Rf testing (part 1)</a></li>
+							<li><a href="Features3.html">Rf testing (part 2)</a></li>
+							<li><a href="Features4.html">Other features</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</div>
+			<div class="sidebox">
+				<ul class="share">
+					<li><a href="https://www.youtube.com/channel/UC0Hc3samto4lsru6p0XtiWg"><img src="style/images/icon-rss.png" alt=""></a></li>
+					<li><a href="https://m.facebook.com/SphereaUK/"><img src="style/images/icon-facebook.png" alt=""></a></li>
+					<li><a href="https://twitter.com/groupspherea?lang=en"><img src="style/images/icon-twitter.png" alt=""></a></li>
+					<li><a href="https://www.spherea.com/en"><img src="style/images/icon-dribbble.png" alt=""></a></li>
+					<li><a href="https://www.linkedin.com/company/spherea"><img src="style/images/icon-linkedin.png" alt=""></a></li>
+				</ul>
+			</div>
+			<div class="sidebox" style="color:#FFF;">
+				<p style="margin-bottom:5px;">Copyright &copy; </p>
 
-        </div>
-        <div id="content">
-            <h1 class="title">Component</h1>
+			</div>
+		</div>
+		<div id="content">
+			<h1 class="title">Component</h1>
 
-            <p>
-                As part of the UUT description, its intended to describe all the sub components used as a parts list. This can then extracted as the Bill Of Materials (BoM) or just components for any FMECA type exercise. ATML Hardware descriptions have always allowed a component subcomponent structure to be defined. In most cases their original objective was to allow UUT is made out of LRU (line replaceable units) which are themselves made up of SRU (shop replaceable units). Each one of these is considered a UUT (at some level) and may have its out UUT Description.
-            </p>
+			<p>
+				As part of the UUT description, its intended to describe all the sub components used as a parts list. This can then extracted as the Bill Of Materials (BoM) or just components for any FMECA type exercise. ATML Hardware descriptions have always allowed a component subcomponent structure to be defined. In most cases their original objective was to allow UUT is made out of LRU (line replaceable units) which are themselves made up of SRU (shop replaceable units). Each one of these is considered a UUT (at some level) and may have its out UUT Description.
+			</p>
 
-            <p>
-                For the ATML demonstrations the UUT is built directly from common components resistors capacitors transistors etc. Describing these components is a edge use case for the ATML hardware descriptions. What is described below will be changed in future releases of the 'dot' standards and therefore replicating its use should be considered carefully.
-            </p>
+			<p>
+				For the ATML demonstrations the UUT is built directly from common components resistors capacitors transistors etc. Describing these components is a edge use case for the ATML hardware descriptions. What is described below will be changed in future releases of the 'dot' standards and therefore replicating its use should be considered carefully.
+			</p>
 
 
 
 
-            <h3 class="title">Walkthrough</h3>
+			<h3 class="title">Walkthrough</h3>
 
-            <p>
-                The basic concept is we are trying to represent the following components and values with enough detail to both identify component for build and repair and allow us to describe the complete schematic, though a netlist.
-            </p>
+			<p>
+				The basic concept is we are trying to represent the following components and values with enough detail to both identify component for build and repair and allow us to describe the complete schematic, though a netlist.
+			</p>
 
 
-            tabl
+			tabl
 
 
 
 
 
-            <p>
+			<p>
 
-                Need to identify the component, give it a name and identify what type it is.
-            </p>
+				Need to identify the component, give it a name and identify what type it is.
+			</p>
 
-            <p>
-                To start with every c:Component must have an ID, but an ID is only unique, and has meaning, inside the ATML description, to provide a 'permanent' name we also need to fill in the designator. We could chose only to fill in ID (the mandatory attribute), this would require any client program to use a rule to default designator to ID if not present, since this would restrict its use, a better approach would be to duplicate the information.
-            </p>
+			<p>
+				To start with every c:Component must have an ID, but an ID is only unique, and has meaning, inside the ATML description, to provide a 'permanent' name we also need to fill in the designator. We could chose only to fill in ID (the mandatory attribute), this would require any client program to use a rule to default designator to ID if not present, since this would restrict its use, a better approach would be to duplicate the information.
+			</p>
 
-            <p>
-                <xmp>
-                    - <hc:Component ID="IC1">
-                        - <c:Definition xsi:type="uut:HardwareUUT">
-                            - <c:Identification designator="IC1">
-                                <c:ModelName>AD5220</c:ModelName>
-                            </c:Identification>
-                            + <hc:Interface>
-                        </c:Definition>
-                    </hc:Component>
-                </xmp>
-            </p>
+			<br>
+			<br>
 
-            <p>
-                The dilemma this leaves is how to identify a component such as a 12K resistor. Initially we considered ModelNames of "12K"  or "resistor, 12K". This required some parsing of the component to identify what type it was. It was also felt that there must be some 'other' standard fro identifying component parts perhaps from the CAD or drawing , but none came to light, during the demo.
-            </p>
+			<div class="e">
+				<div class="c">
+					<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">-</a>
+					<span class="m">&lt;</span><span class="t">hc:Component ID</span><span class="m">="</span><b>IC1</b><span class="m">"&gt;</span>
+				</div>
+				<div style="DISPLAY: block">
+					<div class="e">
+						<div class="c">
+							<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+								-
+							</a>
+							<span class="m">&lt;</span><span class="t">
+								c:Definition
+							</span><span class="style5">xsi:type="</span><span class="style6">uut:HardwareUUT</span><span class="style5">"&gt;</span>
+						</div>
+						<div>
+							<div class="e">
+								<div class="c">
+									<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+										-
+									</a>
+									<span class="m">&lt;</span><span class="t">
+										c:Identification
+										designator
+									</span><span class="m">="</span><b>IC1</b><span class="m">"&gt;</span>
+								</div>
+								<div>
+									<div class="e">
+										<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+											<span class="b">&nbsp;</span>
+											<span class="m">&lt;</span><span class="t">c:ModelName</span><span class="m">&gt;</span><span class="tx">AD5220</span><span class="m">&lt;/</span><span class="t">c:ModelName</span><span class="m">&gt;</span>
+										</div>
+									</div>
+									<div>
+										<span class="b">&nbsp;</span> <span class="m">
+											&lt;/
+										</span><span class="t">c:Identification</span><span class="m">&gt;</span>
+									</div>
+								</div>
+							</div>
+							<div class="e">
+								<div class="c">
+									<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">-</a> <span class="style5">&lt;hc:Interface</span><span class="m">&gt;</span>
+								</div>
+								<div style="display: block;">
+									<div class="e">
+										<div class="c">
+											<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">&nbsp;</a>
+											<span class="m">&lt;</span><span class="t">c:Ports</span><span class="m">&gt;</span>
+										</div>
+										<div>
+											<div class="e">
+												<div class="c">
+													<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">&nbsp;</a>
+													<span class="m">&lt;</span><span class="t">
+														c:Port
+														name
+													</span><span class="m">="</span><b>CLK</b><span class="m">"&gt;</span>
+												</div>
+												<div>
+													<div class="e">
+														<div class="c">
+															<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">&nbsp;</a>
+															<span class="m">&lt;</span><span class="t">c:ConnectorPins</span><span class="m">&gt;</span>
+														</div>
+														<div>
+															<div class="e">
+																<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+																	<span class="b">
+																		&nbsp;
+																	</span>
+																	<span class="m">
+																		&lt;
+																	</span><span class="t">c:ConnectorPin</span>
+																	<span class="t">
+																		connectorID
+																	</span><span class="m">="</span><b>IC1</b><span class="m">"</span><span class="t">
+																		pinID
+																	</span><span class="m">="</span><b>1</b><span class="m">
+																		"
+																		/&gt;
+																	</span>
+																</div>
+															</div>
+															<div>
+																<span class="b">
+																	&nbsp;
+																</span>
+																<span class="m">
+																	&lt;/
+																</span><span class="t">c:ConnectorPins</span><span class="m">&gt;</span>
+															</div>
+														</div>
+													</div>
+													<div>
+														<span class="b">&nbsp;</span>
+														<span class="m">&lt;/</span><span class="t">c:Port</span><span class="m">&gt;</span>
+													</div>
+												</div>
+											</div>
+											<div class="e">
+												<div class="c">
+													<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">&nbsp;</a>
+													<span class="m">&lt;</span><span class="t">
+														c:Port
+														name
+													</span><span class="m">="</span><b>U/D</b><span class="m">"&gt;</span>
+												</div>
+												<div>
+													<div class="e">
+														<div class="c">
+															<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">&nbsp;</a>
+															<span class="m">&lt;</span><span class="t">c:ConnectorPins</span><span class="m">&gt;</span>
+														</div>
+														<div>
+															<div class="e">
+																<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+																	<span class="b">
+																		&nbsp;
+																	</span>
+																	<span class="m">
+																		&lt;
+																	</span><span class="t">c:ConnectorPin</span>
+																	<span class="t">
+																		connectorID
+																	</span><span class="m">="</span><b>IC1</b><span class="m">"</span><span class="t">
+																		pinID
+																	</span><span class="m">="</span><b>2</b><span class="m">
+																		"
+																		/&gt;
+																	</span>
+																</div>
+															</div>
+															<div>
+																<span class="b">
+																	&nbsp;
+																</span>
+																<span class="m">
+																	&lt;/
+																</span><span class="t">c:ConnectorPins</span><span class="m">&gt;</span>
+															</div>
+														</div>
+													</div>
+													<div>
+														<span class="b">&nbsp;</span>
+														<span class="m">&lt;/</span><span class="t">c:Port</span><span class="m">&gt;</span>
+													</div>
+												</div>
+											</div>
+											<div class="e">
+												<div class="c">
+													<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">&nbsp;</a>
+													<span class="m">&lt;</span><span class="t">
+														c:Port
+														name
+													</span><span class="m">="</span><b>A1</b><span class="m">"&gt;</span>
+												</div>
+												<div>
+													<div class="e">
+														<div class="c">
+															<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">&nbsp;</a>
+															<span class="m">&lt;</span><span class="t">c:ConnectorPins</span><span class="m">&gt;</span>
+														</div>
+														<div>
+															<div class="e">
+																<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+																	<span class="b">
+																		&nbsp;
+																	</span>
+																	<span class="m">
+																		&lt;
+																	</span><span class="t">c:ConnectorPin</span>
+																	<span class="t">
+																		connectorID
+																	</span><span class="m">="</span><b>IC1</b><span class="m">"</span><span class="t">
+																		pinID
+																	</span><span class="m">="</span><b>3</b><span class="m">
+																		"
+																		/&gt;
+																	</span>
+																</div>
+															</div>
+															<div>
+																<span class="b">
+																	&nbsp;
+																</span>
+																<span class="m">
+																	&lt;/
+																</span><span class="t">c:ConnectorPins</span><span class="m">&gt;</span>
+															</div>
+														</div>
+													</div>
+													<div>
+														<span class="b">&nbsp;</span>
+														<span class="m">&lt;/</span><span class="t">c:Port</span><span class="m">&gt;</span>
+													</div>
+												</div>
+											</div>
+											<div class="e">
+												<div class="c">
+													<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">&nbsp;</a>
+													<span class="m">&lt;</span><span class="t">
+														c:Port
+														name
+													</span><span class="m">="</span><b>GND</b><span class="m">"&gt;</span>
+												</div>
+												<div>
+													<div class="e">
+														<div class="c">
+															<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">&nbsp;</a>
+															<span class="m">&lt;</span><span class="t">c:ConnectorPins</span><span class="m">&gt;</span>
+														</div>
+														<div>
+															<div class="e">
+																<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+																	<span class="b">
+																		&nbsp;
+																	</span>
+																	<span class="m">
+																		&lt;
+																	</span><span class="t">c:ConnectorPin</span>
+																	<span class="t">
+																		connectorID
+																	</span><span class="m">="</span><b>IC1</b><span class="m">"</span><span class="t">
+																		pinID
+																	</span><span class="m">="</span><b>4</b><span class="m">
+																		"
+																		/&gt;
+																	</span>
+																</div>
+															</div>
+															<div>
+																<span class="b">
+																	&nbsp;
+																</span>
+																<span class="m">
+																	&lt;/
+																</span><span class="t">c:ConnectorPins</span><span class="m">&gt;</span>
+															</div>
+														</div>
+													</div>
+													<div>
+														<span class="b">&nbsp;</span>
+														<span class="m">&lt;/</span><span class="t">c:Port</span><span class="m">&gt;</span>
+													</div>
+												</div>
+											</div>
+											<div class="e">
+												<div class="c">
+													<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">&nbsp;</a>
+													<span class="m">&lt;</span><span class="t">
+														c:Port
+														name
+													</span><span class="m">="</span><b>W1</b><span class="m">"&gt;</span>
+												</div>
+												<div>
+													<div class="e">
+														<div class="c">
+															<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">&nbsp;</a>
+															<span class="m">&lt;</span><span class="t">c:ConnectorPins</span><span class="m">&gt;</span>
+														</div>
+														<div>
+															<div class="e">
+																<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+																	<span class="b">
+																		&nbsp;
+																	</span>
+																	<span class="m">
+																		&lt;
+																	</span><span class="t">c:ConnectorPin</span>
+																	<span class="t">
+																		connectorID
+																	</span><span class="m">="</span><b>IC1</b><span class="m">"</span><span class="t">
+																		pinID
+																	</span><span class="m">="</span><b>5</b><span class="m">
+																		"
+																		/&gt;
+																	</span>
+																</div>
+															</div>
+															<div>
+																<span class="b">
+																	&nbsp;
+																</span>
+																<span class="m">
+																	&lt;/
+																</span><span class="t">c:ConnectorPins</span><span class="m">&gt;</span>
+															</div>
+														</div>
+													</div>
+													<div>
+														<span class="b">&nbsp;</span>
+														<span class="m">&lt;/</span><span class="t">c:Port</span><span class="m">&gt;</span>
+													</div>
+												</div>
+											</div>
+											<div class="e">
+												<div class="c">
+													<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">&nbsp;</a>
+													<span class="m">&lt;</span><span class="t">
+														c:Port
+														name
+													</span><span class="m">="</span><b>B1</b><span class="m">"&gt;</span>
+												</div>
+												<div>
+													<div class="e">
+														<div class="c">
+															<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">&nbsp;</a>
+															<span class="m">&lt;</span><span class="t">c:ConnectorPins</span><span class="m">&gt;</span>
+														</div>
+														<div>
+															<div class="e">
+																<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+																	<span class="b">
+																		&nbsp;
+																	</span>
+																	<span class="m">
+																		&lt;
+																	</span><span class="t">c:ConnectorPin</span>
+																	<span class="t">
+																		connectorID
+																	</span><span class="m">="</span><b>IC1</b><span class="m">"</span><span class="t">
+																		pinID
+																	</span><span class="m">="</span><b>6</b><span class="m">
+																		"
+																		/&gt;
+																	</span>
+																</div>
+															</div>
+															<div>
+																<span class="b">
+																	&nbsp;
+																</span>
+																<span class="m">
+																	&lt;/
+																</span><span class="t">c:ConnectorPins</span><span class="m">&gt;</span>
+															</div>
+														</div>
+													</div>
+													<div>
+														<span class="b">&nbsp;</span>
+														<span class="m">&lt;/</span><span class="t">c:Port</span><span class="m">&gt;</span>
+													</div>
+												</div>
+											</div>
+											<div class="e">
+												<div class="c">
+													<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">&nbsp;</a>
+													<span class="m">&lt;</span><span class="t">
+														c:Port
+														name
+													</span><span class="m">="</span><b>CS</b><span class="m">"&gt;</span>
+												</div>
+												<div>
+													<div class="e">
+														<div class="c">
+															<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">&nbsp;</a>
+															<span class="m">&lt;</span><span class="t">c:ConnectorPins</span><span class="m">&gt;</span>
+														</div>
+														<div>
+															<div class="e">
+																<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+																	<span class="b">
+																		&nbsp;
+																	</span>
+																	<span class="m">
+																		&lt;
+																	</span><span class="t">c:ConnectorPin</span>
+																	<span class="t">
+																		connectorID
+																	</span><span class="m">="</span><b>IC1</b><span class="m">"</span><span class="t">
+																		pinID
+																	</span><span class="m">="</span><b>7</b><span class="m">
+																		"
+																		/&gt;
+																	</span>
+																</div>
+															</div>
+															<div>
+																<span class="b">
+																	&nbsp;
+																</span>
+																<span class="m">
+																	&lt;/
+																</span><span class="t">c:ConnectorPins</span><span class="m">&gt;</span>
+															</div>
+														</div>
+													</div>
+													<div>
+														<span class="b">&nbsp;</span>
+														<span class="m">&lt;/</span><span class="t">c:Port</span><span class="m">&gt;</span>
+													</div>
+												</div>
+											</div>
+											<div class="e">
+												<div class="c">
+													<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">&nbsp;</a>
+													<span class="m">&lt;</span><span class="t">
+														c:Port
+														name
+													</span><span class="m">="</span><b>VDD</b><span class="m">"&gt;</span>
+												</div>
+												<div>
+													<div class="e">
+														<div class="c">
+															<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">&nbsp;</a>
+															<span class="m">&lt;</span><span class="t">c:ConnectorPins</span><span class="m">&gt;</span>
+														</div>
+														<div>
+															<div class="e">
+																<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+																	<span class="b">
+																		&nbsp;
+																	</span>
+																	<span class="m">
+																		&lt;
+																	</span><span class="t">c:ConnectorPin</span>
+																	<span class="t">
+																		connectorID
+																	</span><span class="m">="</span><b>IC1</b><span class="m">"</span><span class="t">
+																		pinID
+																	</span><span class="m">="</span><b>8</b><span class="m">
+																		"
+																		/&gt;
+																	</span>
+																</div>
+															</div>
+															<div>
+																<span class="b">
+																	&nbsp;
+																</span>
+																<span class="m">
+																	&lt;/
+																</span><span class="t">c:ConnectorPins</span><span class="m">&gt;</span>
+															</div>
+														</div>
+													</div>
+													<div>
+														<span class="b">&nbsp;</span>
+														<span class="m">&lt;/</span><span class="t">c:Port</span><span class="m">&gt;</span>
+													</div>
+												</div>
+											</div>
+											<div>
+												<span class="b">&nbsp;</span>
+												<span class="m">&lt;/</span><span class="t">c:Ports</span><span class="m">&gt;</span>
+											</div>
+										</div>
+									</div>
+									<div>
+										<span class="b">&nbsp;</span> <span class="m">
+											&lt;/
+										</span><span class="t">hc:Interface</span><span class="m">&gt;</span>
+									</div>
+								</div>
+							</div>
+							<div>
+								<span class="b">&nbsp;</span> <span class="m">&lt;/</span><span class="t">c:Definition</span><span class="m">&gt;</span>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="b">&nbsp;</span> <span class="m">&lt;/</span><span class="t">hc:Component</span><span class="m">&gt;</span>
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
+			<p>
+				The dilemma this leaves is how to identify a component such as a 12K resistor. Initially we considered ModelNames of "12K"  or "resistor, 12K". This required some parsing of the component to identify what type it was. It was also felt that there must be some 'other' standard fro identifying component parts perhaps from the CAD or drawing , but none came to light, during the demo.
+			</p>
 
-            <p>
-                The resultant solution used, is still unsatisfactory, it uses the Identification number to hold the fact its a resistor (component) and its value 12K. and since ModelName is mandatory uses a component value to identify the part e.g. 12K . If a component standard could be identified then that should be used as the ModelName. In the future we expect to create a special hardwareitem type just for components that allows us to better define these types of hardware components. In the mean time we use what we can.
-            </p>
+			<p>
+				The resultant solution used, is still unsatisfactory, it uses the Identification number to hold the fact its a resistor (component) and its value 12K. and since ModelName is mandatory uses a component value to identify the part e.g. 12K . If a component standard could be identified then that should be used as the ModelName. In the future we expect to create a special hardwareitem type just for components that allows us to better define these types of hardware components. In the mean time we use what we can.
+			</p>
+			<br>
+			<br>
+			<div class="e">
+				<div class="c">
+					<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">-</a>
+					<span class="m">&lt;</span><span class="t">hc:Component ID</span><span class="m">="</span><b>R2</b><span class="m">"&gt;</span>
+				</div>
+				<div style="DISPLAY: block">
+					<div class="e">
+						<div class="c">
+							<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+								-
+							</a>
+							<span class="m">&lt;</span><span class="t">
+								c:Definition
+							</span><span class="style5">xsi:type="</span><span class="style6">uut:HardwareUUT</span><span class="style5">"&gt;</span>
+						</div>
+						<div style="DISPLAY: block">
+							<div class="e">
+								<div class="c">
+									<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+										-
+									</a>
+									<span class="m">&lt;</span><span class="t">
+										c:Identification
+										designator
+									</span><span class="m">="</span><b>R2</b><span class="m">"&gt;</span>
+								</div>
+								<div>
+									<div class="e">
+										<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+											<span class="b">&nbsp;</span>
+											<span class="m">&lt;</span><span class="t">c:ModelName</span><span class="m">&gt;</span><span class="tx">1.2K</span><span class="m">&lt;/</span><span class="t">c:ModelName</span><span class="m">&gt;</span>
+										</div>
+									</div>
+									<div class="e">
+										<div class="c">
+											<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+												-
+											</a>
+											<span class="m">&lt;</span><span class="t">c:IdentificationNumbers</span><span class="m">&gt;</span>
+										</div>
+										<div>
+											<div class="e">
+												<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+													<span class="b">&nbsp;</span>
+													<span class="m">&lt;</span><span class="t">c:IdentificationNumber</span>
+													<span class="t">number</span><span class="m">="</span><b>resistor</b><span class="m">"</span><span class="t">
+														type
+													</span><span class="m">="</span><b>Other</b><span class="m">"</span><span class="t">
+														qualifier
+													</span><span class="m">="</span><b>1.2K</b><span class="m">
+														"
+														/&gt;
+													</span>
+												</div>
+											</div>
+											<div>
+												<span class="b">&nbsp;</span>
+												<span class="m">&lt;/</span><span class="t">c:IdentificationNumbers</span><span class="m">&gt;</span>
+											</div>
+										</div>
+									</div>
+									<div>
+										<span class="b">&nbsp;</span> <span class="m">
+											&lt;/
+										</span><span class="t">c:Identification</span><span class="m">&gt;</span>
+									</div>
+								</div>
+							</div>
+							<div class="e">
+								<div class="c">
+									<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">-</a><span class="style5"> &lt;hc:Interface</span><span class="m">&gt;</span>
+								</div>
+								<div style="display: block;">
+									<div class="e">
+										<div class="c">
+											<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">&nbsp;</a>
+											<span class="m">&lt;</span><span class="t">c:Ports</span><span class="m">&gt;</span>
+										</div>
+										<div>
+											<div class="e">
+												<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+													<span class="b">&nbsp;</span>
+													<span class="m">&lt;</span><span class="t">c:Port</span>
+													<span class="t">name</span><span class="m">="</span><b>a</b><span class="m">
+														"
+														/&gt;
+													</span>
+												</div>
+											</div>
+											<div class="e">
+												<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+													<span class="b">&nbsp;</span>
+													<span class="m">&lt;</span><span class="t">c:Port</span>
+													<span class="t">name</span><span class="m">="</span><b>b</b><span class="m">
+														"
+														/&gt;
+													</span>
+												</div>
+											</div>
+											<div>
+												<span class="b">&nbsp;</span>
+												<span class="m">&lt;/</span><span class="t">c:Ports</span><span class="m">&gt;</span>
+											</div>
+										</div>
+									</div>
+									<div>
+										<span class="b">&nbsp;</span> <span class="m">
+											&lt;/
+										</span><span class="t">hc:Interface</span><span class="m">&gt;</span>
+									</div>
+								</div>
+							</div>
+							<div>
+								<span class="b">&nbsp;</span> <span class="m">&lt;/</span><span class="t">c:Definition</span><span class="m">&gt;</span>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="b">&nbsp;</span> <span class="m">&lt;/</span><span class="t">hc:Component</span><span class="m">&gt;</span>
+					</div>
+				</div>
+			</div>
+			<div class="e">
+				<div class="c">
+					<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">-</a>
+					<span class="m">&lt;</span><span class="t">hc:Component ID</span><span class="m">="</span><b>R6</b><span class="m">"&gt;</span>
+				</div>
+				<div style="DISPLAY: block">
+					<div class="e">
+						<div class="c">
+							<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+								-
+							</a>
+							<span class="m">&lt;</span><span class="t">c:Definition</span><span class="style5">
+								xsi:type="
+							</span><span class="style6">uut:HardwareUUT</span><span class="style5">"&gt;</span>
+						</div>
+						<div>
+							<div class="e">
+								<div class="c">
+									<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+										-
+									</a>
+									<span class="m">&lt;</span><span class="t">
+										c:Identification
+										designator
+									</span><span class="m">="</span><b>R6</b><span class="m">"&gt;</span>
+								</div>
+								<div>
+									<div class="e">
+										<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+											<span class="b">&nbsp;</span>
+											<span class="m">&lt;</span><span class="t">c:ModelName</span><span class="m">&gt;</span><span class="tx">100K</span><span class="m">&lt;/</span><span class="t">c:ModelName</span><span class="m">&gt;</span>
+										</div>
+									</div>
+									<div class="e">
+										<div class="c">
+											<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+												-
+											</a>
+											<span class="m">&lt;</span><span class="t">c:IdentificationNumbers</span><span class="m">&gt;</span>
+										</div>
+										<div>
+											<div class="e">
+												<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+													<span class="b">&nbsp;</span>
+													<span class="m">&lt;</span><span class="t">c:IdentificationNumber</span>
+													<span class="t">number</span><span class="m">="</span><b>resistor</b><span class="m">"</span><span class="t">
+														type
+													</span><span class="m">="</span><b>Other</b><span class="m">"</span><span class="t">
+														qualifier
+													</span><span class="m">="</span><b>100K</b><span class="m">
+														"
+														/&gt;
+													</span>
+												</div>
+											</div>
+											<div>
+												<span class="b">&nbsp;</span>
+												<span class="m">&lt;/</span><span class="t">c:IdentificationNumbers</span><span class="m">&gt;</span>
+											</div>
+										</div>
+									</div>
+									<div>
+										<span class="b">&nbsp;</span> <span class="m">
+											&lt;/
+										</span><span class="t">c:Identification</span><span class="m">&gt;</span>
+									</div>
+								</div>
+							</div>
+							<div class="e">
+								<div class="c">
+									<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">-</a><span class="style5"> &lt;hc:Interface</span><span class="m">&gt;</span>
+								</div>
+								<div style="display: block;">
+									<div class="e">
+										<div class="c">
+											<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">&nbsp;</a>
+											<span class="m">&lt;</span><span class="t">c:Ports</span><span class="m">&gt;</span>
+										</div>
+										<div>
+											<div class="e">
+												<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+													<span class="b">&nbsp;</span>
+													<span class="m">&lt;</span><span class="t">c:Port</span>
+													<span class="t">name</span><span class="m">="</span><b>a</b><span class="m">
+														"
+														/&gt;
+													</span>
+												</div>
+											</div>
+											<div class="e">
+												<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+													<span class="b">&nbsp;</span>
+													<span class="m">&lt;</span><span class="t">c:Port</span>
+													<span class="t">name</span><span class="m">="</span><b>b</b><span class="m">
+														"
+														/&gt;
+													</span>
+												</div>
+											</div>
+											<div>
+												<span class="b">&nbsp;</span>
+												<span class="m">&lt;/</span><span class="t">c:Ports</span><span class="m">&gt;</span>
+											</div>
+										</div>
+									</div>
+									<div>
+										<span class="b">&nbsp;</span> <span class="m">
+											&lt;/
+										</span><span class="t">hc:Interface</span><span class="m">&gt;</span>
+									</div>
+								</div>
+							</div>
+							<div>
+								<span class="b">&nbsp;</span> <span class="m">&lt;/</span><span class="t">c:Definition</span><span class="m">&gt;</span>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="b">&nbsp;</span> <span class="m">&lt;/</span><span class="t">hc:Component</span><span class="m">&gt;</span>
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
+			<p>
+				Identifying the component solves half the problem, however the UUT description is also suppose to represent the schematic, or at least point to point connections. In order to do that we have to provide named ports with each of our components. In essence we can define a set of ports for any HardwareItemDescription type using its c:Interface elements. To do this each (sub )component is made a uut:HardwareUUT type and Interface ports provided.
+			</p>
 
-            <p>
-                <xmp>
-                    - <hc:Component ID="R2">
-                        - <c:Definition xsi:type="uut:HardwareUUT">
-                            - <c:Identification designator="R2">
-                                <c:ModelName>1.2K</c:ModelName>
-                                - <c:IdentificationNumbers>
-                                    <c:IdentificationNumber number="resistor" type="Other" qualifier="1.2K" />
-                                </c:IdentificationNumbers>
-                            </c:Identification>
-                            + <hc:Interface>
-                        </c:Definition>
-                    </hc:Component>
-                    - <hc:Component ID="R6">
-                        - <c:Definition xsi:type="uut:HardwareUUT">
-                            - <c:Identification designator="R6">
-                                <c:ModelName>100K</c:ModelName>
-                                - <c:IdentificationNumbers>
-                                    <c:IdentificationNumber number="resistor" type="Other" qualifier="100K" />
-                                </c:IdentificationNumbers>
-                            </c:Identification>
-                            + <hc:Interface>
-                        </c:Definition>
-                    </hc:Component>
-                </xmp>
-            </p>
+			<p>
+				In the UUT description the names of the ports on components are almost irrelevant, although this is true where the ports represent symmetrical components, e.g. a resistor or capacitor can be inserted anyway around, however for asynchronous components e.g. NPN or switch the Ports and pins have to be matched.
+			</p>
 
-            <p>
-                Identifying the component solves half the problem, however the UUT description is also suppose to represent the schematic, or at least point to point connections. In order to do that we have to provide named ports with each of our components. In essence we can define a set of ports for any HardwareItemDescription type using its c:Interface elements. To do this each (sub )component is made a uut:HardwareUUT type and Interface ports provided.
-            </p>
+			<p>
+				Note: In the example a universal matching between port and pins was not achieved, the best we did was be port name e.g. in/out switch and e,b,c for NPN transistor
+			</p>
+			<br>
+			<br>
+			<div class="e">
+				<div class="c">
+					<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">-</a>
+					<span class="m">&lt;</span><span class="t">hc:Component ID</span><span class="m">="</span><b>R2</b><span class="m">"&gt;</span>
+				</div>
+				<div style="DISPLAY: block">
+					<div class="e">
+						<div class="c">
+							<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+								-
+							</a>
+							<span class="m">&lt;</span><span class="t">
+								c:Definition
+								xsi:type
+							</span><span class="m">="</span><b>uut:HardwareUUT</b><span class="m">"&gt;</span>
+						</div>
+						<div style="DISPLAY: block">
+							<div class="e">
+								<div class="c">
+									<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">-</a> <span class="style5">
+										&lt;c:Identification
+										designator="
+									</span><span class="style6">R2</span><span class="style5">"&gt;</span>
+								</div>
+								<div style="display: block;">
+									<div class="e">
+										<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+											<span class="b">&nbsp;</span>
+											<span class="m">&lt;</span><span class="t">c:ModelName</span><span class="m">&gt;</span><span class="tx">1.2K</span><span class="m">&lt;/</span><span class="t">c:ModelName</span><span class="m">&gt;</span>
+										</div>
+									</div>
+									<div class="e">
+										<div class="c">
+											<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">&nbsp;</a>
+											<span class="m">&lt;</span><span class="t">c:IdentificationNumbers</span><span class="m">&gt;</span>
+										</div>
+										<div>
+											<div class="e">
+												<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+													<span class="b">&nbsp;</span>
+													<span class="m">&lt;</span><span class="t">c:IdentificationNumber</span>
+													<span class="t">number</span><span class="m">="</span><b>resistor</b><span class="m">"</span><span class="t">
+														type
+													</span><span class="m">="</span><b>Other</b><span class="m">"</span><span class="t">
+														qualifier
+													</span><span class="m">="</span><b>1.2K</b><span class="m">
+														"
+														/&gt;
+													</span>
+												</div>
+											</div>
+											<div>
+												<span class="b">&nbsp;</span>
+												<span class="m">&lt;/</span><span class="t">c:IdentificationNumbers</span><span class="m">&gt;</span>
+											</div>
+										</div>
+									</div>
+									<div>
+										<span class="b">&nbsp;</span> <span class="m">
+											&lt;/
+										</span><span class="t">c:Identification</span><span class="m">&gt;</span>
+									</div>
+								</div>
+							</div>
+							<div class="e">
+								<div class="c">
+									<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+										-
+									</a>
+									<span class="m">&lt;</span><span class="t">hc:Interface</span><span class="m">&gt;</span>
+								</div>
+								<div style="DISPLAY: block">
+									<div class="e">
+										<div class="c">
+											<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+												-
+											</a>
+											<span class="m">&lt;</span><span class="t">c:Ports</span><span class="m">&gt;</span>
+										</div>
+										<div>
+											<div class="e">
+												<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+													<span class="b">&nbsp;</span>
+													<span class="m">&lt;</span><span class="t">c:Port</span>
+													<span class="t">name</span><span class="m">="</span><b>a</b><span class="m">
+														"
+														/&gt;
+													</span>
+												</div>
+											</div>
+											<div class="e">
+												<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+													<span class="b">&nbsp;</span>
+													<span class="m">&lt;</span><span class="t">c:Port</span>
+													<span class="t">name</span><span class="m">="</span><b>b</b><span class="m">
+														"
+														/&gt;
+													</span>
+												</div>
+											</div>
+											<div>
+												<span class="b">&nbsp;</span>
+												<span class="m">&lt;/</span><span class="t">c:Ports</span><span class="m">&gt;</span>
+											</div>
+										</div>
+									</div>
+									<div>
+										<span class="b">&nbsp;</span> <span class="m">
+											&lt;/
+										</span><span class="t">hc:Interface</span><span class="m">&gt;</span>
+									</div>
+								</div>
+							</div>
+							<div>
+								<span class="b">&nbsp;</span> <span class="m">&lt;/</span><span class="t">c:Definition</span><span class="m">&gt;</span>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="b">&nbsp;</span> <span class="m">&lt;/</span><span class="t">hc:Component</span><span class="m">&gt;</span>
+					</div>
+				</div>
+			</div>
+			<div class="e">
+				<div class="c">
+					<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">-</a>
+					<span class="m">&lt;</span><span class="t">hc:Component ID</span><span class="m">="</span><b>C1</b><span class="m">"&gt;</span>
+				</div>
+				<div style="DISPLAY: block">
+					<div class="e">
+						<div class="c">
+							<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+								-
+							</a>
+							<span class="m">&lt;</span><span class="t">
+								c:Definition
+								xsi:type
+							</span><span class="m">="</span><b>uut:HardwareUUT</b><span class="m">"&gt;</span>
+						</div>
+						<div style="DISPLAY: block">
+							<div class="e">
+								<div class="c">
+									<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">-</a><span class="style5">
+										&lt;c:Identification
+										designator="
+									</span><span class="style6">C1</span><span class="style5">"&gt;</span>
+								</div>
+								<div style="display: block;">
+									<div class="e">
+										<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+											<span class="b">&nbsp;</span>
+											<span class="m">&lt;</span><span class="t">c:ModelName</span><span class="m">&gt;</span><span class="tx">10uF</span><span class="m">&lt;/</span><span class="t">c:ModelName</span><span class="m">&gt;</span>
+										</div>
+									</div>
+									<div class="e">
+										<div class="c">
+											<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">&nbsp;</a>
+											<span class="m">&lt;</span><span class="t">c:IdentificationNumbers</span><span class="m">&gt;</span>
+										</div>
+										<div>
+											<div class="e">
+												<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+													<span class="b">&nbsp;</span>
+													<span class="m">&lt;</span><span class="t">c:IdentificationNumber</span>
+													<span class="t">number</span><span class="m">="</span><b>capacitor</b><span class="m">"</span><span class="t">
+														type
+													</span><span class="m">="</span><b>Other</b><span class="m">"</span><span class="t">
+														qualifier
+													</span><span class="m">="</span><b>10uF</b><span class="m">
+														"
+														/&gt;
+													</span>
+												</div>
+											</div>
+											<div>
+												<span class="b">&nbsp;</span>
+												<span class="m">&lt;/</span><span class="t">c:IdentificationNumbers</span><span class="m">&gt;</span>
+											</div>
+										</div>
+									</div>
+									<div>
+										<span class="b">&nbsp;</span> <span class="m">
+											&lt;/
+										</span><span class="t">c:Identification</span><span class="m">&gt;</span>
+									</div>
+								</div>
+							</div>
+							<div class="e">
+								<div class="c">
+									<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+										-
+									</a>
+									<span class="m">&lt;</span><span class="t">hc:Interface</span><span class="m">&gt;</span>
+								</div>
+								<div>
+									<div class="e">
+										<div class="c">
+											<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+												-
+											</a>
+											<span class="m">&lt;</span><span class="t">c:Ports</span><span class="m">&gt;</span>
+										</div>
+										<div>
+											<div class="e">
+												<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+													<span class="b">&nbsp;</span>
+													<span class="m">&lt;</span><span class="t">c:Port</span>
+													<span class="t">name</span><span class="m">="</span><b>a</b><span class="m">
+														"
+														/&gt;
+													</span>
+												</div>
+											</div>
+											<div class="e">
+												<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+													<span class="b">&nbsp;</span>
+													<span class="m">&lt;</span><span class="t">c:Port</span>
+													<span class="t">name</span><span class="m">="</span><b>b</b><span class="m">
+														"
+														/&gt;
+													</span>
+												</div>
+											</div>
+											<div>
+												<span class="b">&nbsp;</span>
+												<span class="m">&lt;/</span><span class="t">c:Ports</span><span class="m">&gt;</span>
+											</div>
+										</div>
+									</div>
+									<div>
+										<span class="b">&nbsp;</span> <span class="m">
+											&lt;/
+										</span><span class="t">hc:Interface</span><span class="m">&gt;</span>
+									</div>
+								</div>
+							</div>
+							<div>
+								<span class="b">&nbsp;</span> <span class="m">&lt;/</span><span class="t">c:Definition</span><span class="m">&gt;</span>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="b">&nbsp;</span> <span class="m">&lt;/</span><span class="t">hc:Component</span><span class="m">&gt;</span>
+					</div>
+				</div>
+			</div>
+			<div class="e">
+				<div class="c">
+					<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">-</a>
+					<span class="m">&lt;</span><span class="t">hc:Component ID</span><span class="m">="</span><b>JP1</b><span class="m">"&gt;</span>
+				</div>
+				<div style="DISPLAY: block">
+					<div class="e">
+						<div class="c">
+							<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+								-
+							</a>
+							<span class="m">&lt;</span><span class="t">
+								c:Definition
+								xsi:type
+							</span><span class="m">="</span><b>uut:HardwareUUT</b><span class="m">"&gt;</span>
+						</div>
+						<div>
+							<div class="e">
+								<div class="c">
+									<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+										+
+									</a> <span class="style5">
+										&lt;c:Identification
+										designator="
+									</span><span class="style6">JP1</span><span class="style5">"&gt;</span>
+								</div>
+								<div style="DISPLAY: none">
+									<div class="e">
+										<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+											<span class="b">&nbsp;</span>
+											<span class="m">&lt;</span><span class="t">c:ModelName</span><span class="m">&gt;</span><span class="tx">JUMPER</span><span class="m">&lt;/</span><span class="t">c:ModelName</span><span class="m">&gt;</span>
+										</div>
+									</div>
+									<div class="e">
+										<div class="c">
+											<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">&nbsp;</a>
+											<span class="m">&lt;</span><span class="t">c:IdentificationNumbers</span><span class="m">&gt;</span>
+										</div>
+										<div>
+											<div class="e">
+												<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+													<span class="b">&nbsp;</span>
+													<span class="m">&lt;</span><span class="t">c:IdentificationNumber</span>
+													<span class="t">number</span><span class="m">="</span><b>jumper</b><span class="m">"</span><span class="t">
+														type
+													</span><span class="m">="</span><b>Other</b><span class="m">"</span><span class="t">
+														qualifier
+													</span><span class="m">="</span><b>2</b><span class="m">
+														"
+														/&gt;
+													</span>
+												</div>
+											</div>
+											<div>
+												<span class="b">&nbsp;</span>
+												<span class="m">&lt;/</span><span class="t">c:IdentificationNumbers</span><span class="m">&gt;</span>
+											</div>
+										</div>
+									</div>
+									<div>
+										<span class="b">&nbsp;</span> <span class="m">
+											&lt;/
+										</span><span class="t">c:Identification</span><span class="m">&gt;</span>
+									</div>
+								</div>
+							</div>
+							<div class="e">
+								<div class="c">
+									<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+										-
+									</a>
+									<span class="m">&lt;</span><span class="t">hc:Interface</span><span class="m">&gt;</span>
+								</div>
+								<div>
+									<div class="e">
+										<div class="c">
+											<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+												-
+											</a>
+											<span class="m">&lt;</span><span class="t">c:Ports</span><span class="m">&gt;</span>
+										</div>
+										<div>
+											<div class="e">
+												<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+													<span class="b">&nbsp;</span>
+													<span class="m">&lt;</span><span class="t">c:Port</span>
+													<span class="t">name</span><span class="m">="</span><b>1</b><span class="m">
+														"
+														/&gt;
+													</span>
+												</div>
+											</div>
+											<div class="e">
+												<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+													<span class="b">&nbsp;</span>
+													<span class="m">&lt;</span><span class="t">c:Port</span>
+													<span class="t">name</span><span class="m">="</span><b>2</b><span class="m">
+														"
+														/&gt;
+													</span>
+												</div>
+											</div>
+											<div>
+												<span class="b">&nbsp;</span>
+												<span class="m">&lt;/</span><span class="t">c:Ports</span><span class="m">&gt;</span>
+											</div>
+										</div>
+									</div>
+									<div>
+										<span class="b">&nbsp;</span> <span class="m">
+											&lt;/
+										</span><span class="t">hc:Interface</span><span class="m">&gt;</span>
+									</div>
+								</div>
+							</div>
+							<div>
+								<span class="b">&nbsp;</span> <span class="m">&lt;/</span><span class="t">c:Definition</span><span class="m">&gt;</span>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="b">&nbsp;</span> <span class="m">&lt;/</span><span class="t">hc:Component</span><span class="m">&gt;</span>
+					</div>
+				</div>
+			</div>
+			<div class="e">
+				<div class="c">
+					<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">-</a>
+					<span class="m">&lt;</span><span class="t">hc:Component ID</span><span class="m">="</span><b>Q1</b><span class="m">"&gt;</span>
+				</div>
+				<div style="DISPLAY: block">
+					<div class="e">
+						<div class="c">
+							<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+								-
+							</a>
+							<span class="m">&lt;</span><span class="t">
+								c:Definition
+								xsi:type
+							</span><span class="m">="</span><b>uut:HardwareUUT</b><span class="m">"&gt;</span>
+						</div>
+						<div>
+							<div class="e">
+								<div class="c">
+									<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">-</a><span class="style5">
+										&lt;c:Identification
+										designator="
+									</span><span class="style6">Q1</span><span class="style5">"&gt;</span>
+								</div>
+								<div style="display: block;">
+									<div class="e">
+										<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+											<span class="b">&nbsp;</span>
+											<span class="m">&lt;</span><span class="t">c:ModelName</span><span class="m">&gt;</span><span class="tx">NPN</span><span class="m">&lt;/</span><span class="t">c:ModelName</span><span class="m">&gt;</span>
+										</div>
+									</div>
+									<div class="e">
+										<div class="c">
+											<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">&nbsp;</a>
+											<span class="m">&lt;</span><span class="t">c:IdentificationNumbers</span><span class="m">&gt;</span>
+										</div>
+										<div>
+											<div class="e">
+												<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+													<span class="b">&nbsp;</span>
+													<span class="m">&lt;</span><span class="t">c:IdentificationNumber</span>
+													<span class="t">number</span><span class="m">="</span><b>transistor</b><span class="m">"</span><span class="t">
+														type
+													</span><span class="m">="</span><b>Other</b><span class="m">"</span><span class="t">
+														qualifier
+													</span><span class="m">="</span><b>NPN</b><span class="m">
+														"
+														/&gt;
+													</span>
+												</div>
+											</div>
+											<div>
+												<span class="b">&nbsp;</span>
+												<span class="m">&lt;/</span><span class="t">c:IdentificationNumbers</span><span class="m">&gt;</span>
+											</div>
+										</div>
+									</div>
+									<div>
+										<span class="b">&nbsp;</span> <span class="m">
+											&lt;/
+										</span><span class="t">c:Identification</span><span class="m">&gt;</span>
+									</div>
+								</div>
+							</div>
+							<div class="e">
+								<div class="c">
+									<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+										-
+									</a>
+									<span class="m">&lt;</span><span class="t">hc:Interface</span><span class="m">&gt;</span>
+								</div>
+								<div>
+									<div class="e">
+										<div class="c">
+											<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+												-
+											</a>
+											<span class="m">&lt;</span><span class="t">c:Ports</span><span class="m">&gt;</span>
+										</div>
+										<div>
+											<div class="e">
+												<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+													<span class="b">&nbsp;</span>
+													<span class="m">&lt;</span><span class="t">c:Port</span>
+													<span class="t">name</span><span class="m">="</span><b>b</b><span class="m">
+														"
+														/&gt;
+													</span>
+												</div>
+											</div>
+											<div class="e">
+												<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+													<span class="b">&nbsp;</span>
+													<span class="m">&lt;</span><span class="t">c:Port</span>
+													<span class="t">name</span><span class="m">="</span><b>c</b><span class="m">
+														"
+														/&gt;
+													</span>
+												</div>
+											</div>
+											<div class="e">
+												<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+													<span class="b">&nbsp;</span>
+													<span class="m">&lt;</span><span class="t">c:Port</span>
+													<span class="t">name</span><span class="m">="</span><b>e</b><span class="m">
+														"
+														/&gt;
+													</span>
+												</div>
+											</div>
+											<div>
+												<span class="b">&nbsp;</span>
+												<span class="m">&lt;/</span><span class="t">c:Ports</span><span class="m">&gt;</span>
+											</div>
+										</div>
+									</div>
+									<div>
+										<span class="b">&nbsp;</span> <span class="m">
+											&lt;/
+										</span><span class="t">hc:Interface</span><span class="m">&gt;</span>
+									</div>
+								</div>
+							</div>
+							<div>
+								<span class="b">&nbsp;</span> <span class="m">&lt;/</span><span class="t">c:Definition</span><span class="m">&gt;</span>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="b">&nbsp;</span> <span class="m">&lt;/</span><span class="t">hc:Component</span><span class="m">&gt;</span>
+					</div>
+				</div>
+			</div>
+			<div class="e">
+				<div class="c">
+					<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">-</a>
+					<span class="m">&lt;</span><span class="t">hc:Component ID</span><span class="m">="</span><b>K1</b><span class="m">"&gt;</span>
+				</div>
+				<div style="DISPLAY: block">
+					<div class="e">
+						<div class="c">
+							<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+								-
+							</a>
+							<span class="m">&lt;</span><span class="t">
+								c:Definition
+								xsi:type
+							</span><span class="m">="</span><b>uut:HardwareUUT</b><span class="m">"&gt;</span>
+						</div>
+						<div>
+							<div class="e">
+								<div class="c">
+									<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">-</a> <span class="style5">
+										&lt;c:Identification
+										designator="
+									</span><span class="style6">K1</span><span class="style5">"&gt;</span>
+								</div>
+								<div style="display: block;">
+									<div class="e">
+										<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+											<span class="b">&nbsp;</span>
+											<span class="m">&lt;</span><span class="t">c:ModelName</span><span class="m">&gt;</span><span class="tx">SW</span><span class="m">&lt;/</span><span class="t">c:ModelName</span><span class="m">&gt;</span>
+										</div>
+									</div>
+									<div class="e">
+										<div class="c">
+											<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">&nbsp;</a>
+											<span class="m">&lt;</span><span class="t">c:IdentificationNumbers</span><span class="m">&gt;</span>
+										</div>
+										<div>
+											<div class="e">
+												<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+													<span class="b">&nbsp;</span>
+													<span class="m">&lt;</span><span class="t">c:IdentificationNumber</span>
+													<span class="t">number</span><span class="m">="</span><b>switch</b><span class="m">"</span><span class="t">
+														type
+													</span><span class="m">="</span><b>Other</b><span class="m">"</span><span class="t">
+														qualifier
+													</span><span class="m">="</span><b>2</b><span class="m">
+														"
+														/&gt;
+													</span>
+												</div>
+											</div>
+											<div>
+												<span class="b">&nbsp;</span>
+												<span class="m">&lt;/</span><span class="t">c:IdentificationNumbers</span><span class="m">&gt;</span>
+											</div>
+										</div>
+									</div>
+									<div>
+										<span class="b">&nbsp;</span> <span class="m">
+											&lt;/
+										</span><span class="t">c:Identification</span><span class="m">&gt;</span>
+									</div>
+								</div>
+							</div>
+							<div class="e">
+								<div class="c">
+									<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+										-
+									</a>
+									<span class="m">&lt;</span><span class="t">hc:Interface</span><span class="m">&gt;</span>
+								</div>
+								<div>
+									<div class="e">
+										<div class="c">
+											<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+												-
+											</a>
+											<span class="m">&lt;</span><span class="t">c:Ports</span><span class="m">&gt;</span>
+										</div>
+										<div>
+											<div class="e">
+												<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+													<span class="b">&nbsp;</span>
+													<span class="m">&lt;</span><span class="t">c:Port</span>
+													<span class="t">name</span><span class="m">="</span><b>in</b><span class="m">
+														"
+														/&gt;
+													</span>
+												</div>
+											</div>
+											<div class="e">
+												<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+													<span class="b">&nbsp;</span>
+													<span class="m">&lt;</span><span class="t">c:Port</span>
+													<span class="t">name</span><span class="m">="</span><b>out</b><span class="m">
+														"
+														/&gt;
+													</span>
+												</div>
+											</div>
+											<div>
+												<span class="b">&nbsp;</span>
+												<span class="m">&lt;/</span><span class="t">c:Ports</span><span class="m">&gt;</span>
+											</div>
+										</div>
+									</div>
+									<div>
+										<span class="b">&nbsp;</span> <span class="m">
+											&lt;/
+										</span><span class="t">hc:Interface</span><span class="m">&gt;</span>
+									</div>
+								</div>
+							</div>
+							<div>
+								<span class="b">&nbsp;</span> <span class="m">&lt;/</span><span class="t">c:Definition</span><span class="m">&gt;</span>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="b">&nbsp;</span> <span class="m">&lt;/</span><span class="t">hc:Component</span><span class="m">&gt;</span>
+					</div>
+				</div>
+			</div>
+			<div class="e">
+				<div class="c">
+					<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">-</a>
+					<span class="m">&lt;</span><span class="t">hc:Component ID</span><span class="m">="</span><b>VB</b><span class="m">"&gt;</span>
+				</div>
+				<div style="DISPLAY: block">
+					<div class="e">
+						<div class="c">
+							<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+								-
+							</a>
+							<span class="m">&lt;</span><span class="t">
+								c:Definition
+								xsi:type
+							</span><span class="m">="</span><b>uut:HardwareUUT</b><span class="m">"&gt;</span>
+						</div>
+						<div>
+							<div class="e">
+								<div class="c">
+									<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">-</a> <span class="style5">
+										&lt;c:Identification
+										designator="
+									</span><span class="style6">VB</span><span class="style5">"&gt;</span>
+								</div>
+								<div style="display: block;">
+									<div class="e">
+										<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+											<span class="b">&nbsp;</span>
+											<span class="m">&lt;</span><span class="t">c:ModelName</span><span class="m">&gt;</span><span class="tx">TP</span><span class="m">&lt;/</span><span class="t">c:ModelName</span><span class="m">&gt;</span>
+										</div>
+									</div>
+									<div class="e">
+										<div class="c">
+											<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">&nbsp;</a>
+											<span class="m">&lt;</span><span class="t">c:IdentificationNumbers</span><span class="m">&gt;</span>
+										</div>
+										<div>
+											<div class="e">
+												<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+													<span class="b">&nbsp;</span>
+													<span class="m">&lt;</span><span class="t">c:IdentificationNumber</span>
+													<span class="t">number</span><span class="m">="</span><b>testpoint</b><span class="m">"</span><span class="t">
+														type
+													</span><span class="m">="</span><b>Other</b><span class="m">"</span><span class="t">
+														qualifier
+													</span><span class="m">="</span><b>1</b><span class="m">
+														"
+														/&gt;
+													</span>
+												</div>
+											</div>
+											<div>
+												<span class="b">&nbsp;</span>
+												<span class="m">&lt;/</span><span class="t">c:IdentificationNumbers</span><span class="m">&gt;</span>
+											</div>
+										</div>
+									</div>
+									<div>
+										<span class="b">&nbsp;</span> <span class="m">
+											&lt;/
+										</span><span class="t">c:Identification</span><span class="m">&gt;</span>
+									</div>
+								</div>
+							</div>
+							<div class="e">
+								<div class="c">
+									<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+										-
+									</a>
+									<span class="m">&lt;</span><span class="t">hc:Interface</span><span class="m">&gt;</span>
+								</div>
+								<div>
+									<div class="e">
+										<div class="c">
+											<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+												-
+											</a>
+											<span class="m">&lt;</span><span class="t">c:Ports</span><span class="m">&gt;</span>
+										</div>
+										<div>
+											<div class="e">
+												<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+													<span class="b">&nbsp;</span>
+													<span class="m">&lt;</span><span class="t">c:Port</span>
+													<span class="t">name</span><span class="m">="</span><b>tp</b><span class="m">
+														"
+														/&gt;
+													</span>
+												</div>
+											</div>
+											<div>
+												<span class="b">&nbsp;</span>
+												<span class="m">&lt;/</span><span class="t">c:Ports</span><span class="m">&gt;</span>
+											</div>
+										</div>
+									</div>
+									<div>
+										<span class="b">&nbsp;</span> <span class="m">
+											&lt;/
+										</span><span class="t">hc:Interface</span><span class="m">&gt;</span>
+									</div>
+								</div>
+							</div>
+							<div>
+								<span class="b">&nbsp;</span> <span class="m">&lt;/</span><span class="t">c:Definition</span><span class="m">&gt;</span>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="b">&nbsp;</span> <span class="m">&lt;/</span><span class="t">hc:Component</span><span class="m">&gt;</span>
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
+			<p>
+				This identification problem only exists for basic components, if we consider the IC components, here there model already defines there associated pins, every IC has a pin numbering system. In this case we mealy identify a Port for each pin, with a specific connectorID and pinID. In the example It uses a connectorID the same as the component ID which has the effect of defining a corresponding connector.
+			</p>
+			<br>
+			<br>
+			<div class="e">
+				<div class="c">
+					<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">-</a>
+					<span class="m">&lt;</span><span class="t">hc:Component ID</span><span class="m">="</span><b>IC2</b><span class="m">"&gt;</span>
+				</div>
+				<div style="DISPLAY: block">
+					<div class="e">
+						<div class="c">
+							<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+								-
+							</a>
+							<span class="m">&lt;</span><span class="t">
+								c:Definition
+								xsi:type
+							</span><span class="m">="</span><b>uut:HardwareUUT</b><span class="m">"&gt;</span>
+						</div>
+						<div>
+							<div class="e">
+								<div class="c">
+									<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+										-
+									</a>
+									<span class="m">&lt;</span><span class="t">
+										c:Identification
+										designator
+									</span><span class="m">="</span><b>IC2</b><span class="m">"&gt;</span>
+								</div>
+								<div>
+									<div class="e">
+										<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+											<span class="b">&nbsp;</span>
+											<span class="m">&lt;</span><span class="t">c:ModelName</span><span class="m">&gt;</span><span class="tx">BA30BC0T</span><span class="m">&lt;/</span><span class="t">c:ModelName</span><span class="m">&gt;</span>
+										</div>
+									</div>
+									<div>
+										<span class="b">&nbsp;</span> <span class="m">
+											&lt;/
+										</span><span class="t">c:Identification</span><span class="m">&gt;</span>
+									</div>
+								</div>
+							</div>
+							<div class="e">
+								<div class="c">
+									<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+										-
+									</a>
+									<span class="m">&lt;</span><span class="t">hc:Interface</span><span class="m">&gt;</span>
+								</div>
+								<div>
+									<div class="e">
+										<div class="c">
+											<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+												-
+											</a>
+											<span class="m">&lt;</span><span class="t">c:Ports</span><span class="m">&gt;</span>
+										</div>
+										<div>
+											<div class="e">
+												<div class="c">
+													<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+														-
+													</a>
+													<span class="m">&lt;</span><span class="t">
+														c:Port
+														name
+													</span><span class="m">="</span><b>Vin</b><span class="m">"&gt;</span>
+												</div>
+												<div>
+													<div class="e">
+														<div class="c">
+															<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+																-
+															</a>
+															<span class="m">&lt;</span><span class="t">c:ConnectorPins</span><span class="m">&gt;</span>
+														</div>
+														<div>
+															<div class="e">
+																<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+																	<span class="b">
+																		&nbsp;
+																	</span>
+																	<span class="m">
+																		&lt;
+																	</span><span class="t">c:ConnectorPin</span>
+																	<span class="t">
+																		connectorID
+																	</span><span class="m">="</span><b>IC2</b><span class="m">"</span><span class="t">
+																		pinID
+																	</span><span class="m">="</span><b>1</b><span class="m">
+																		"
+																		/&gt;
+																	</span>
+																</div>
+															</div>
+															<div>
+																<span class="b">
+																	&nbsp;
+																</span>
+																<span class="m">
+																	&lt;/
+																</span><span class="t">c:ConnectorPins</span><span class="m">&gt;</span>
+															</div>
+														</div>
+													</div>
+													<div>
+														<span class="b">&nbsp;</span>
+														<span class="m">&lt;/</span><span class="t">c:Port</span><span class="m">&gt;</span>
+													</div>
+												</div>
+											</div>
+											<div class="e">
+												<div class="c">
+													<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+														-
+													</a>
+													<span class="m">&lt;</span><span class="t">
+														c:Port
+														name
+													</span><span class="m">="</span><b>GND</b><span class="m">"&gt;</span>
+												</div>
+												<div>
+													<div class="e">
+														<div class="c">
+															<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+																-
+															</a>
+															<span class="m">&lt;</span><span class="t">c:ConnectorPins</span><span class="m">&gt;</span>
+														</div>
+														<div>
+															<div class="e">
+																<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+																	<span class="b">
+																		&nbsp;
+																	</span>
+																	<span class="m">
+																		&lt;
+																	</span><span class="t">c:ConnectorPin</span>
+																	<span class="t">
+																		connectorID
+																	</span><span class="m">="</span><b>IC2</b><span class="m">"</span><span class="t">
+																		pinID
+																	</span><span class="m">="</span><b>2</b><span class="m">
+																		"
+																		/&gt;
+																	</span>
+																</div>
+															</div>
+															<div>
+																<span class="b">
+																	&nbsp;
+																</span>
+																<span class="m">
+																	&lt;/
+																</span><span class="t">c:ConnectorPins</span><span class="m">&gt;</span>
+															</div>
+														</div>
+													</div>
+													<div>
+														<span class="b">&nbsp;</span>
+														<span class="m">&lt;/</span><span class="t">c:Port</span><span class="m">&gt;</span>
+													</div>
+												</div>
+											</div>
+											<div class="e">
+												<div class="c">
+													<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+														-
+													</a>
+													<span class="m">&lt;</span><span class="t">
+														c:Port
+														name
+													</span><span class="m">="</span><b>Vout</b><span class="m">"&gt;</span>
+												</div>
+												<div>
+													<div class="e">
+														<div class="c">
+															<a class="b" href="file://ukbhfile/TES_Projects/ATML%20Demonstration/ATML.www/Demonstrations/Phase3/UUT%20Data/Components.html#" onclick="return false" onfocus="h()">
+																-
+															</a>
+															<span class="m">&lt;</span><span class="t">c:ConnectorPins</span><span class="m">&gt;</span>
+														</div>
+														<div>
+															<div class="e">
+																<div style="MARGIN-LEFT: 1em; TEXT-INDENT: -2em">
+																	<span class="b">
+																		&nbsp;
+																	</span>
+																	<span class="m">
+																		&lt;
+																	</span><span class="t">c:ConnectorPin</span>
+																	<span class="t">
+																		connectorID
+																	</span><span class="m">="</span><b>IC2</b><span class="m">"</span><span class="t">
+																		pinID
+																	</span><span class="m">="</span><b>3</b><span class="m">
+																		"
+																		/&gt;
+																	</span>
+																</div>
+															</div>
+															<div>
+																<span class="b">
+																	&nbsp;
+																</span>
+																<span class="m">
+																	&lt;/
+																</span><span class="t">c:ConnectorPins</span><span class="m">&gt;</span>
+															</div>
+														</div>
+													</div>
+													<div>
+														<span class="b">&nbsp;</span>
+														<span class="m">&lt;/</span><span class="t">c:Port</span><span class="m">&gt;</span>
+													</div>
+												</div>
+											</div>
+											<div>
+												<span class="b">&nbsp;</span>
+												<span class="m">&lt;/</span><span class="t">c:Ports</span><span class="m">&gt;</span>
+											</div>
+										</div>
+									</div>
+									<div>
+										<span class="b">&nbsp;</span> <span class="m">
+											&lt;/
+										</span><span class="t">hc:Interface</span><span class="m">&gt;</span>
+									</div>
+								</div>
+							</div>
+							<div>
+								<span class="b">&nbsp;</span> <span class="m">&lt;/</span><span class="t">c:Definition</span><span class="m">&gt;</span>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class="b">&nbsp;</span> <span class="m">&lt;/</span><span class="t">hc:Component</span><span class="m">&gt;</span>
+					</div>
+				</div>
+			</div>
+			<p>&nbsp;</p>
+			<br>
+			<br>
 
-            <p>
-                In the UUT description the names of the ports on components are almost irrelevant, although this is true where the ports represent symmetrical components, e.g. a resistor or capacitor can be inserted anyway around, however for asynchronous components e.g. NPN or switch the Ports and pins have to be matched.
-            </p>
+			<div class="page-navi">
+				<ul>
+					<li><a href="UUT5.html">Next</a></li>
+					<li><a href="UUT5.html">End</a></li>
+				</ul>
+			</div>
 
-            <p>
-                Note: In the example a universal matching between port and pins was not achieved, the best we did was be port name e.g. in/out switch and e,b,c for NPN transistor
-            </p>
+			<div id="footer">
+				<div class="footer-box one-third">
+					<h3>Popular Posts</h3>
+					<ul class="popular-posts">
+						<li>
+							<a href="Features1.html"><img src="style/images/art/s1.jpg" alt=""></a>
+							<h5><a href="Features1.html">Smart diagnostic</a></h5>
+							<span>26 Aug 2011</span>
+						</li>
+						<li>
+							<a href="Features2.html"><img src="style/images/art/s2.jpg" alt=""></a>
+							<h5><a href="Features2.html">RF Test</a></h5>
+							<span>26 Aug 2011</span>
+						</li>
+						<li>
+							<a href="#"><img src="style/images/art/s3.jpg" alt=""></a>
+							<h5><a href="buttons-boxes-images.html">Demonstration</a></h5>
+							<span>26 Aug 2011</span>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-box one-third">
+					<h3>About</h3>
+					<p>SPHEREA specialised in the design and realisation of modular testing solutions for the entire life cycle of complex and critical electronic, microwave, optronic and mechatronic systems.</p>
+					<br>
 
-            <p>
-                <xmp>
-                    - <hc:Component ID="R2">
-                        - <c:Definition xsi:type="uut:HardwareUUT">
-                            + <c:Identification designator="R2">
-                                - <hc:Interface>
-                                    - <c:Ports>
-                                        <c:Port name="a" />
-                                        <c:Port name="b" />
-                                    </c:Ports>
-                                </hc:Interface>
-                        </c:Definition>
-                    </hc:Component>
-                    - <hc:Component ID="C1">
-                        - <c:Definition xsi:type="uut:HardwareUUT">
-                            + <c:Identification designator="C1">
-                                - <hc:Interface>
-                                    - <c:Ports>
-                                        <c:Port name="a" />
-                                        <c:Port name="b" />
-                                    </c:Ports>
-                                </hc:Interface>
-                        </c:Definition>
-                    </hc:Component>
-                    - <hc:Component ID="JP1">
-                        - <c:Definition xsi:type="uut:HardwareUUT">
-                            + <c:Identification designator="JP1">
-                                - <hc:Interface>
-                                    - <c:Ports>
-                                        <c:Port name="1" />
-                                        <c:Port name="2" />
-                                    </c:Ports>
-                                </hc:Interface>
-                        </c:Definition>
-                    </hc:Component>
-                    - <hc:Component ID="Q1">
-                        - <c:Definition xsi:type="uut:HardwareUUT">
-                            + <c:Identification designator="Q1">
-                                - <hc:Interface>
-                                    - <c:Ports>
-                                        <c:Port name="b" />
-                                        <c:Port name="c" />
-                                        <c:Port name="e" />
-                                    </c:Ports>
-                                </hc:Interface>
-                        </c:Definition>
-                    </hc:Component>
-                    - <hc:Component ID="K1">
-                        - <c:Definition xsi:type="uut:HardwareUUT">
-                            + <c:Identification designator="K1">
-                                - <hc:Interface>
-                                    - <c:Ports>
-                                        <c:Port name="in" />
-                                        <c:Port name="out" />
-                                    </c:Ports>
-                                </hc:Interface>
-                        </c:Definition>
-                    </hc:Component>
-                    - <hc:Component ID="VB">
-                        - <c:Definition xsi:type="uut:HardwareUUT">
-                            + <c:Identification designator="VB">
-                                - <hc:Interface>
-                                    - <c:Ports>
-                                        <c:Port name="tp" />
-                                    </c:Ports>
-                                </hc:Interface>
-                        </c:Definition>
-                    </hc:Component>
-                </xmp>
-            </p>
-
-            <p>
-                This identification problem only exists for basic components, if we consider the IC components, here there model already defines there associated pins, every IC has a pin numbering system. In this case we mealy identify a Port for each pin, with a specific connectorID and pinID. In the example It uses a connectorID the same as the component ID which has the effect of defining a corresponding connector.
-            </p>
-
-            <p>
-                <xmp>
-                    - <hc:Component ID="IC2">
-                        - <c:Definition xsi:type="uut:HardwareUUT">
-                            - <c:Identification designator="IC2">
-                                <c:ModelName>BA30BC0T</c:ModelName>
-                            </c:Identification>
-                            - <hc:Interface>
-                                - <c:Ports>
-                                    - <c:Port name="Vin">
-                                        - <c:ConnectorPins>
-                                            <c:ConnectorPin connectorID="IC2" pinID="1" />
-                                        </c:ConnectorPins>
-                                    </c:Port>
-                                    - <c:Port name="GND">
-                                        - <c:ConnectorPins>
-                                            <c:ConnectorPin connectorID="IC2" pinID="2" />
-                                        </c:ConnectorPins>
-                                    </c:Port>
-                                    - <c:Port name="Vout">
-                                        - <c:ConnectorPins>
-                                            <c:ConnectorPin connectorID="IC2" pinID="3" />
-                                        </c:ConnectorPins>
-                                    </c:Port>
-                                </c:Ports>
-                            </hc:Interface>
-                        </c:Definition>
-                    </hc:Component>
-                </xmp>
-            </p>
-
-            <div class="page-navi">
-                <ul>
-                    <li><a href="UUT1.html">1</a></li>
-                    <li><a href="UUT2.html">2</a></li>
-                    <li><a href="UUT3.html">3</a></li>
-                    <li><a href="UUT4.html" class="current">4</a></li>
-                    <li><a href="UUT5.html">5</a></li>
-                    <li><a href="UUT5.html">›</a></li>
-                    <li><a href="UUT5.html">»</a></li>
-                </ul>
-            </div>
-
-            <div id="footer">
-                <div class="footer-box one-third">
-                    <h3>Popular Posts</h3>
-                    <ul class="popular-posts">
-                        <li>
-                            <a href="Features1.html"><img src="style/images/art/s1.jpg" alt=""></a>
-                            <h5><a href="Features1.html">Smart diagnostic</a></h5>
-                            <span>26 Aug 2011</span>
-                        </li>
-                        <li>
-                            <a href="Features2.html"><img src="style/images/art/s2.jpg" alt=""></a>
-                            <h5><a href="Features2.html">RF Test</a></h5>
-                            <span>26 Aug 2011</span>
-                        </li>
-                        <li>
-                            <a href="#"><img src="style/images/art/s3.jpg" alt=""></a>
-                            <h5><a href="buttons-boxes-images.html">Demonstration</a></h5>
-                            <span>26 Aug 2011</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-box one-third">
-                    <h3>About</h3>
-                    <p>SPHEREA specialised in the design and realisation of modular testing solutions for the entire life cycle of complex and critical electronic, microwave, optronic and mechatronic systems.</p>
-                    <br>
-
-                </div>
-                <div class="footer-box one-third last">
-                    <h3>Question</h3>
-                    <p>To ask any queries or report any problems regarding the Knowledge Base. </p>
-                    <span class="lite1">Fax:</span> +44 1202 870 810<br> <br>
-                    <span class="lite1">Tel:</span> +44 1202 872 800<br> <br>
-                    <span class="lite1">E-mail:</span> tes-info@spherea.co.uk</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="clear"></div>
-    <script src="style/js/scripts.js"></script>
-    <!--[if !IE]> -->
-    <script src="style/js/jquery.corner.js"></script>
-    <!-- <![endif]-->
+				</div>
+				<div class="footer-box one-third last">
+					<h3>Question</h3>
+					<p>To ask any queries or report any problems regarding the Knowledge Base. </p>
+					<span class="lite1">Fax:</span> +44 1202 870 810<br> <br>
+					<span class="lite1">Tel:</span> +44 1202 872 800<br> <br>
+					<span class="lite1">E-mail:</span> tes-info@spherea.co.uk</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<script src="style/js/scripts.js"></script>
+	<!--[if !IE]> -->
+	<script src="style/js/jquery.corner.js"></script>
+	<!-- <![endif]-->
 </body>
 </html>
