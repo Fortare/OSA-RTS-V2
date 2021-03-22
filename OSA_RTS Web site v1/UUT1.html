@@ -52,9 +52,9 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="TestDescription1.html">Test descritption</a>
+                        <a href="TestDescription1.html">Test description</a>
                         <ul>
-                            <li><a href="TestDescription1.html">Test descritption presentation</a></li>
+                            <li><a href="TestDescription1.html">Test description presentation</a></li>
                             <li><a href="TestDescription2.html">TSF Libraries</a></li>
                             <li><a href="TestDescription3.html">Signal Requirements</a></li>
                             <li><a href="TestDescription4.html">Test Information</a></li>
@@ -67,15 +67,17 @@
                             <li><a href="blog.html">Overview</a></li>
                             <li><a href="blog2.html">Installing LabWindows/CVI OSA RTS Toolset</a></li>
                             <li><a href="buttons-boxes-images.html">Running LabWindows/CVI OSA-RTS Toolset</a></li>
-                            <li><a href="post2.html">Video</a></li>
+                            <li><a href="post2.html">Video LabWindows</a></li>
+                            <li><a href="post3.html">Video Labview</a></li>
+
                         </ul>
                     </li>
                     <li>
                         <a href="Features1.html">Features</a>
                         <ul>
                             <li><a href="Features1.html">Smart diagnostic</a></li>
-                            <li><a href="Features2.html">Rf testing (part 1)</a></li>
-                            <li><a href="Features3.html">Rf testing (part 2)</a></li>
+                            <li><a href="Features2.html">RF testing (part 1)</a></li>
+                            <li><a href="Features3.html">RF testing (part 2)</a></li>
                             <li><a href="Features4.html">Other features</a></li>
                         </ul>
                     </li>
@@ -91,9 +93,10 @@
                     <li><a href="https://www.linkedin.com/company/spherea"><img src="style/images/icon-linkedin.png" alt=""></a></li>
                 </ul>
             </div>
-            <div class="sidebox" style="color:#FFF;">
-                <p style="margin-bottom:5px;">Copyright &copy; </p>
-
+       <div class="sidebox" style="color:#FFF;">
+                <p style="margin-bottom:5px;">Copyright © Spherea 2021 </p>
+				<p>All rights reserved </p>
+			<p>See <a href="http://www.spherea-technology.co.uk/SphereaTechnology/Index.htm"> Useful details</a> <a href="https://www.bitlaw.com/copyright/formalities.html">©</a> </p>
             </div>
         </div>
         <div id="content">
@@ -110,13 +113,9 @@
                 <a href="index4.html">Source documents</a>
             </p>
 
-            <p>
-
-            </p>
-
             <p><a title="General settings"><img src="style/images/UUT/UUTDes.PNG" alt="" class="center round"></a></p>
 
-            <h2 class="title">Analog UUT Description</h2>
+            <h2 class="title"> I. Analog UUT Description</h2>
 
             <p>
                 The ATML Demo UUT has 'developed' over the lifetime of the project. Initially we all wanted to use a 'real' customer supplied UUT, but ran into the usual problems of availability, injecting faults to show diagnostics and having something we could run and share amongst all the team members. By having our own UUT design we've been able to add functionality such as RS232 busses and Digital control on top of an analogue design where we can inject known faults.
@@ -150,7 +149,7 @@
             </table>
             <br>
 
-            <h3 class="title">UUT Description</h3>
+            <h3 class="title"> I.1.UUT Description</h3>
 
             <p> The UUT design allows the board to simulate specific faults that could be used to show diagnostics, indictments and fault analysis. The design of the board is such that it has 10 (ten) fault insertion switches that provide the ability to simulate faults. The following table identifies the 'simulation' faults</p>
 
@@ -203,7 +202,7 @@
             </table>
             <br>
 
-            <h3 class="title">UUT Tests</h3>
+            <h3 class="title"> I.2. UUT Tests</h3>
 
             <p>The UUT design is such that on power-on the gain assumes a default value, equivalent to the digital components missing or not present; as was the case for the initial Phase I demonstration. In this default power-on state the following tests represent the simulated stimulus and response of the board.</p>
 
@@ -293,7 +292,7 @@
             <br>
 
 
-            <h3 class="title">ATML UUT Description</h3>
+            <h3 class="title"> I.3. ATML UUT Description</h3>
 
             <p>At this point (if you've opened all the links) you have all the information available on the UUT. The problem is that its all in propriety or user orientated format. Its difficult to share this information electronically with another system without having to have significant user input in mapping the information. The purpose of the ATML UUT Description is to capture all this UUT information and and allow the test information to be used and exchanged as part of the test system, without significant user interpretation.</p>
             <p>The UUT Description described the 'hardware design' of the ATML Demo UUT board. The ATML UUT Description (UUTDescriptionDemo3.xml) is a complete description of the UUT information. The example attempts to demonstrate all possible uses where ATML UUT Description could be used, in some cases pushing use-cases to the extreme limits of what can be supported.</p>
@@ -301,7 +300,7 @@
             <div class="clear"></div>
 
 
-            <h2 class="title">RF UUT Description</h2>
+            <h2 class="title">II. RF UUT Description</h2>
 
             <p><a title="General settings"><img src="style/images/UUT/RF ampli.PNG" alt="" class="center round"></a></p>
 
@@ -317,7 +316,7 @@
             </p>
 
 
-            <h2 class="title">Test Adaptor Description</h2>
+            <h2 class="title">III. Test Adaptor Description</h2>
 
             <p>
                 One of the major components developed through all three demonstrations has been the Interface Test Adaptor (ITA) and Test Adaptor Description.
